@@ -203,7 +203,7 @@
      
       justify-content: center;
   color: #273A49;
-  font-family: "Proxima Nova",'PT Sans', sans-serif;
+  font-family: "Proxima Nova",'Open Sans', sans-serif;
   text-align: justify;
   font-size: 10px;
   width: 100%;
@@ -276,20 +276,20 @@
   
   
   .user_field{
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova",'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1;
   text-align: left;
-  width: 98px;
+  width: 105px;
   color: #162531;
   vertical-align: top;
   }
   
   .user_fieldValue{
-      padding-left: 40px;
-      font-family: Proxima Nova;
+      padding-left: 26px;
+      font-family: "Proxima Nova",'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -299,47 +299,7 @@
     color: #646a7c;
     }
   
-  /*#merchant_name{
-    font-family: Proxima Nova;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 6px;
   
-  
-  color: #737A8D;
-  
-  }
-  #date{
-    font-family: Proxima Nova;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 6px;
-  color: #737A8D;
-  }
-  #charges{
-    font-family: Proxima Nova;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 6px;
-  color: #737A8D;
-  }
-  #card_number{ 
-    font-family: Proxima Nova;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 6px;
-  
-  color: #737A8D;
-  }
-  #per_message{
-    font-family: Proxima Nova;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 6px;
-  
-  color: #737A8D;
-  }
-  */
   
   .wrapperBar{
     position: relative;
@@ -361,47 +321,7 @@
   }
   
   
-  /*
-  #otptab{
-    display: flex;
-    justify-content: center;
-    width: 67px;
-  height: 16px;
-  font-weight: 600;
-  line-height: 0;
-  font-size: 8px;
-  background: #2A1563;
-  color: white;
-  border-radius: 25px;
-  }
   
-  
-  
-  #atmpin_tab{
-    display: flex;
-    justify-content: center;
-    width: 67px;
-  height: 16px;
-  font-weight: 500;
-  line-height: 0;
-  font-size: 8px;
-  background: #F2F2FF;
-  color: 2A1563;
-  border-radius: 25px;
-  }
-  #staticpin_tab{
-    display: flex;
-    justify-content: center;
-    width: 67px;
-  height: 16px;
-  font-weight: 500;
-  line-height: 0;
-  font-size: 8px;
-  background: #F2F2FF;
-  color: 2A1563;
-  border-radius: 25px;
-  }
-  */
   
   
   .dyncnt{
@@ -606,7 +526,7 @@
   .resendtimer    {
                       
                       float: left;
-                      font-family: Proxima Nova;
+                      font-family: "Proxima Nova",'Open Sans', sans-serif;
                       font-style: normal;
                       font-weight: 500;
                       font-size: 7px;
@@ -616,7 +536,7 @@
   
   #resendOTPbtn1  {
                   
-                  font-family: Proxima Nova;
+                  font-family: "Proxima Nova",'Open Sans', sans-serif;
                   font-style: normal;
                   font-weight: 500;
                   font-size: 8px;
@@ -630,7 +550,7 @@
 
               #resendOTPbtn2  {
                   
-                font-family: Proxima Nova;
+                font-family: "Proxima Nova",'Open Sans', sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 8px;
@@ -657,7 +577,7 @@
   
   .setPwd  {
                   
-                  font-family: Proxima Nova;
+                  font-family: "Proxima Nova",'Open Sans', sans-serif;
                   font-style: normal;
                   font-weight: 500;
                   font-size: 9px;
@@ -705,7 +625,7 @@
                 }              
   
   .resetlable   {
-                font-family: Proxima Nova;
+                font-family: "Proxima Nova",'Open Sans', sans-serif;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 8px;
@@ -761,7 +681,7 @@
   }
                   .rstExplable   {
                     position: absolute;
-                    font-family: Proxima Nova;
+                    font-family: "Proxima Nova",'Open Sans', sans-serif;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 8px;
@@ -839,7 +759,7 @@
               display: flex;
               justify-content: center;
               top: 25px;
-              font-family: Proxima Nova;
+              font-family: "Proxima Nova",'Open Sans', sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 6px;
@@ -851,7 +771,7 @@
               display: flex;
               justify-content: center;
               top: 35px;
-              font-family: Proxima Nova;
+              font-family: "Proxima Nova",'Open Sans', sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 8px;
@@ -864,7 +784,7 @@
               display: flex;
               justify-content: center;
               top: 35px;
-              font-family: Proxima Nova;
+              font-family: "Proxima Nova",'Open Sans', sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 8px;
@@ -879,7 +799,7 @@
   }
   
   .pinlable   {
-                  font-family: Proxima Nova;
+                  font-family: "Proxima Nova",'Open Sans', sans-serif;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 8px;
@@ -889,7 +809,7 @@
   
                       
   .explable   {
-                  font-family: Proxima Nova;
+                  font-family: "Proxima Nova",'Open Sans', sans-serif;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 7px;
@@ -1008,7 +928,7 @@
   
   
   .copyright{
-      font-family: Proxima Nova;
+      font-family: "Proxima Nova",'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
@@ -1032,7 +952,6 @@
   form > div {
     position: relative;
     background: white;
-    /*border-bottom: 1px solid #ccc;*/
   }
   form > div > label {
     opacity: 0.3;
@@ -1053,12 +972,6 @@
     opacity: 0;
   }
   
-  form > div > input[type="password"]:valid {
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg');
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 20px 20px;
-  }
   
   form > div > input[type="password"]:valid + label {
     opacity: 0;
@@ -1090,7 +1003,7 @@
   
   body {
     background-color: #F2F2FF;
-    font-family: "Proxima Nova",'PT Sans', sans-serif;
+    font-family: "Proxima Nova",'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
     

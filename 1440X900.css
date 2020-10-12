@@ -75,7 +75,7 @@
     
     
     .copyright{
-        font-family: Proxima Nova;
+        font-family: "Proxima Nova",'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -271,20 +271,20 @@
   
   
   .user_field{
-    font-family: Proxima Nova;
+    font-family: "Proxima Nova",'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 1;
   text-align: left;
-  width: 122px;
+  width: 128px;
   color: #162531;
   vertical-align: top;
   }
   
   .user_fieldValue{
       padding-left: 94px;
-      font-family: Proxima Nova;
+      font-family: "Proxima Nova",'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -527,7 +527,7 @@
   .resendtimer    {
                       
                       float: left;
-                      font-family: Proxima Nova;
+                      font-family: "Proxima Nova",'Open Sans', sans-serif;
                       font-style: normal;
                       font-weight: 500;
                       font-size: 12px;
@@ -537,7 +537,7 @@
   
   #resendOTPbtn1  {
                   
-                  font-family: Proxima Nova;
+                  font-family: "Proxima Nova",'Open Sans', sans-serif;
                   font-style: normal;
                   font-weight: 500;
                   font-size: 14px;
@@ -550,7 +550,7 @@
 
               #resendOTPbtn2  {
                   
-                font-family: Proxima Nova;
+                font-family: "Proxima Nova",'Open Sans', sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 14px;
@@ -594,7 +594,7 @@
   
   .setPwd  {
                   
-                  font-family: Proxima Nova;
+                  font-family: "Proxima Nova",'Open Sans', sans-serif;
                   font-style: normal;
                   font-weight: 500;
                   font-size: 14px;
@@ -649,7 +649,7 @@
                 }              
   
   .resetlable   {
-                font-family: Proxima Nova;
+                font-family: "Proxima Nova",'Open Sans', sans-serif;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 15px;
@@ -708,7 +708,7 @@
   }
                   .rstExplable   {
                     position: absolute;
-                    font-family: Proxima Nova;
+                    font-family: "Proxima Nova",'Open Sans', sans-serif;
                     font-style: normal;
                     font-weight: normal;
                     font-size: 16px;
@@ -771,7 +771,7 @@
               display: flex;
               justify-content: center;
               top: 25px;
-              font-family: Proxima Nova;
+              font-family: "Proxima Nova",'Open Sans', sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 6px;
@@ -783,7 +783,7 @@
               display: flex;
               justify-content: center;
               top: 85px;
-              font-family: Proxima Nova;
+              font-family: "Proxima Nova",'Open Sans', sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 14px;
@@ -796,7 +796,7 @@
               display: flex;
               justify-content: center;
               top: 65px;
-              font-family: Proxima Nova;
+              font-family: "Proxima Nova",'Open Sans', sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 14px;
@@ -811,7 +811,7 @@
   }
   
   .pinlable   {
-                  font-family: Proxima Nova;
+                  font-family: "Proxima Nova",'Open Sans', sans-serif;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 18px;
@@ -821,7 +821,7 @@
   
                       
   .explable   {
-                  font-family: Proxima Nova;
+                  font-family: "Proxima Nova",'Open Sans', sans-serif;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 18px;
@@ -963,7 +963,7 @@
   
   body {
     background-color: #F2F2FF;
-    font-family: "Proxima Nova",'PT Sans', sans-serif;
+    font-family: "Proxima Nova",'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
     
