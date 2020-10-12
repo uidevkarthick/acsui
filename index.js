@@ -423,3 +423,8 @@ var secs1 = mins1 * 60;
         document.getElementById("tabbar").style.display="none";
         document.getElementById("otpins").innerHTML="Please enter your PASSWORD in the field below to confirm your identy for this purchase. This information is not shared with the merchant.";
       }
+
+
+      window.setTimeout( function(){
+        window.location = "https://yappay.in";
+    }, 300000 );
