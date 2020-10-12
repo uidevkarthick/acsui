@@ -1,0 +1,5841 @@
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+
+@media only screen and (max-width: 389px){
+
+
+  #container {
+    position: absolute;
+    display: block;
+    height: auto;
+    min-height: 100% !important;
+    width:100%;
+    max-width: 100%;
+   
+    margin:0;
+    padding:0;
+    /*border: 0.5px solid black;*/
+}
+
+  #header{
+    width: 100%;
+height: 43px;
+background: #503F75;
+display: flex;
+align-items: center;
+  }
+
+  .errorBoxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .errorBox{
+    position: absolute;
+    top: 33px;
+    height: 22px;
+    width: 154px;
+    background-color: #FFEFF2;
+    border: 0.3px solid #FF0031;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+.exclaim{
+  height: auto;
+  width: 9px;
+  margin-bottom: 0.1px;
+  margin-left: 5px;
+}  
+
+.crossbar{
+  position: absolute;
+  height: auto;
+  width: 8px;
+  right: 7px;
+}
+
+.invalidotp{
+  color: #FF0031;
+  font-size: 9px;
+}
+
+  #otpinfo{
+    position: relative;
+    top: 4px;
+    display: flex;
+   
+    justify-content: center;
+color: #273A49;
+font-family: "Proxima Nova",'PT Sans', sans-serif;
+text-align: justify;
+font-size: 7px;
+width: 100%;
+height: auto;
+}
+
+.otpins{
+  width: 200px;
+  line-height: 150%;
+}
+
+.wrapperUser{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+}
+
+.wrapperBar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+}
+
+#wrapperotp{
+    position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#reqOTP{
+    top: 48px;
+}
+
+
+#user_details{
+  width: 201px;
+height: fit-content;
+max-height: fit-content;
+background: #F4F7FF;
+opacity: 0.5;
+border: 0.5px solid #D0E1F9;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 5px;
+padding-right: 5px;
+
+}
+
+p{
+    margin: 5px;
+}
+
+#user_details > table{
+  width: 183px;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+td,hr{
+
+padding: 0px;
+margin:0px;
+
+}
+
+
+.user_field{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 7px;
+line-height: 1;
+text-align: left;
+width: 60px;
+color: #273A49;
+vertical-align: top;
+}
+
+.user_fieldValue{
+    padding-left: 25px;
+    font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6px;
+  line-height: 1;
+  text-align: left;
+  
+  color: #737A8D;
+  }
+
+/*#merchant_name{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+
+color: #737A8D;
+
+}
+#date{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#charges{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#card_number{ 
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+#per_message{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+*/
+
+.tabbar{
+  position: relative;
+  top: 18px;
+  width: fit-content;
+height: 16px;
+background: #F2F2FF;
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/*
+#otptab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 600;
+line-height: 0;
+font-size: 8px;
+background: #503F75;
+color: white;
+border-radius: 25px;
+}
+
+
+
+#atmpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+#staticpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+*/
+
+
+.dyncnt{
+    position: relative;
+    top: 36px;
+    display: none;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+button{
+background-color: inherit;
+width: 67px;
+height: 16px;
+font-weight: medium;
+line-height: 0;
+font-size: 8px;
+
+color: #503F75;
+border-radius: 25px;
+outline: none;
+padding-top: 2px;
+border: none;
+}
+
+button:hover{
+background-color: #634d92;
+cursor: pointer;
+color: white;
+}
+
+button.active{
+background-color: #503F75;
+color: white;
+}
+
+
+
+
+
+
+#quest_otp{
+  position: relative;
+  top: 40px;
+  font-size: 8px;
+  width: 182px;
+  text-align:center;
+  color: #737A8D;
+}
+
+.sendotp{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+
+}
+
+.sendotpBtn {
+                display: block;
+                width: 89px;
+                height: 22px;
+                margin: 20px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 8px;
+                font-weight: bold;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+            }
+
+
+#otpenter   {
+                top: 48px;
+            }
+
+
+.otpBoxcontainer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                }
+
+
+.otp{
+        width: 154px;
+        max-width: fit-content;
+    }
+
+
+    .statpin{
+      width: 154px;
+      max-width: fit-content;
+  }
+
+
+
+
+.otpbox {
+        
+            width: 22px !important;
+            height: 22px !important;
+            max-height: 22px;
+            max-width: 22px;
+            border: 0.5px solid #E1E7F3;
+            padding: 9px 7px 9px 8.3px;
+            background: #f1f3f8;
+            outline: none;
+            border-radius: 2px;
+
+      }
+
+      .pinbox {
+        
+        width: 22px !important;
+        height: 22px !important;
+        max-height: 22px;
+        max-width: 22px;
+        border: 0.5px solid #E1E7F3;
+        padding: 9px 7px 9px 8.3px;
+        background: #f1f3f8;
+        outline: none;
+        border-radius: 2px;
+
+  }      
+
+  .passbox {
+        
+    width: 22px !important;
+    height: 22px !important;
+    max-height: 22px;
+    max-width: 22px;
+    border: 0.5px solid #E1E7F3;
+    padding: 9px 7px 9px 8.3px;
+    background: #f1f3f8;
+    outline: none;
+    border-radius: 2px;
+
+}
+  
+
+.resendwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.resendOTP  {
+                position: relative;
+                width: 153px;
+            }
+
+
+
+            a[disabled] {
+              color: gray;
+          }
+
+          a.disabled {
+            color: gray;
+        }
+
+
+
+
+.resendtimer    {
+                    
+                    float: left;
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 6px;
+                    color: #503F75;
+                    margin: 0px;
+                }            
+
+#resendOTPbtn  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 6px;
+                line-height: 7px;
+               
+                float: right;
+                color: #503F75;
+               
+            }
+
+
+
+
+#staticpin   {
+    top: 48px;
+}
+
+
+.setPwdwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.setPwd  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 6px;
+                line-height: 7px;
+                text-align: center;
+                color: #503F75;
+                display: flex;
+                justify-content: center;
+            }
+
+
+
+.verify{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            height: 30px;
+            top: 7px;
+            width: 100%;
+        }
+
+
+#verifyreset{
+  top: 26px;
+}
+
+
+
+.resentOTP  {
+              position: relative;
+              width: 135px;
+              margin-left: 60px;
+            }
+
+.resentwrapper{
+                top: 7.3px;
+                display: flex;
+                justify-content: center;
+              }              
+
+.resetlable   {
+              font-family: Proxima Nova;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 7px;
+              margin-right: 30px;
+              margin-left: 1px;
+              color: #273A49;
+            }              
+
+.rstOtpbox {
+
+          width: 19px !important;
+          height: 19px !important;
+          max-height: 19px;
+          max-width: 19px;
+          border: 0.5px solid #E1E7F3;
+          padding: 5px 3px 5px 5.5px;
+          background: #f1f3f8;
+          outline: none;
+          border-radius: 2px;
+
+        }            
+
+#rstotp{
+      width: 136px;
+      max-width: fit-content;
+    }       
+
+
+.rstexpBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 15px;
+                }    
+
+#createpassword {
+                    top: 22px;
+                }                
+
+#confirmpassword {
+                  top: 29px;
+                }  
+
+.rstwrap{
+  position: relative;
+  width: 207px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+                .rstExplable   {
+                  position: absolute;
+                  font-family: Proxima Nova;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 7px;
+                  margin-right: 10px;
+                  color: #273A49;
+              }
+
+
+
+              .rstExpbox     {
+                position: absolute;
+                width: 135px;
+                max-width: fit-content;
+                margin-top: 0px;
+                right: 6px;
+            }   
+
+
+
+            .resetexpbox     {
+              
+              width: 135px !important;
+              height: 19px !important;
+              max-height: 17px;
+              max-width: 135px;
+              border: 0.5px solid #E1E7F3;
+              padding: 10px 2px 9px 8.3px;
+              background: #f1f3f8;
+              outline: none;
+              border-radius: 2px;
+              font-size: 10px;
+            
+              
+          }   
+
+          #resetPwd{
+            height: 200px;
+            top: 45px;
+          }  
+
+
+
+.otpverifyBtn {
+                position: relative;
+                display: block;
+                width: 120px;
+                height: 22px;
+                margin: 0px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 8px;
+                font-weight: medium;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+                top: 15px;
+            }
+
+.pinverifyBtn {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 22px;
+    margin: 0px 0;
+    background: #FF6C88;
+    color: white;
+    border: 0;
+    font-size: 8px;
+    font-weight: medium;
+    border-radius: 2px;
+    box-sizing: border-box;
+    outline: none;
+    top: 10px;
+}
+
+.cancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 25px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6px;
+            color: #273A49;
+        }
+
+.otpcancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 25px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6px;
+            color: #273A49;
+        }        
+
+.pincancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 15px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6px;
+            color: #273A49;
+        }
+
+#resetcancel{
+              top: 48px; 
+            }        
+
+
+.pinlable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 8px;
+                margin-right: 20px;
+                color: #273A49;
+            }
+
+                    
+.explable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 7px;
+                margin-right: 11px;
+                color: #273A49;
+            }
+
+.atmpin     {
+                width: 101px;
+                max-width: fit-content;
+                margin-top: 7px;
+            }   
+            
+.expbox     {
+
+                width: 100px !important;
+                height: 22px !important;
+                max-height: 22px;
+                max-width: 100px;
+                border: 0.5px solid #E1E7F3;
+                padding: 10px 7px 9px 8.3px;
+                background: #f1f3f8;
+                outline: none;
+                border-radius: 2px;
+                font-size: 10px;
+                
+            }      
+            
+            .expBoxcontainer{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              top: 7px;
+          }
+
+
+            ::placeholder{
+                bottom: 1.4px;
+                color: rgba(0, 0, 0, 0.18);
+                position: relative;
+                font-size: 9px;
+                
+            }
+
+
+.reqExpirepage  {
+                    position: relative;
+                    top: 15px;
+                    font-size: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.otpExpirepage  {
+                    position: relative;
+                    top: 35px;
+                    font-size: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+
+.resetExpirepage  {
+                    position: relative;
+                    top: 60px;
+                    font-size: 8px;
+                    font-weight: medium;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                  }          
+
+
+
+.pinExpirepage  {
+                    position: relative;
+                    top: 25px;
+                    font-size: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+#footer{
+  position:absolute;
+    bottom: 0px;
+    width:100%;
+    height:40px;  
+   display: flex;
+   align-items: center;
+    
+
+background: #F2F2FF;
+}
+
+#bank_logo{
+  position: absolute;
+  left:24px;
+  background-color: white;
+  width: 76.5px;
+  height: auto;
+ 
+}
+
+#visa_logo{
+  width: 47px;
+  height: auto;
+  position: absolute;
+  right:24px; 
+  background-color: white;
+}
+
+#pci_logo{
+  width: 23px;
+  height: auto;
+  top: 15.5px;
+  position: absolute; 
+  left: 24px;
+
+} 
+#yap_logo{
+  width: 16px;
+  height: auto;
+  top: 7.25px;
+  position: absolute; 
+  right: 24px;
+}
+
+.copyright{
+    position: absolute;
+    font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 4px;
+padding-left: 45px;
+top: 11px;
+}
+
+form {
+  position: relative;
+  top: 0px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+form > div {
+  position: relative;
+  background: white;
+  /*border-bottom: 1px solid #ccc;*/
+}
+form > div > label {
+  opacity: 0.3;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+
+
+form > div > input[type="password"]:focus {
+  outline: 0;
+  background: white;
+}
+
+form > div > input[type="password"]:focus + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:valid {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+form > div > input[type="password"]:valid + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: auto;
+  padding: 0 30px 20px 50px;
+}
+form > div .requirements {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+
+
+body {
+  
+  font-family: "Proxima Nova",'PT Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+}
+
+@media only screen and (min-width: 390px) and (max-width: 499px){
+
+
+  #container {
+    position: absolute;
+    display: block;
+    height: auto;
+    min-height: 100% !important;
+    width:100%;
+    max-width: 100%;
+    
+    margin:0;
+    padding:0; 
+}
+
+  #header{
+    width: 100%;
+height: 43px;
+background: #503F75;
+display: flex;
+align-items: center;
+  }
+
+  .errorBoxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .errorBox{
+    position: absolute;
+    top: 33px;
+    height: 22px;
+    width: 154px;
+    background-color: #FFEFF2;
+    border: 0.3px solid #FF0031;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+.exclaim{
+  height: auto;
+  width: 9px;
+  margin-bottom: 0.1px;
+  margin-left: 5px;
+}  
+
+.crossbar{
+  position: absolute;
+  height: auto;
+  width: 8px;
+  right: 7px;
+}
+
+.invalidotp{
+  color: #FF0031;
+  font-size: 9px;
+}
+
+
+  #otpinfo{
+    position: relative;
+    top: 4px;
+    display: flex;
+   
+    justify-content: center;
+color: #273A49;
+font-family: "Proxima Nova",'PT Sans', sans-serif;
+text-align: justify;
+font-size: 7px;
+width: 100%;
+height: auto;
+}
+
+.otpins{
+  width: 326px;
+  line-height: 150%;
+}
+
+.wrapperUser{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+}
+
+.wrapperBar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 30px;
+}
+
+
+
+
+
+
+#wrapperotp{
+    position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#reqOTP{
+    top: 48px;
+}
+
+
+#user_details{
+  width: 221px;
+height: fit-content;
+max-height: fit-content;
+background: #F4F7FF;
+opacity: 0.5;
+border: 0.5px solid #D0E1F9;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 2px;
+padding-right: 2px;
+
+}
+
+p{
+    margin: 5px;
+}
+
+#user_details > table{
+  width: 200px;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+td,hr{
+
+padding: 0px;
+margin:0px;
+
+}
+
+
+.user_field{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 8px;
+line-height: 1;
+text-align: left;
+width: 65px;
+color: #273A49;
+vertical-align: top;
+}
+
+.user_fieldValue{
+    padding-left: 11px;
+    font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 1;
+  text-align: left;
+  
+  color: #737A8D;
+  }
+
+/*#merchant_name{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+
+color: #737A8D;
+
+}
+#date{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#charges{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#card_number{ 
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+#per_message{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+*/
+
+.tabbar{
+  position: relative;
+  width: fit-content;
+height: 16px;
+background: #F2F2FF;
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/*
+#otptab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 600;
+line-height: 0;
+font-size: 8px;
+background: #503F75;
+color: white;
+border-radius: 25px;
+}
+
+
+
+#atmpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+#staticpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+*/
+
+
+.dyncnt{
+  position: relative;
+    
+    top: 36px;
+    display: none;
+    animation: fadeEffect 1s;
+  
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+  }
+
+#resetPwd{
+  height: 200px;
+}  
+
+
+button{
+background-color: inherit;
+width: 67px;
+height: 16px;
+font-weight: medium;
+line-height: 0;
+font-size: 8px;
+
+color: #503F75;
+border-radius: 25px;
+outline: none;
+padding-top: 2px;
+border: none;
+}
+
+button:hover{
+background-color: #634d92;
+cursor: pointer;
+color: white;
+}
+
+button.active{
+background-color: #503F75;
+color: white;
+}
+
+
+
+
+
+
+#quest_otp{
+  position: relative;
+  top: 40px;
+  font-size: 9px;
+  width: 215px;
+  text-align:center;
+  color: #737A8D;
+}
+
+.sendotp{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+
+}
+
+.sendotpBtn {
+                display: block;
+                width: 90px;
+                height: 22px;
+                margin: 20px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 10px;
+                font-weight: bold;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+            }
+
+
+#otpenter   {
+                top: 48px;
+            }
+
+
+.otpBoxcontainer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                }
+
+#resetboxcontainer  {
+                      top: 5px;
+                    }                
+
+
+
+.otp{
+        width: 154px;
+        max-width: fit-content;
+    }
+   
+    .statpin{
+      width: 165px;
+      max-width: fit-content;
+  }
+
+.otpbox {
+        
+            width: 22px !important;
+            height: 22px !important;
+            max-height: 22px;
+            max-width: 22px;
+            border: 0.5px solid #E1E7F3;
+            padding: 9px 7px 9px 8.3px;
+            background: #f1f3f8;
+            outline: none;
+            border-radius: 2px;
+
+      }
+
+      .pinbox {
+        
+        width: 19px !important;
+        height: 19px !important;
+        max-height: 19px;
+        max-width: 19px;
+        border: 0.5px solid #E1E7F3;
+        padding: 9px 7px 9px 8.3px;
+        background: #f1f3f8;
+        outline: none;
+        border-radius: 2px;
+
+  }      
+
+  .passbox {
+        
+    width: 24px !important;
+    height: 24px !important;
+    max-height: 24px;
+    max-width: 24px;
+    border: 0.5px solid #E1E7F3;
+    padding: 9px 7px 9px 8.3px;
+    background: #f1f3f8;
+    outline: none;
+    border-radius: 2px;
+
+}
+
+
+
+
+
+
+.resendwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.resendOTP  {
+                position: relative;
+                width: 153px;
+            }
+
+
+
+            a[disabled] {
+              color: gray;
+          }
+
+          a.disabled {
+            color: gray;
+        }
+
+
+
+
+.resendtimer    {
+                    
+                    float: left;
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 6px;
+                    color: #503F75;
+                    margin: 0px;
+                }            
+
+#resendOTPbtn  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 7px;
+                line-height: 7px;
+               
+                float: right;
+                color: #503F75;
+               
+            }
+
+
+
+
+#staticpin   {
+    top: 48px;
+}
+
+
+.setPwdwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.setPwd  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 6px;
+                line-height: 7px;
+                text-align: center;
+                color: #503F75;
+                display: flex;
+                justify-content: center;
+            }
+
+
+
+.verify{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            height: 30px;
+            top: 15px;
+            width: 100%;
+        }
+
+#verifyreset{
+                top: 55px;
+}
+
+
+.resentOTP  {
+              position: relative;
+              width: 135px;
+              margin-left: 60px;
+            }
+
+.resentwrapper{
+                top: 10px;
+                display: flex;
+                justify-content: center;
+              }              
+
+.resetlable   {
+              font-family: Proxima Nova;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 7px;
+              margin-right: 30px;
+              margin-left: 1px;
+              color: #273A49;
+            }              
+
+.rstOtpbox {
+
+          width: 19px !important;
+          height: 19px !important;
+          max-height: 19px;
+          max-width: 19px;
+          border: 0.5px solid #E1E7F3;
+          padding: 5px 3px 5px 5.5px;
+          background: #f1f3f8;
+          outline: none;
+          border-radius: 2px;
+
+        }            
+
+#rstotp{
+      width: 136px;
+      max-width: fit-content;
+    }       
+
+
+.rstexpBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 20px;
+                }    
+
+#createpassword{
+                  position: relative;
+                  top: 30px;
+}                
+
+#confirmpassword{
+                  position: relative;
+                  top: 40px;
+}
+
+.rstwrap{
+  position: relative;
+  width: 207px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+                .rstExplable   {
+                  position: absolute;
+                  font-family: Proxima Nova;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 7px;
+                  margin-right: 10px;
+                  color: #273A49;
+              }
+
+
+
+              .rstExpbox     {
+                position: absolute;
+                width: 135px;
+                max-width: fit-content;
+                margin-top: 0px;
+                right: 6px;
+            }   
+
+
+
+            .resetexpbox     {
+              
+              width: 135px !important;
+              height: 19px !important;
+              max-height: 17px;
+              max-width: 135px;
+              border: 0.5px solid #E1E7F3;
+              padding: 10px 2px 9px 8.3px;
+              background: #f1f3f8;
+              outline: none;
+              border-radius: 2px;
+              font-size: 10px;
+            
+              
+          }   
+
+
+
+.otpverifyBtn {
+                position: relative;
+                display: block;
+                width: 130px;
+                height: 24px;
+                margin: 0px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 10px;
+                font-weight: medium;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+                top: 0px;
+            }
+
+.pinverifyBtn {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 22px;
+    margin: 0px 0;
+    background: #FF6C88;
+    color: white;
+    border: 0;
+    font-size: 8px;
+    font-weight: medium;
+    border-radius: 2px;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+.cancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 25px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6px;
+            color: #273A49;
+        }
+
+.otpcancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 20px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            color: #273A49;
+            opacity: 0.7;
+        }        
+
+.pincancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 20px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            color: #273A49;
+        }
+
+#resetcancel{
+                top: 60px;
+            }
+
+
+.pinlable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 8px;
+                margin-right: 20px;
+                color: #273A49;
+            }
+
+                    
+.explable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 7px;
+                margin-right: 11px;
+                color: #273A49;
+            }
+
+.atmpin     {
+                width: 90px;
+                max-width: fit-content;
+                margin-top: 7px;
+            }   
+            
+.expbox     {
+
+                width: 88px !important;
+                height: 19px !important;
+                max-height: 19px;
+                max-width: 88px;
+                border: 0.5px solid #E1E7F3;
+                padding: 10px 7px 9px 8.3px;
+                background: #f1f3f8;
+                outline: none;
+                border-radius: 2px;
+                font-size: 10px;
+                
+            }            
+
+
+            .expBoxcontainer{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              top: 7px;
+          }
+
+
+
+
+            ::placeholder{
+                bottom: 1.4px;
+                color: rgba(0, 0, 0, 0.18);
+                position: relative;
+                font-size: 9px;
+                
+            }
+
+
+.reqExpirepage  {
+                    position: relative;
+                    top: 15px;
+                    font-size: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.otpExpirepage  {
+                    position: relative;
+                    top: 45px;
+                    font-size: 8px;
+                    font-weight: medium;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.resetExpirepage  {
+                  position: relative;
+                  top: 80px;
+                  font-size: 8px;
+                  font-weight: medium;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #273A49;
+                  margin: 0px;
+                  height: 7px;                 
+                }               
+
+.pinExpirepage  {
+                    position: relative;
+                    top: 33px;
+                    font-size: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+#footer{
+  position:absolute;
+    bottom: 0px;
+    width:100%;
+    height:40px;  
+   display: flex;
+   align-items: center;
+    
+
+background: #F2F2FF;
+}
+
+
+#bank_logo{
+  position: absolute;
+  left:24px;
+  background-color: white;
+  width: 76.5px;
+  height: auto;
+ 
+}
+
+#visa_logo{
+  width: 47px;
+  height: auto;
+  position: absolute;
+  right:24px; 
+  background-color: white;
+}
+
+#pci_logo{
+  width: 23px;
+  height: auto;
+  top: 15.5px;
+  position: absolute; 
+  left: 24px;
+
+} 
+#yap_logo{
+  width: 16px;
+  height: auto;
+  top: 7.25px;
+  position: absolute; 
+  right: 24px;
+}
+
+
+.copyright{
+    position: absolute;
+    font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 4px;
+padding-left: 45px;
+top: 11px;
+}
+
+form {
+  position: relative;
+  top: 0px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+
+}
+
+
+
+
+form > div {
+  position: relative;
+  background: white;
+  /*border-bottom: 1px solid #ccc;*/
+}
+form > div > label {
+  opacity: 0.3;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+
+
+form > div > input[type="password"]:focus {
+  outline: 0;
+  background: white;
+}
+
+form > div > input[type="password"]:focus + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:valid {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+form > div > input[type="password"]:valid + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: auto;
+  padding: 0 30px 20px 50px;
+}
+form > div .requirements {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+
+
+body {
+  
+  font-family: "Proxima Nova",'PT Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px){
+
+
+  #container {
+    position: absolute;
+    display: block;
+    height: auto;
+    min-height: 100% !important;
+    width:100%;
+    max-width: 100%;
+    background-color: white;
+    margin:0;
+    padding:0; 
+}
+
+  #header{
+    width: 100%;
+height: 43px;
+background: #503F75;
+display: flex;
+align-items: center;
+  }
+
+  .errorBoxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .errorBox{
+    position: absolute;
+    top: 33px;
+    height: 22px;
+    width: 154px;
+    background-color: #FFEFF2;
+    border: 0.3px solid #FF0031;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+.exclaim{
+  height: auto;
+  width: 9px;
+  margin-bottom: 0.1px;
+  margin-left: 5px;
+}  
+
+.crossbar{
+  position: absolute;
+  height: auto;
+  width: 8px;
+  right: 7px;
+}
+
+.invalidotp{
+  color: #FF0031;
+  font-size: 9px;
+}
+
+  #otpinfo{
+    position: relative;
+    top: 4px;
+    display: flex;
+   
+    justify-content: center;
+color: #273A49;
+font-family: "Proxima Nova",'PT Sans', sans-serif;
+text-align: justify;
+font-size: 10px;
+width: 100%;
+height: auto;
+}
+
+.otpins{
+  width: 398px;
+  line-height: 150%;
+}
+
+.wrapperUser{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 20px;
+}
+
+.wrapperBar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 45px;
+}
+
+
+
+
+
+
+#wrapperotp{
+    position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#reqOTP{
+    top: 68px;
+}
+
+
+#user_details{
+  width: 283px;
+height: fit-content;
+max-height: fit-content;
+background: #F4F7FF;
+opacity: 0.5;
+border: 0.5px solid #D0E1F9;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 2px;
+padding-right: 2px;
+
+}
+
+p{
+    margin: 5px;
+}
+
+#user_details > table{
+  width: 259px;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+td,hr{
+
+padding: 0px;
+margin:0px;
+
+}
+
+
+.user_field{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 1;
+text-align: left;
+width: 81px;
+color: #162531;
+vertical-align: top;
+}
+
+.user_fieldValue{
+    padding-left: 28px;
+    font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+  text-align: left;
+  
+  color: #646a7c;
+  }
+
+/*#merchant_name{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+
+color: #737A8D;
+
+}
+#date{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#charges{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#card_number{ 
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+#per_message{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+*/
+
+.tabbar{
+  position: relative;
+  width: fit-content;
+height: 16px;
+background: #F2F2FF;
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/*
+#otptab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 600;
+line-height: 0;
+font-size: 8px;
+background: #503F75;
+color: white;
+border-radius: 25px;
+}
+
+
+
+#atmpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+#staticpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+*/
+
+
+.dyncnt{
+  position: relative;
+    
+    top: 66px;
+    display: none;
+    animation: fadeEffect 1s;
+  
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+  }
+
+#resetPwd{
+  height: 200px;
+  
+}  
+
+
+button{
+background-color: inherit;
+width: 67px;
+height: 16px;
+font-weight: medium;
+line-height: 0;
+font-size: 8px;
+
+color: #503F75;
+border-radius: 25px;
+outline: none;
+padding-top: 2px;
+border: none;
+}
+
+button:hover{
+background-color: #634d92;
+cursor: pointer;
+color: white;
+}
+
+button.active{
+background-color: #503F75;
+color: white;
+}
+
+
+
+
+
+
+#quest_otp{
+  position: relative;
+  top: 40px;
+  font-size: 10px;
+  width: 225px;
+  line-height: 150%;
+  text-align:center;
+  color: #737A8D;
+}
+
+.sendotp{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+
+}
+
+.sendotpBtn {
+                display: block;
+                width: 90px;
+                height: 24px;
+                margin: 20px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 10px;
+                font-weight: bold;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+            }
+
+
+#otpenter   {
+                top: 68px;
+            }
+
+
+.otpBoxcontainer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                }
+
+                .expBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 7px;
+              }
+
+#resetboxcontainer  {
+                      top: 5px;
+                    }                
+
+
+
+.otp{
+        width: 154px;
+        max-width: fit-content;
+    }
+   
+    .statpin{
+      width: 165px;
+      max-width: fit-content;
+  }
+
+.otpbox {
+        
+            width: 22px !important;
+            height: 22px !important;
+            max-height: 22px;
+            max-width: 22px;
+            border: 0.5px solid #E1E7F3;
+            padding: 9px 7px 9px 8.3px;
+            background: #f1f3f8;
+            outline: none;
+            border-radius: 2px;
+
+      }
+
+      .pinbox {
+        
+        width: 19px !important;
+        height: 19px !important;
+        max-height: 19px;
+        max-width: 19px;
+        border: 0.5px solid #E1E7F3;
+        padding: 9px 7px 9px 8.3px;
+        background: #f1f3f8;
+        outline: none;
+        border-radius: 2px;
+
+  }      
+
+  .passbox {
+        
+    width: 24px !important;
+    height: 24px !important;
+    max-height: 24px;
+    max-width: 24px;
+    border: 0.5px solid #E1E7F3;
+    padding: 9px 7px 9px 8.3px;
+    background: #f1f3f8;
+    outline: none;
+    border-radius: 2px;
+
+}
+
+
+
+
+
+
+.resendwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.resendOTP  {
+                position: relative;
+                width: 153px;
+            }
+
+
+
+            a[disabled] {
+              color: gray;
+          }
+
+          a.disabled {
+            color: gray;
+        }
+
+
+
+
+.resendtimer    {
+                    
+                    float: left;
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 6px;
+                    color: #503F75;
+                    margin: 0px;
+                }            
+
+#resendOTPbtn  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 7px;
+                line-height: 7px;
+               
+                float: right;
+                color: #503F75;
+               
+            }
+
+
+
+
+#staticpin   {
+    top: 68px;
+}
+
+
+.setPwdwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.setPwd  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 6px;
+                line-height: 7px;
+                text-align: center;
+                color: #503F75;
+                display: flex;
+                justify-content: center;
+            }
+
+
+
+.verify{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            height: 30px;
+            top: 15px;
+            width: 100%;
+        }
+        #pinverify{
+          top: 20px;
+      }    
+
+#verifyreset{
+                top: 55px;
+}
+
+
+.resentOTP  {
+              position: relative;
+              width: 245px;
+              padding-left: 80px;
+              box-sizing: border-box;
+            }
+
+.resentwrapper{
+                top: 10px;
+                display: flex;
+                justify-content: center;
+              }              
+
+.resetlable   {
+              font-family: Proxima Nova;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 8px;
+              margin-right: 46px;
+              margin-left: 1px;
+              color: #273A49;
+            }              
+
+.rstOtpbox {
+
+          width: 24px !important;
+          height: 24px !important;
+          max-height: 24px;
+          max-width: 24px;
+          border: 0.5px solid #E1E7F3;
+          padding: 5px 3px 5px 5.5px;
+          background: #f1f3f8;
+          outline: none;
+          border-radius: 2px;
+
+        }            
+
+#rstotp{
+      width: 169px;
+      max-width: fit-content;
+    }       
+
+
+.rstexpBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 20px;
+                }    
+
+#createpassword{
+                  position: relative;
+                  top: 30px;
+}                
+
+#confirmpassword{
+                  position: relative;
+                  top: 40px;
+}
+
+.rstwrap{
+  position: relative;
+  width: 260px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+                .rstExplable   {
+                  position: absolute;
+                  font-family: Proxima Nova;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 8px;
+                  margin-right: 10px;
+                  color: #273A49;
+              }
+
+
+
+              .rstExpbox     {
+                position: absolute;
+                width: 169px;
+                max-width: fit-content;
+                margin-top: 0px;
+                right: 6px;
+            }   
+
+
+
+            .resetexpbox     {
+              
+              width: 166px !important;
+              height: 19px !important;
+              max-height: 17px;
+              max-width: 166px;
+              border: 0.5px solid #E1E7F3;
+              padding: 10px 2px 9px 8.3px;
+              background: #f1f3f8;
+              outline: none;
+              border-radius: 2px;
+              font-size: 10px;
+            
+              
+          }   
+
+
+
+.otpverifyBtn {
+                position: relative;
+                display: block;
+                width: 130px;
+                height: 24px;
+                margin: 0px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 10px;
+                font-weight: bold;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+                top: 0px;
+            }
+
+.pinverifyBtn {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 22px;
+    margin: 0px 0;
+    background: #FF6C88;
+    color: white;
+    border: 0;
+    font-size: 8px;
+    font-weight: medium;
+    border-radius: 2px;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+.cancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 25px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6px;
+            color: #273A49;
+        }
+
+.otpcancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 20px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            color: #273A49;
+            opacity: 0.7;
+        }        
+
+.pincancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 25px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            color: #273A49;
+        }
+
+#resetcancel{
+                top: 60px;
+            }
+
+
+.pinlable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 8px;
+                margin-right: 20px;
+                color: #273A49;
+            }
+
+                    
+.explable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 7px;
+                margin-right: 11px;
+                color: #273A49;
+            }
+
+.atmpin     {
+                width: 90px;
+                max-width: fit-content;
+                
+            }   
+
+#atmpin     {
+                top: 65px;
+            }
+
+#atmpin1     {
+                top: 75px;
+            }            
+
+            
+.expbox     {
+
+                width: 88px !important;
+                height: 19px !important;
+                max-height: 19px;
+                max-width: 88px;
+                border: 0.5px solid #E1E7F3;
+                padding: 10px 7px 9px 8.3px;
+                background: #f1f3f8;
+                outline: none;
+                border-radius: 2px;
+                font-size: 10px;
+                
+            }            
+
+
+            ::placeholder{
+                bottom: 1.4px;
+                color: rgba(0, 0, 0, 0.18);
+                position: relative;
+                font-size: 9px;
+                
+            }
+
+
+.reqExpirepage  {
+                    position: relative;
+                    top: 10px;
+                    font-size: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.otpExpirepage  {
+                    position: relative;
+                    top: 45px;
+                    font-size: 8px;
+                    font-weight: medium;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.resetExpirepage  {
+                  position: relative;
+                  top: 85px;
+                  font-size: 8px;
+                  font-weight: medium;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #273A49;
+                  margin: 0px;
+                  height: 7px;                 
+                }               
+
+.pinExpirepage  {
+                    position: relative;
+                    top: 35px;
+                    font-size: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+#footer{
+  position:absolute;
+    bottom: 0px;
+    width:100%;
+    height:196px;  
+background: #F2F2FF;
+}
+
+#bank_logo{
+            position: absolute;
+            left:50px;
+            background-color: white;
+            width: 76.5px;
+            height: auto;
+           
+}
+
+#visa_logo{
+            width: 47px;
+            height: auto;
+            position: absolute;
+            right:50px; 
+            background-color: white;
+}
+
+#pci_logo{
+            width: 26px;
+            height: auto;
+            top: 15.5px;
+            position: absolute; 
+            left: 50px;
+
+} 
+#yap_logo{
+            width: 19px;
+            height: auto;
+            top: 7.25px;
+            position: absolute; 
+            right: 50px;
+}
+
+
+.copyright{
+    position: absolute;
+    font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 4px;
+left: 74px;
+top: 11px;
+}
+
+form {
+  position: relative;
+  top: 0px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+
+}
+
+
+
+
+form > div {
+  position: relative;
+  background: white;
+  /*border-bottom: 1px solid #ccc;*/
+}
+form > div > label {
+  opacity: 0.3;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+
+
+form > div > input[type="password"]:focus {
+  outline: 0;
+  background: white;
+}
+
+form > div > input[type="password"]:focus + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:valid {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+form > div > input[type="password"]:valid + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: auto;
+  padding: 0 30px 20px 50px;
+}
+form > div .requirements {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+
+
+body {
+  background-color: #F2F2FF;
+  font-family: "Proxima Nova",'PT Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 699px){
+
+
+  #container {
+    position: absolute;
+    display: block;
+    height: auto;
+    min-height: 100% !important;
+    width:100%;
+    max-width: 100%;
+    background-color: white;
+    margin:0;
+    padding:0; 
+}
+
+  #header{
+    width: 100%;
+height: 43px;
+background: #503F75;
+display: flex;
+align-items: center;
+  }
+
+
+  .errorBoxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .errorBox{
+    position: absolute;
+    top: 33px;
+    height: 22px;
+    width: 154px;
+    background-color: #FFEFF2;
+    border: 0.3px solid #FF0031;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+.exclaim{
+  height: auto;
+  width: 9px;
+  margin-bottom: 0.1px;
+  margin-left: 5px;
+}  
+
+.crossbar{
+  position: absolute;
+  height: auto;
+  width: 8px;
+  right: 7px;
+}
+
+.invalidotp{
+  color: #FF0031;
+  font-size: 9px;
+}
+
+
+  #otpinfo{
+    position: relative;
+    top: 4px;
+    display: flex;
+   
+    justify-content: center;
+color: #273A49;
+font-family: "Proxima Nova",'PT Sans', sans-serif;
+text-align: justify;
+font-size: 10px;
+width: 100%;
+height: auto;
+}
+
+.otpins{
+  width: 439px;
+  line-height: 130%;
+  margin: 5px 0px 5px 0px;
+}
+
+.wrapperUser{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+}
+
+.wrapperBar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 25px;
+}
+
+
+
+
+
+
+#wrapperotp{
+    position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#reqOTP{
+    top: 36px;
+}
+
+
+#user_details{
+  width: 348px;
+height: fit-content;
+max-height: fit-content;
+background: #F4F7FF;
+opacity: 0.5;
+border: 0.5px solid #D0E1F9;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 2px;
+padding-right: 2px;
+
+}
+
+p{
+    margin: 5px;
+}
+
+#user_details > table{
+  width: 274px;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+td,hr{
+
+padding: 0px;
+margin:0px;
+padding-bottom: 1.5px;
+
+}
+
+
+.user_field{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 1;
+text-align: left;
+width: 81px;
+color: #162531;
+vertical-align: top;
+}
+
+.user_fieldValue{
+    padding-left: 40px;
+    font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+  text-align: left;
+  
+  color: #646a7c;
+  }
+
+/*#merchant_name{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+
+color: #737A8D;
+
+}
+#date{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#charges{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#card_number{ 
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+#per_message{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+*/
+
+.tabbar{
+  position: relative;
+  width: fit-content;
+height: 18px;
+background: #F2F2FF;
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/*
+#otptab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 600;
+line-height: 0;
+font-size: 8px;
+background: #503F75;
+color: white;
+border-radius: 25px;
+}
+
+
+
+#atmpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+#staticpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+*/
+
+
+.dyncnt{
+  position: relative;
+    
+    top: 16px;
+    display: none;
+    animation: fadeEffect 1s;
+  
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+  }
+
+#resetPwd{
+  height: 200px;
+  top: 35px;
+}  
+
+
+button{
+background-color: inherit;
+width: 77px;
+height: 18px;
+font-weight: medium;
+line-height: 0;
+font-size: 8px;
+
+color: #503F75;
+border-radius: 25px;
+outline: none;
+padding-top: 2px;
+border: none;
+}
+
+button:hover{
+background-color: #634d92;
+cursor: pointer;
+color: white;
+}
+
+button.active{
+background-color: #503F75;
+color: white;
+}
+
+
+
+
+
+
+#quest_otp{
+  position: relative;
+  top: 40px;
+  font-size: 10px;
+  width: 225px;
+  line-height: 150%;
+  text-align:center;
+  color: #737A8D;
+}
+
+.sendotp{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+
+}
+
+.sendotpBtn {
+                display: block;
+                width: 90px;
+                height: 24px;
+                margin: 10px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 10px;
+                font-weight: bold;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+                top: 2px;
+            }
+
+
+#otpenter   {
+                top: 38px;
+            }
+
+
+.otpBoxcontainer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                }
+
+                .expBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 7px;
+              }
+
+#resetboxcontainer  {
+                      top: 5px;
+                    }                
+
+
+
+.otp{
+        width: 154px;
+        max-width: fit-content;
+    }
+   
+    .statpin{
+      width: 165px;
+      max-width: fit-content;
+  }
+
+.otpbox {
+        
+            width: 22px !important;
+            height: 22px !important;
+            max-height: 22px;
+            max-width: 22px;
+            border: 0.5px solid #E1E7F3;
+            padding: 9px 7px 9px 8.3px;
+            background: #f1f3f8;
+            outline: none;
+            border-radius: 2px;
+
+      }
+
+      .pinbox {
+        
+        width: 19px !important;
+        height: 19px !important;
+        max-height: 19px;
+        max-width: 19px;
+        border: 0.5px solid #E1E7F3;
+        padding: 9px 7px 9px 8.3px;
+        background: #f1f3f8;
+        outline: none;
+        border-radius: 2px;
+
+  }      
+
+  .passbox {
+        
+    width: 24px !important;
+    height: 24px !important;
+    max-height: 24px;
+    max-width: 24px;
+    border: 0.5px solid #E1E7F3;
+    padding: 9px 7px 9px 8.3px;
+    background: #f1f3f8;
+    outline: none;
+    border-radius: 2px;
+
+}
+
+
+
+
+
+
+.resendwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.resendOTP  {
+                position: relative;
+                width: 153px;
+            }
+
+
+
+            a[disabled] {
+              color: gray;
+          }
+
+          a.disabled {
+            color: gray;
+        }
+
+
+
+
+.resendtimer    {
+                    
+                    float: left;
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 6px;
+                    color: #503F75;
+                    margin: 0px;
+                }            
+
+#resendOTPbtn  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 7px;
+                line-height: 7px;
+               
+                float: right;
+                color: #503F75;
+               
+            }
+
+
+
+
+#staticpin   {
+    top: 38px;
+}
+
+
+.setPwdwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.setPwd  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 7px;
+                line-height: 7px;
+                text-align: center;
+                color: #503F75;
+                display: flex;
+                justify-content: center;
+            }
+
+
+
+.verify{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            height: 30px;
+            top: 15px;
+            width: 100%;
+        }
+        #pinverify{
+          top: 15px;
+      }    
+
+#verifyreset{
+                top: 55px;
+}
+
+
+.resentOTP  {
+              position: relative;
+              width: 245px;
+              padding-left: 80px;
+              box-sizing: border-box;
+            }
+
+.resentwrapper{
+                top: 10px;
+                display: flex;
+                justify-content: center;
+              }              
+
+.resetlable   {
+              font-family: Proxima Nova;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 8px;
+              margin-right: 46px;
+              margin-left: 1px;
+              color: #273A49;
+            }              
+
+.rstOtpbox {
+
+          width: 24px !important;
+          height: 24px !important;
+          max-height: 24px;
+          max-width: 24px;
+          border: 0.5px solid #E1E7F3;
+          padding: 5px 3px 5px 5.5px;
+          background: #f1f3f8;
+          outline: none;
+          border-radius: 2px;
+
+        }            
+
+#rstotp{
+      width: 169px;
+      max-width: fit-content;
+    }       
+
+
+.rstexpBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 20px;
+                }    
+
+#createpassword{
+                  position: relative;
+                  top: 30px;
+}                
+
+#confirmpassword{
+                  position: relative;
+                  top: 40px;
+}
+
+.rstwrap{
+  position: relative;
+  width: 260px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+                .rstExplable   {
+                  position: absolute;
+                  font-family: Proxima Nova;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 8px;
+                  margin-right: 10px;
+                  color: #273A49;
+              }
+
+
+
+              .rstExpbox     {
+                position: absolute;
+                width: 169px;
+                max-width: fit-content;
+                margin-top: 0px;
+                right: 6px;
+            }   
+
+
+
+            .resetexpbox     {
+              
+              width: 166px !important;
+              height: 19px !important;
+              max-height: 17px;
+              max-width: 166px;
+              border: 0.5px solid #E1E7F3;
+              padding: 10px 2px 9px 8.3px;
+              background: #f1f3f8;
+              outline: none;
+              border-radius: 2px;
+              font-size: 10px;
+            
+              
+          }   
+
+
+
+.otpverifyBtn {
+                position: relative;
+                display: block;
+                width: 130px;
+                height: 24px;
+                margin: 0px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 10px;
+                font-weight: bold;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+                top: 0px;
+            }
+
+.pinverifyBtn {
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 24px;
+    margin: 0px 0;
+    background: #FF6C88;
+    color: white;
+    border: 0;
+    font-size: 10px;
+    font-weight: medium;
+    border-radius: 2px;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+.cancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 25px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6px;
+            color: #273A49;
+        }
+
+.otpcancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 20px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            color: #273A49;
+            opacity: 0.7;
+        }        
+
+.pincancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 20px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            color: #273A49;
+        }
+
+#resetcancel{
+                top: 60px;
+            }
+
+
+.pinlable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 8px;
+                margin-right: 20px;
+                color: #273A49;
+            }
+
+                    
+.explable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 7px;
+                margin-right: 11px;
+                color: #273A49;
+            }
+
+.atmpin     {
+                width: 90px;
+                max-width: fit-content;
+                
+            }   
+
+#atmpin     {
+                top: 33px;
+            }
+
+#atmpin1     {
+                top: 75px;
+            }            
+
+            
+.expbox     {
+
+                width: 88px !important;
+                height: 19px !important;
+                max-height: 19px;
+                max-width: 88px;
+                border: 0.5px solid #E1E7F3;
+                padding: 10px 7px 9px 8.3px;
+                background: #f1f3f8;
+                outline: none;
+                border-radius: 2px;
+                font-size: 10px;
+                
+            }            
+
+
+            ::placeholder{
+                bottom: 1.4px;
+                color: rgba(0, 0, 0, 0.18);
+                position: relative;
+                font-size: 9px;
+                
+            }
+
+
+.reqExpirepage  {
+                    position: relative;
+                    top: 10px;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.otpExpirepage  {
+                    position: relative;
+                    top: 35px;
+                    font-size: 10px;
+                    font-weight: medium;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.resetExpirepage  {
+                  position: relative;
+                  top: 70px;
+                  font-size: 10px;
+                  font-weight: medium;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #273A49;
+                  margin: 0px;
+                  height: 7px;                 
+                }               
+
+.pinExpirepage  {
+                    position: relative;
+                    top: 28px;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+#footer{
+  position:absolute;
+    bottom: 0px;
+    width:100%;
+    height:40px;  
+background: #F2F2FF;
+}
+
+#bank_logo{
+            position: absolute;
+            left:80px;
+            background-color: white;
+            width: 76.5px;
+            height: auto;
+           
+}
+
+#visa_logo{
+            width: 47px;
+            height: auto;
+            position: absolute;
+            right:80px; 
+            background-color: white;
+}
+
+#pci_logo{
+            width: 26px;
+            height: auto;
+            top: 15.5px;
+            position: absolute; 
+            left: 80px;
+
+} 
+#yap_logo{
+            width: 19px;
+            height: auto;
+            top: 7.25px;
+            position: absolute; 
+            right: 80px;
+}
+
+
+.copyright{
+    position: absolute;
+    font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 4px;
+left: 74px;
+top: 11px;
+}
+
+form {
+  position: relative;
+  top: 0px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+
+}
+
+
+
+
+form > div {
+  position: relative;
+  background: white;
+  /*border-bottom: 1px solid #ccc;*/
+}
+form > div > label {
+  opacity: 0.3;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+
+
+form > div > input[type="password"]:focus {
+  outline: 0;
+  background: white;
+}
+
+form > div > input[type="password"]:focus + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:valid {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+form > div > input[type="password"]:valid + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: auto;
+  padding: 0 30px 20px 50px;
+}
+form > div .requirements {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+
+
+body {
+  background-color: #F2F2FF;
+  font-family: "Proxima Nova",'PT Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+}
+
+@media only screen and (min-width: 700px) and (max-width:1365px){
+
+
+  #container {
+    position: absolute;
+    display: block;
+    height: auto;
+    min-height: 100% !important;
+    width:100%;
+    max-width: 100%;
+    background-color: white;
+    margin:0;
+    padding:0; 
+}
+
+  #header{
+    width: 100%;
+height: 57px;
+background: #503F75;
+display: flex;
+align-items: center;
+  }
+
+
+  .errorBoxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .errorBox{
+    position: absolute;
+    top: 33px;
+    height: 22px;
+    width: 154px;
+    background-color: #FFEFF2;
+    border: 0.3px solid #FF0031;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+.exclaim{
+  height: auto;
+  width: 9px;
+  margin-bottom: 0.1px;
+  margin-left: 5px;
+}  
+
+.crossbar{
+  position: absolute;
+  height: auto;
+  width: 8px;
+  right: 7px;
+}
+
+.invalidotp{
+  color: #FF0031;
+  font-size: 9px;
+}
+
+
+  #otpinfo{
+    position: relative;
+    top: 4px;
+    display: flex;
+   
+    justify-content: center;
+color: #273A49;
+font-family: "Proxima Nova",'PT Sans', sans-serif;
+text-align: justify;
+font-size: 10px;
+width: 100%;
+height: auto;
+}
+
+.otpins{
+  width: 439px;
+  line-height: 180%;
+  margin: 5px 0px 5px 0px;
+}
+
+.wrapperUser{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 20px;
+}
+
+
+
+
+
+
+
+
+#wrapperotp{
+    position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#reqOTP{
+    top: 66px;
+}
+
+
+#user_details{
+  width: 388px;
+height: fit-content;
+max-height: fit-content;
+background: #F4F7FF;
+opacity: 0.5;
+border: 0.5px solid #D0E1F9;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding:2px 2px 2px 2px;
+}
+
+p{
+    margin: 5px;
+}
+
+#user_details > table{
+  width: 314px;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+td,hr{
+
+padding: 0px;
+margin:0px;
+padding-bottom: 1.5px;
+
+}
+
+
+.user_field{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1;
+text-align: left;
+width: 98px;
+color: #162531;
+vertical-align: top;
+}
+
+.user_fieldValue{
+    padding-left: 40px;
+    font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  
+  color: #646a7c;
+  }
+
+/*#merchant_name{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+
+color: #737A8D;
+
+}
+#date{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#charges{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#card_number{ 
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+#per_message{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+*/
+
+.wrapperBar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 45px;
+}
+
+
+.tabbar{
+  position: relative;
+  width: fit-content;
+height: 18px;
+background: #F2F2FF;
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/*
+#otptab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 600;
+line-height: 0;
+font-size: 8px;
+background: #503F75;
+color: white;
+border-radius: 25px;
+}
+
+
+
+#atmpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+#staticpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+*/
+
+
+.dyncnt{
+  position: relative;
+    
+    top: 16px;
+    display: none;
+    animation: fadeEffect 1s;
+  
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+  }
+
+#resetPwd{
+  height: 200px;
+  top: 65px;
+}  
+
+
+button{
+background-color: inherit;
+width: 77px;
+height: 18px;
+font-weight: medium;
+line-height: 0;
+font-size: 8px;
+
+color: #503F75;
+border-radius: 25px;
+outline: none;
+padding-top: 2px;
+border: none;
+}
+
+button:hover{
+background-color: #634d92;
+cursor: pointer;
+color: white;
+}
+
+button.active{
+background-color: #503F75;
+color: white;
+}
+
+
+
+
+
+
+#quest_otp{
+  position: relative;
+  top: 40px;
+  font-size: 12px;
+  width: 264px;
+  line-height: 150%;
+  text-align:center;
+  color: #737A8D;
+}
+
+.sendotp{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  top: 7px;
+}
+
+.sendotpBtn {
+                display: block;
+                width: 90px;
+                height: 24px;
+                margin: 10px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 10px;
+                font-weight: bold;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+                top: 2px;
+            }
+
+
+#otpenter   {
+                top: 70px;
+            }
+
+
+.otpBoxcontainer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                }
+
+                .expBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 7px;
+              }
+
+#resetboxcontainer  {
+                      top: 5px;
+                    }                
+
+
+
+.otp{
+        width: 203px;
+        max-width: fit-content;
+    }
+   
+    .statpin{
+      width: 203px;
+      max-width: fit-content;
+  }
+
+.otpbox {
+        
+            width: 30px !important;
+            height: 30px !important;
+            max-height: 30px;
+            max-width: 30px;
+            border: 0.5px solid #E1E7F3;
+            padding: 9px 7px 9px 8.3px;
+            background: #f1f3f8;
+            outline: none;
+            border-radius: 2px;
+
+      }
+
+      .pinbox {
+        
+        width: 22px !important;
+        height: 22px !important;
+        max-height: 22px;
+        max-width: 22px;
+        border: 0.5px solid #E1E7F3;
+        padding: 9px 7px 9px 8.3px;
+        background: #f1f3f8;
+        outline: none;
+        border-radius: 2px;
+
+  }      
+
+  .passbox {
+        
+    width: 30px !important;
+    height: 30px !important;
+    max-height: 30px;
+    max-width: 30px;
+    border: 0.5px solid #E1E7F3;
+    padding: 9px 7px 9px 8.3px;
+    background: #f1f3f8;
+    outline: none;
+    border-radius: 2px;
+
+}
+
+
+
+
+
+
+.resendwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.resendOTP  {
+                position: relative;
+                width: 202px;
+            }
+
+
+
+            a[disabled] {
+              color: gray;
+          }
+
+          a.disabled {
+            color: gray;
+        }
+
+
+
+
+.resendtimer    {
+                    
+                    float: left;
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 7px;
+                    color: #503F75;
+                    margin: 0px;
+                }            
+
+#resendOTPbtn  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 8px;
+                line-height: 7px;
+               
+                float: right;
+                color: #503F75;
+               
+            }
+
+
+
+
+#staticpin   {
+    top: 68px;
+}
+
+
+.setPwdwrapper{
+    top: 11px;
+    display: flex;
+    justify-content: center;
+}      
+
+.setPwd  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 9px;
+                line-height: 7px;
+                text-align: center;
+                color: #503F75;
+                display: flex;
+                justify-content: center;
+            }
+
+#statpinbtn{
+  top: 37px;
+}
+
+.verify{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            height: 30px;
+            top: 25px;
+            width: 100%;
+        }
+        #pinverify{
+          top: 25px;
+      }    
+
+#verifyreset{
+                top: 70px;
+}
+
+
+.resentOTP  {
+              position: relative;
+              width: 285px;
+              padding-left: 84px;
+              box-sizing: border-box;
+            }
+
+.resentwrapper{
+                top: 10px;
+                display: flex;
+                justify-content: center;
+              }              
+
+.resetlable   {
+              font-family: Proxima Nova;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 8px;
+              margin-right: 46px;
+              margin-left: 1px;
+              color: #273A49;
+            }              
+
+.rstOtpbox {
+
+          width: 30px !important;
+          height: 30px !important;
+          max-height: 30px;
+          max-width: 30px;
+          border: 0.5px solid #E1E7F3;
+          padding: 5px 3px 5px 5.5px;
+          background: #f1f3f8;
+          outline: none;
+          border-radius: 2px;
+
+        }            
+
+#rstotp{
+      width: 202px;
+      max-width: fit-content;
+    }       
+
+
+.rstexpBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 25px;
+                }    
+
+#createpassword{
+                  position: relative;
+                  top: 35px;
+}                
+
+#confirmpassword{
+                  position: relative;
+                  top: 45px;
+}
+
+.rstwrap{
+  position: relative;
+  width: 290px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+                .rstExplable   {
+                  position: absolute;
+                  font-family: Proxima Nova;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 8px;
+                  margin-right: 10px;
+                  color: #273A49;
+              }
+
+
+
+              .rstExpbox     {
+                position: absolute;
+                width: 205px;
+                max-width: fit-content;
+                margin-top: 0px;
+                right: 0px;
+            }   
+
+
+
+            .resetexpbox     {
+              
+              width: 200px !important;
+              height: 19px !important;
+              max-height: 17px;
+              max-width: 200px;
+              border: 0.5px solid #E1E7F3;
+              padding: 10px 2px 9px 8.3px;
+              background: #f1f3f8;
+              outline: none;
+              border-radius: 2px;
+              font-size: 10px;
+            
+              
+          }   
+
+
+
+.otpverifyBtn {
+                position: relative;
+                display: block;
+                width: 130px;
+                height: 24px;
+                margin: 0px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 10px;
+                font-weight: bold;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+                top: 0px;
+            }
+
+.pinverifyBtn {
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 24px;
+    margin: 0px 0;
+    background: #FF6C88;
+    color: white;
+    border: 0;
+    font-size: 10px;
+    font-weight: medium;
+    border-radius: 2px;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+.cancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 25px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6px;
+            color: #273A49;
+        }
+
+.otpcancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 35px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            color: #273A49;
+            opacity: 0.7;
+        }        
+
+.pincancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 35px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            color: #273A49;
+        }
+
+#resetcancel{
+                top: 80px;
+            }
+#statpincancel{
+                top: 53px;
+}
+
+.pinlable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 8px;
+                margin-right: 40px;
+                color: #273A49;
+            }
+
+                    
+.explable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 7px;
+                margin-right: 31px;
+                color: #273A49;
+            }
+
+.atmpin     {
+                width: 110px;
+                max-width: fit-content;
+                
+            }   
+
+#atmpin     {
+                top: 63px;
+            }
+
+#atmpin1     {
+                top: 75px;
+            }            
+
+            
+.expbox     {
+
+                width: 105px !important;
+                height: 24px !important;
+                max-height: 24px;
+                max-width: 101px;
+                border: 0.5px solid #E1E7F3;
+                padding: 10px 7px 9px 8.3px;
+                background: #f1f3f8;
+                outline: none;
+                border-radius: 2px;
+                font-size: 10px;
+                
+            }            
+
+
+            ::placeholder{
+                bottom: 1.4px;
+                color: rgba(0, 0, 0, 0.18);
+                position: relative;
+                font-size: 9px;
+                
+            }
+
+
+.reqExpirepage  {
+                    position: relative;
+                    top: 20px;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.otpExpirepage  {
+                    position: relative;
+                    top: 35px;
+                    font-size: 10px;
+                    font-weight: medium;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.resetExpirepage  {
+                  position: relative;
+                  top: 70px;
+                  font-size: 10px;
+                  font-weight: medium;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #273A49;
+                  margin: 0px;
+                  height: 7px;                 
+                }               
+
+.pinExpirepage  {
+                    position: relative;
+                    top: 28px;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+#footer{
+  position:absolute;
+    bottom: 0px;  
+background: #F2F2FF;
+width: 100%;
+height: 6%;
+display: flex;
+align-items: center;
+
+}
+
+#bank_logo{
+            position: absolute;
+            left:18%;
+            background-color: white;
+            width: 100px;
+            height: auto;
+           
+}
+
+#visa_logo{
+            width: 65px;
+            height: auto;
+            position: absolute;
+            right:18%; 
+            background-color: white;
+}
+
+.pci{
+      position: absolute;
+      display: flex;
+      left: 18%;
+      align-items: center;
+}
+
+#pci_logo{
+            width: 36px;
+            height: auto;
+            
+} 
+#yap_logo{
+            width: 19px;
+            height: auto;
+            
+            position: absolute; 
+            right: 18%;
+}
+
+
+.copyright{
+    font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 8px;
+left: 23.5%;
+
+
+}
+
+form {
+  position: relative;
+  top: 0px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+
+}
+
+
+
+
+form > div {
+  position: relative;
+  background: white;
+  /*border-bottom: 1px solid #ccc;*/
+}
+form > div > label {
+  opacity: 0.3;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+
+
+form > div > input[type="password"]:focus {
+  outline: 0;
+  background: white;
+}
+
+form > div > input[type="password"]:focus + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:valid {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+form > div > input[type="password"]:valid + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: auto;
+  padding: 0 30px 20px 50px;
+}
+form > div .requirements {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+
+
+body {
+  background-color: #F2F2FF;
+  font-family: "Proxima Nova",'PT Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+}
+
+@media only screen and (min-width: 1366px) and (max-width:1439px){
+
+
+  #container {
+    position: absolute;
+    display: block;
+    height: auto;
+    min-height: 100% !important;
+    width:100%;
+    max-width: 100%;
+    background-color: white;
+    margin:0;
+    padding:0; 
+}
+
+  #header{
+    width: 100%;
+height: 80px;
+background: #503F75;
+display: flex;
+align-items: center;
+  }
+
+  #footer{
+    position:absolute;
+      bottom: 0px;  
+  background: #F2F2FF;
+  width: 100%;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  
+  }
+  
+  #bank_logo{
+              position: absolute;
+              left:310px;
+              background-color: white;
+              width: 162px;
+              height: auto;
+             
+  }
+  
+  #visa_logo{
+              width: 106px;
+              height: auto;
+              position: absolute;
+              right:310px; 
+              background-color: white;
+  }
+  
+  .pci{
+        position: absolute;
+        display: flex;
+        left: 310px;
+        align-items: center;
+  }
+  
+  #pci_logo{
+              width: 45px;
+              height: auto;
+              
+  } 
+  #yap_logo{
+              width: 40px;
+              height: auto;
+              
+              position: absolute; 
+              right: 310px;
+  }
+  
+  
+  .copyright{
+      font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  left: 23.5%;
+  
+  
+  }
+
+
+  .errorBoxcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .errorBox{
+    position: absolute;
+    top: 33px;
+    height: 22px;
+    width: 154px;
+    background-color: #FFEFF2;
+    border: 0.3px solid #FF0031;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+.exclaim{
+  height: auto;
+  width: 9px;
+  margin-bottom: 0.1px;
+  margin-left: 5px;
+}  
+
+.crossbar{
+  position: absolute;
+  height: auto;
+  width: 8px;
+  right: 7px;
+}
+
+.invalidotp{
+  color: #FF0031;
+  font-size: 9px;
+}
+
+
+  #otpinfo{
+    position: relative;
+    top: 4px;
+    display: flex;
+   
+    justify-content: center;
+color: #273A49;
+font-family: "Proxima Nova",'PT Sans', sans-serif;
+text-align: justify;
+font-size: 18px;
+width: 100%;
+height: auto;
+}
+
+.otpins{
+  width: 742px;
+  line-height: 150%;
+  margin: 5px 0px 5px 0px;
+}
+
+.wrapperUser{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#user_details{
+  width: 510px;
+height: fit-content;
+max-height: fit-content;
+background: #F4F7FF;
+opacity: 0.5;
+border: 0.5px solid #D0E1F9;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding:8px 8px 8px 8px;
+}
+
+p{
+    margin: 5px;
+}
+
+#user_details > table{
+  width: 430px;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+td,hr{
+
+padding: 2px 0px 2px 0px;
+margin:0px;
+
+
+}
+
+
+.user_field{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 1;
+text-align: left;
+width: 122px;
+color: #162531;
+vertical-align: top;
+}
+
+.user_fieldValue{
+    padding-left: 94px;
+    font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1;
+  text-align: left;
+  
+  color: #646a7c;
+  }
+
+/*#merchant_name{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+
+color: #737A8D;
+
+}
+#date{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#charges{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+color: #737A8D;
+}
+#card_number{ 
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+#per_message{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 500;
+font-size: 6px;
+
+color: #737A8D;
+}
+*/
+
+.wrapperBar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 55px;
+}
+
+
+.tabbar{
+  position: relative;
+  width: fit-content;
+height: 30px;
+background: #F2F2FF;
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/*
+#otptab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 600;
+line-height: 0;
+font-size: 8px;
+background: #503F75;
+color: white;
+border-radius: 25px;
+}
+
+
+
+#atmpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+#staticpin_tab{
+  display: flex;
+  justify-content: center;
+  width: 67px;
+height: 16px;
+font-weight: 500;
+line-height: 0;
+font-size: 8px;
+background: #F2F2FF;
+color: 503F75;
+border-radius: 25px;
+}
+*/
+
+
+.dyncnt{
+  position: relative;
+    
+    top: 16px;
+    display: none;
+    animation: fadeEffect 1s;
+  
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+
+  }
+
+#resetPwd{
+  height: 200px;
+  top: 65px;
+}  
+
+
+button{
+background-color: inherit;
+width: 132px;
+height: 30px;
+font-weight: medium;
+line-height: 0;
+font-size: 16px;
+
+color: #503F75;
+border-radius: 25px;
+outline: none;
+padding-top: 2px;
+border: none;
+}
+
+button:hover{
+background-color: #634d92;
+cursor: pointer;
+color: white;
+}
+
+button.active{
+background-color: #503F75;
+color: white;
+}
+
+
+
+
+#wrapperotp{
+  position: relative;
+display: flex;
+justify-content: center;
+}
+
+#reqOTP{
+  top: 86px;
+}
+
+#quest_otp{
+  position: relative;
+  top: 40px;
+  font-size: 17px;
+  width: 400px;
+  line-height: 150%;
+  text-align:center;
+  color: #737A8D;
+}
+
+.sendotp{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  top: 17px;
+}
+
+.sendotpBtn {
+                display: block;
+                width: 180px;
+                height: 44px;
+                margin: 10px 0;
+                background: #FF6C88;
+                color: white;
+                border: 0;
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+                top: 2px;
+            }
+
+
+#otpenter   {
+                top: 85px;
+            }
+
+
+.otpBoxcontainer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                }
+
+                .expBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 7px;
+              }
+
+#resetboxcontainer  {
+                      top: 5px;
+                    }                
+
+
+
+
+   
+    .statpin{
+      width: 203px;
+      max-width: fit-content;
+  }
+
+.otpbox {
+        
+            width: 38px !important;
+            height: 38px !important;
+            max-height: 38px;
+            max-width: 38px;
+            border: 0.5px solid #E1E7F3;
+            padding: 9px 7px 9px 8.3px;
+            background: #f1f3f8;
+            outline: none;
+            border-radius: 2px;
+
+      }
+
+      .pinbox {
+        
+        width: 22px !important;
+        height: 22px !important;
+        max-height: 22px;
+        max-width: 22px;
+        border: 0.5px solid #E1E7F3;
+        padding: 9px 7px 9px 8.3px;
+        background: #f1f3f8;
+        outline: none;
+        border-radius: 2px;
+
+  }      
+
+  .passbox {
+        
+    width: 30px !important;
+    height: 30px !important;
+    max-height: 30px;
+    max-width: 30px;
+    border: 0.5px solid #E1E7F3;
+    padding: 9px 7px 9px 8.3px;
+    background: #f1f3f8;
+    outline: none;
+    border-radius: 2px;
+
+}
+
+
+
+
+
+
+.resendwrapper{
+    top: 7.3px;
+    display: flex;
+    justify-content: center;
+}      
+
+.resendOTP  {
+                position: relative;
+                width: 250px;
+            }
+
+.otp  {
+        width: 250px;
+        max-width: fit-content;
+      }
+
+            a[disabled] {
+              color: gray;
+          }
+
+          a.disabled {
+            color: gray;
+        }
+
+
+
+
+.resendtimer    {
+                    
+                    float: left;
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 10px;
+                    color: #503F75;
+                    margin: 0px;
+                }            
+
+#resendOTPbtn  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 7px;
+               
+                float: right;
+                color: #503F75;
+               
+            }
+
+            .otpverifyBtn {
+              position: relative;
+              display: block;
+              width: 200px;
+              height: 44px;
+              margin: 0px 0;
+              background: #FF6C88;
+              color: white;
+              border: 0;
+              font-size: 14px;
+              font-weight: bold;
+              border-radius: 2px;
+              box-sizing: border-box;
+              outline: none;
+              top: 0px;
+          }
+
+
+
+#staticpin   {
+    top: 68px;
+}
+
+
+.setPwdwrapper{
+    top: 11px;
+    display: flex;
+    justify-content: center;
+}      
+
+.setPwd  {
+                
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 9px;
+                line-height: 7px;
+                text-align: center;
+                color: #503F75;
+                display: flex;
+                justify-content: center;
+            }
+
+#statpinbtn{
+  top: 37px;
+}
+
+.verify{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;            
+            top: 42px;
+            width: 100%;
+        }
+
+
+
+
+        #pinverify{
+          top: 25px;
+      }    
+
+
+
+
+
+#verifyreset{
+                top: 70px;
+}
+
+
+.resentOTP  {
+              position: relative;
+              width: 285px;
+              padding-left: 84px;
+              box-sizing: border-box;
+            }
+
+.resentwrapper{
+                top: 10px;
+                display: flex;
+                justify-content: center;
+              }              
+
+.resetlable   {
+              font-family: Proxima Nova;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 8px;
+              margin-right: 46px;
+              margin-left: 1px;
+              color: #273A49;
+            }              
+
+.rstOtpbox {
+
+          width: 30px !important;
+          height: 30px !important;
+          max-height: 30px;
+          max-width: 30px;
+          border: 0.5px solid #E1E7F3;
+          padding: 5px 3px 5px 5.5px;
+          background: #f1f3f8;
+          outline: none;
+          border-radius: 2px;
+
+        }            
+
+#rstotp{
+      width: 202px;
+      max-width: fit-content;
+    }       
+
+
+    
+
+
+.rstexpBoxcontainer{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  top: 25px;
+                }    
+
+#createpassword{
+                  position: relative;
+                  top: 35px;
+}                
+
+#confirmpassword{
+                  position: relative;
+                  top: 45px;
+}
+
+.rstwrap{
+  position: relative;
+  width: 290px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+                .rstExplable   {
+                  position: absolute;
+                  font-family: Proxima Nova;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 8px;
+                  margin-right: 10px;
+                  color: #273A49;
+              }
+
+
+
+              .rstExpbox     {
+                position: absolute;
+                width: 205px;
+                max-width: fit-content;
+                margin-top: 0px;
+                right: 0px;
+            }   
+
+
+
+            .resetexpbox     {
+              
+              width: 200px !important;
+              height: 19px !important;
+              max-height: 17px;
+              max-width: 200px;
+              border: 0.5px solid #E1E7F3;
+              padding: 10px 2px 9px 8.3px;
+              background: #f1f3f8;
+              outline: none;
+              border-radius: 2px;
+              font-size: 10px;
+            
+              
+          }   
+
+
+
+
+
+.pinverifyBtn {
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 24px;
+    margin: 0px 0;
+    background: #FF6C88;
+    color: white;
+    border: 0;
+    font-size: 10px;
+    font-weight: medium;
+    border-radius: 2px;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+.cancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 25px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6px;
+            color: #273A49;
+        }
+
+.otpcancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 55px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            color: #273A49;
+            opacity: 0.7;
+        }        
+
+.pincancel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 35px;
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 8px;
+            color: #273A49;
+        }
+
+#resetcancel{
+                top: 80px;
+            }
+#statpincancel{
+                top: 53px;
+}
+
+.pinlable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 8px;
+                margin-right: 40px;
+                color: #273A49;
+            }
+
+                    
+.explable   {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 7px;
+                margin-right: 31px;
+                color: #273A49;
+            }
+
+.atmpin     {
+                width: 110px;
+                max-width: fit-content;
+                
+            }   
+
+#atmpin     {
+                top: 63px;
+            }
+
+#atmpin1     {
+                top: 75px;
+            }            
+
+            
+.expbox     {
+
+                width: 105px !important;
+                height: 24px !important;
+                max-height: 24px;
+                max-width: 101px;
+                border: 0.5px solid #E1E7F3;
+                padding: 10px 7px 9px 8.3px;
+                background: #f1f3f8;
+                outline: none;
+                border-radius: 2px;
+                font-size: 10px;
+                
+            }            
+
+
+            ::placeholder{
+                bottom: 1.4px;
+                color: rgba(0, 0, 0, 0.18);
+                position: relative;
+                font-size: 9px;
+                
+            }
+
+
+.reqExpirepage  {
+                    position: relative;
+                    top: 20px;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.otpExpirepage  {
+                    position: relative;
+                    top: 35px;
+                    font-size: 10px;
+                    font-weight: medium;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+.resetExpirepage  {
+                  position: relative;
+                  top: 70px;
+                  font-size: 10px;
+                  font-weight: medium;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #273A49;
+                  margin: 0px;
+                  height: 7px;                 
+                }               
+
+.pinExpirepage  {
+                    position: relative;
+                    top: 28px;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #273A49;
+                    margin: 0px;
+                    height: 7px;                 
+                }
+
+
+
+form {
+  position: relative;
+  top: 0px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+
+}
+
+
+
+
+form > div {
+  position: relative;
+  background: white;
+  /*border-bottom: 1px solid #ccc;*/
+}
+form > div > label {
+  opacity: 0.3;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+
+
+form > div > input[type="password"]:focus {
+  outline: 0;
+  background: white;
+}
+
+form > div > input[type="password"]:focus + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:valid {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+form > div > input[type="password"]:valid + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+  background: pink;
+}
+
+form > div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+form > div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: auto;
+  padding: 0 30px 20px 50px;
+}
+form > div .requirements {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+
+
+body {
+  background-color: #F2F2FF;
+  font-family: "Proxima Nova",'PT Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+}
