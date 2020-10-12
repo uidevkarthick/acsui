@@ -3,47 +3,78 @@ function box(){
   if(window.screen.width>=1440){
     document.getElementById("errorBox").style.visibility= "visible";
     document.getElementById("errorBox").style.opacity= "1";
-    document.getElementById("errorBox").style.top= "100px";
+    document.getElementById("errorBox").style.bottom= "100px";
 setTimeout(() => {
     document.getElementById("errorBox").style.visibility= "visible";
     document.getElementById("errorBox").style.opacity= "0";
-    document.getElementById("errorBox").style.top= "83px";
+    document.getElementById("errorBox").style.bottom= "43px";
 }, 3000);
 }
   
  else if(window.screen.width<=1439 && window.screen.width>=1366){
     document.getElementById("errorBox").style.visibility= "visible";
     document.getElementById("errorBox").style.opacity= "1";
-    document.getElementById("errorBox").style.top= "85px";
+    document.getElementById("errorBox").style.bottom= "90px";
 setTimeout(() => {
     document.getElementById("errorBox").style.visibility= "visible";
     document.getElementById("errorBox").style.opacity= "0";
-    document.getElementById("errorBox").style.top= "53px";
+    document.getElementById("errorBox").style.bottom= "43px";
 }, 3000);
 }
 
 else if(window.screen.width<=1365 && window.screen.width>=700){
   document.getElementById("errorBox").style.visibility= "visible";
   document.getElementById("errorBox").style.opacity= "1";
-  document.getElementById("errorBox").style.top= "65px";
+  document.getElementById("errorBox").style.bottom= "75px";
 setTimeout(() => {
   document.getElementById("errorBox").style.visibility= "visible";
   document.getElementById("errorBox").style.opacity= "0";
-  document.getElementById("errorBox").style.top= "33px";
+  document.getElementById("errorBox").style.bottom= "33px";
 }, 3000);
+}
+
+else if(window.screen.width<=599 && window.screen.width>=500){
+  
+  document.getElementById("errorBox").style.visibility= "visible";
+  document.getElementById("errorBox").style.opacity= "1";
+  document.getElementById("errorBox").style.bottom= "200px";
+setTimeout(() => {
+  document.getElementById("errorBox").style.visibility= "visible";
+  document.getElementById("errorBox").style.opacity= "0";
+  document.getElementById("errorBox").style.bottom= "180px";
+}, 3000);
+  
+
+document.getElementById("submitbtn").addEventListener("click", subm);
+document.getElementById("staticpin_tab").addEventListener("click", stat);
+
+function stat(){
+  document.getElementById("errorBox").style.bottom= "80px";
+}
+
+function subm(){
+    document.getElementById("errorBox").style.visibility= "visible";
+    document.getElementById("errorBox").style.opacity= "1";
+    document.getElementById("errorBox").style.bottom= "100px";
+  setTimeout(() => {
+    document.getElementById("errorBox").style.visibility= "visible";
+    document.getElementById("errorBox").style.opacity= "0";
+    document.getElementById("errorBox").style.bottom= "80px";
+  }, 3000);
+}
 }
 
 else{
   document.getElementById("errorBox").style.visibility= "visible";
   document.getElementById("errorBox").style.opacity= "1";
-  document.getElementById("errorBox").style.top= "50px";
+  document.getElementById("errorBox").style.bottom= "45px";
 setTimeout(() => {
   document.getElementById("errorBox").style.visibility= "visible";
   document.getElementById("errorBox").style.opacity= "0";
-  document.getElementById("errorBox").style.top= "33px";
+  document.getElementById("errorBox").style.bottom= "30px";
 }, 3000);
 }
-  }
+}
 //otp errormsg
 function otperrorBox()  {
   box();
@@ -60,7 +91,6 @@ setTimeout(() => {
   }
   document.getElementById("otpexclaim").style.opacity="0";
 }, 3000);
-
 }
 //pin errormsg
 function pinerrorBox()  {
@@ -78,7 +108,6 @@ setTimeout(() => {
   }
   document.getElementById("pinexclaim").style.opacity="0";
 }, 3000);
-
 }
 //expiry errorBox
 function expiryerrorBox()  {
@@ -94,7 +123,6 @@ setTimeout(() => {
   document.getElementById("pinExpexclaim").style.opacity="0";
   document.getElementById("rstexpexclaim").style.opacity="0";
 }, 3000);
-
 }
 //password errorBox
 function passerrorBox()  {
@@ -106,7 +134,6 @@ setTimeout(() => {
   document.getElementById('passbox').style.border="0.5px solid #E1E7F3";
   document.getElementById("passexclaim").style.opacity="0";
 }, 3000);
-
 }
 //reset otp errormsg
 function resetOTPerrorBox()  {
@@ -123,8 +150,6 @@ setTimeout(() => {
   }
   document.getElementById("rstotpexclaim").style.opacity="0";
 }, 3000);
-
-
 }
 //disabling the links
 function disablelink1(){
@@ -141,7 +166,6 @@ function disablelink1(){
     document.getElementById("sendotpBtn").disabled=false;
     document.getElementById("sendotpBtn").style.opacity="1";
   }, 61500);
-  
 }
 
 function disablelink2(){
@@ -157,21 +181,20 @@ function disablelink2(){
     document.getElementById("setPwd").href = "#";
     document.getElementById("setPwd").style.pointerEvents="";
   }, 61500);
-  
 }
 
 function dblotpbtn (){
   const otpbtn=document.getElementById("otpverifybtn")
     otpbtn.disabled="true";
     otpbtn.value="";
-    //document.getElementById("otpellipsis").style.opacity="1";
-    //document.getElementById("otpellipsis").style.visibility="visible";
+    document.getElementById("otploader").style.opacity="1";
+    document.getElementById("otploader").style.visibility="visible";
 
     setTimeout(() => {
       otpbtn.disabled=false;
     otpbtn.value="VERIFY & PROCEED";
-//    document.getElementById("otpellipsis").style.opacity="0";
-  //  document.getElementById("otpellipsis").style.visibility="hidden";
+    document.getElementById("otploader").style.opacity="0";
+    document.getElementById("otploader").style.visibility="hidden";
     }, 4000);
 }
 
@@ -179,14 +202,14 @@ function dblpinbtn (){
   const pinbtn=document.getElementById("pinverifybtn")
     pinbtn.disabled="true";
     pinbtn.value="";
-    //document.getElementById("pinellipsis").style.opacity="1";
-    //document.getElementById("pinellipsis").style.visibility="visible";
+    document.getElementById("pinloader").style.opacity="1";
+    document.getElementById("pinloader").style.visibility="visible";
     setTimeout(() => {
       pinbtn.disabled=false;
     pinbtn.style.opacity="1";
     pinbtn.value="VERIFY & PROCEED";
-    //document.getElementById("pinellipsis").style.opacity="0";
-    //document.getElementById("pinellipsis").style.visibility="hidden";
+    document.getElementById("pinloader").style.opacity="0";
+    document.getElementById("pinloader").style.visibility="hidden";
     }, 4000);
 }
 
@@ -194,13 +217,13 @@ function dblpassbtn (){
   const pinbtn=document.getElementById("passbtn")
     pinbtn.disabled="true";
     pinbtn.value="";
-    //document.getElementById("passellipsis").style.opacity="1";
-    //document.getElementById("passellipsis").style.visibility="visible";
+    document.getElementById("passloader").style.opacity="1";
+    document.getElementById("passloader").style.visibility="visible";
     setTimeout(() => {
       pinbtn.disabled=false;
       pinbtn.value="VERIFY & PROCEED";
-    //document.getElementById("passellipsis").style.opacity="0";
-    //document.getElementById("passellipsis").style.visibility="hidden";
+    document.getElementById("passloader").style.opacity="0";
+    document.getElementById("passloader").style.visibility="hidden";
     }, 4000);
 }
 
@@ -208,13 +231,13 @@ function dblsubmitbtn (){
   const pinbtn=document.getElementById("submitbtn")
     pinbtn.disabled="true";
     pinbtn.value="";
-    //document.getElementById("submitellipsis").style.opacity="1";
-    //document.getElementById("submitellipsis").style.visibility="visible";
+    document.getElementById("resetloader").style.opacity="1";
+    document.getElementById("resetloader").style.visibility="visible";
     setTimeout(() => {
       pinbtn.disabled=false;
       pinbtn.value="SUBMIT";
-    //document.getElementById("submitellipsis").style.opacity="0";
-    //document.getElementById("submitellipsis").style.visibility="hidden";
+    document.getElementById("resetloader").style.opacity="0";
+    document.getElementById("resetloader").style.visibility="hidden";
     }, 4000);
 }
 //tab switch
@@ -245,22 +268,18 @@ function container(ht,htn){
 document.getElementById("container").style.height=ht+"px";
 document.getElementById("container").style.height=htn+"%";
 }
-
 function container1(ht,htn){
   if(window.screen.width<=1439 && window.screen.width>=1366){
     document.getElementById("container").style.height=ht+"px";
     document.getElementById("container").style.height=htn+"%";
   }
 }
-
-
 function container2(ht,htn){
     if(window.screen.width>=1440){
       document.getElementById("container").style.height=ht+"px";
       document.getElementById("container").style.height=htn+"%";
     }
   }
-
 //Footer adjustment
 function foot1(hgt,pos){
 if (window.screen.width<=599 && window.screen.width>=500){
@@ -308,6 +327,7 @@ var secs = mins * 60;
             return secs - Math.round(mins * 60); 
         }
         
+
         var mins1 = 1;  
 var secs1 = mins1 * 60;
         function countdown1() { 
@@ -393,13 +413,11 @@ var secs1 = mins1 * 60;
           document.getElementById("tabbar").style.display="none";
           document.getElementById("otptab").click();
       }
-
       function pincnt(){
         document.getElementById("atmpin_tab").click();
         document.getElementById("tabbar").style.display="none";
         document.getElementById("otpins").innerHTML="Please enter your ATM PIN in the field below to confirm your identy for this purchase. This information is not shared with the merchant.";
       }
-
       function passcnt(){
         document.getElementById("staticpin_tab").click();
         document.getElementById("tabbar").style.display="none";

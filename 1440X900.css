@@ -3,7 +3,13 @@
 
 
 
-
+.loader{
+  height: 45px;
+  width: auto;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
 
     #container {
       position: absolute;
@@ -93,7 +99,7 @@
   
     .errorBox{
       position: absolute;
-      top: 33px;
+      bottom: 33px;
       height: 67px;
       width: 465px;
       background-color: #FFEFF2;
@@ -106,11 +112,12 @@
       opacity: 0;
       transition: 0.5s ease-in-out;
     }
+
+    
   
   .exclaim{
     height: auto;
     width: 21px;
-    margin-bottom: 0.1px;
     margin-left: 5px;
   }  
 

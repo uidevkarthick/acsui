@@ -1,63 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
 
-.ellipsis {
-  display: inline-block;
+.loader{
+  height: 21px;
+  width: auto;
   position: absolute;
-  width: 68px;
-  height: 40px;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s ease-in;
-}
-.ellipsis div {
-  position: absolute;
-  top: 17px;
-  width: 7.3px;
-  height: 7.3px;
-  border-radius: 50%;
-  background: rgb(255, 255, 255);
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-.ellipsis div:nth-child(1) {
-  left: 8px;
-  animation: ellipsis1 0.6s infinite;
-}
-.ellipsis div:nth-child(2) {
-  left: 8px;
-  animation: ellipsis2 0.6s infinite;
-}
-.ellipsis div:nth-child(3) {
-  left: 32px;
-  animation: ellipsis2 0.6s infinite;
-}
-.ellipsis div:nth-child(4) {
-  left: 56px;
-  animation: ellipsis3 0.6s infinite;
-}
-@keyframes ellipsis1 {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes ellipsis3 {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes ellipsis2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(16px, 0);
-  }
 }
 
 
@@ -90,7 +39,7 @@
   
     .errorBox{
       position: absolute;
-      top: 33px;
+      bottom: 33px;
       height: 36px;
       width: 250px;
       background-color: #FFEFF2;
@@ -103,11 +52,12 @@
       opacity: 0;
       transition: 0.5s ease-in-out;
     }
+
+    
   
   .exclaim{
     height: auto;
     width: 10px;
-    margin-bottom: 0.1px;
     margin-left: 5px;
   }  
   
@@ -875,7 +825,7 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              bottom: 50px;
+              bottom: 90px;
           }
   
   #footer{
