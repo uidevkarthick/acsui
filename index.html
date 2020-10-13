@@ -154,6 +154,7 @@
         <div class="resendOTP">
           <p class="resendtimer"><span id="minutes">00</span>:<span id="seconds">60</span></p>
           <a href="#" class="disablelnk" id="resendOTPbtn1" onclick="countdown();disablelink1();" >RESEND OTP</a>
+          <p class="altResendotp1" id="altResendotp1">RESEND OTP</p>
         </div>
     </div>
 
@@ -181,10 +182,10 @@
       <div class="otpBoxcontainer">
           <p class="pinlable">PIN No.</p>
             <div class="atmpin">
-              <input type="password" class="pinbox" id="pinbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
-              <input type="password" class="pinbox" id="pinbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
-              <input type="password" class="pinbox" id="pinbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
-              <input type="password" class="pinbox" id="pinbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="pinbox" id="pinbox1"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="pinbox" id="pinbox2"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="pinbox" id="pinbox3"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="pinbox" id="pinbox4"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
               <img class="pinexclaim" id="pinexclaim" src="img/exclaim.png" alt="">
               <div class="requirements">
                   Your OTP must be in numbers.
@@ -235,6 +236,7 @@
     <div class="setPwdwrapper">
         <div class="resendOTP">
           <a href="#" class="setPwd" id="setPwd" onclick="tabOpen(event, 'resetPwd');container(499);container1(850);container2(960);tabclr2();foot1(95,110);disablelink2();countdown1();">SET / RESET PIN</a>
+          <p class="altSetpwd" id="altSetpwd">SET / RESET PIN</p>
         </div>
     </div>
 
@@ -261,12 +263,12 @@
     <div class="otpBoxcontainer" id="resetboxcontainer">
       <p class="resetlable">Enter OTP</p>
             <div id="rstotp">
-              <input type="password" class="rstOtpbox" id="otpbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
-              <input type="password" class="rstOtpbox" id="otpbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
-              <input type="password" class="rstOtpbox" id="otpbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
-              <input type="password" class="rstOtpbox" id="otpbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
-              <input type="password" class="rstOtpbox" id="otpbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
-              <input type="password" class="rstOtpbox" id="otpbox"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="rstOtpbox" id="rstotpbox1"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="rstOtpbox" id="rstotpbox2"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="rstOtpbox" id="rstotpbox3"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="rstOtpbox" id="rstotpbox4"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="rstOtpbox" id="rstotpbox5"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
+              <input type="password" class="rstOtpbox" id="rstotpbox6"  name="OTP" maxlength="1" required placeholder=" " pattern="(?=.*\d).{1,1}" />
               <img class="rstotpexclaim" id="rstotpexclaim" src="img/exclaim.png" alt="">
               <div class="requirements">
                   Your OTP must be in numbers.
@@ -277,6 +279,7 @@
         <div class="resentOTP">
           <p class="resendtimer"><span id="minutes1">00</span>:<span id="seconds1">60</span></p>
           <a href="#" class="disablelnk" id="resendOTPbtn2" onclick="countdown1();disablelink2();">RESEND OTP</a>
+          <p class="altResendotp2" id="altResendotp2">RESEND OTP</p>
         </div>
     </div>
 

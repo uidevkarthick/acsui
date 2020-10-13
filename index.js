@@ -153,33 +153,33 @@ setTimeout(() => {
 }
 //disabling the links
 function disablelink1(){
-  document.getElementById("resendOTPbtn1").style.opacity="0.5";
-  document.getElementById("resendOTPbtn1").removeAttribute("href");
-  document.getElementById("resendOTPbtn1").style.pointerEvents="none";
+  document.getElementById("resendOTPbtn1").style.display="none";
+  document.getElementById("altResendotp1").style.display="block";
+ 
   document.getElementById("sendotpBtn").disabled="true";
   document.getElementById("sendotpBtn").style.opacity="0.5";
 
   setTimeout(() => {
-    document.getElementById("resendOTPbtn1").style.opacity="1";
-    document.getElementById("resendOTPbtn1").href = "#";
-    document.getElementById("resendOTPbtn1").style.pointerEvents="";
+    document.getElementById("resendOTPbtn1").style.display="block";
+    document.getElementById("altResendotp1").style.display="none";
+  
     document.getElementById("sendotpBtn").disabled=false;
     document.getElementById("sendotpBtn").style.opacity="1";
   }, 61500);
 }
 
 function disablelink2(){
-  document.getElementById("resendOTPbtn2").style.opacity="0.5";
-  document.getElementById("resendOTPbtn2").removeAttribute("href");
-  document.getElementById("resendOTPbtn2").style.pointerEvents="none";
-  document.getElementById("setPwd").removeAttribute("href");
-  document.getElementById("setPwd").style.pointerEvents="none";
+  document.getElementById("setPwd").style.display="none";
+  document.getElementById("resendOTPbtn2").style.display="none";
+  document.getElementById("altResendotp2").style.display="block";
+  document.getElementById("altSetpwd").style.display="block";
+  
   setTimeout(() => {
-    document.getElementById("resendOTPbtn2").style.opacity="1";
-    document.getElementById("resendOTPbtn2").href = "#";
-    document.getElementById("resendOTPbtn2").style.pointerEvents="";
-    document.getElementById("setPwd").href = "#";
-    document.getElementById("setPwd").style.pointerEvents="";
+    document.getElementById("setPwd").style.display="block";
+    document.getElementById("resendOTPbtn2").style.display="block";
+    document.getElementById("altResendotp2").style.display="none";
+    document.getElementById("altSetpwd").style.display="none";
+
   }, 61500);
 }
 

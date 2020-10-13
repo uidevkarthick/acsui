@@ -550,11 +550,27 @@
                   font-weight: 500;
                   font-size: 14px;
                   line-height: 7px;
-                 
+                  margin: 1.5px 0px 0px 0px;
                   float: right;
                   color: #2A1563;
                  
               }
+
+              .altResendotp1{
+                opacity: 0.5;
+                font-family: "Proxima Nova",'Open Sans', sans-serif;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 7px;
+                                position: absolute;
+                                float: right;
+                                color: #2A1563;
+                                margin: 1.5px 0px 0px 0px;
+                                right: 0px;
+                                display: none;
+              }
+
 
               #resendOTPbtn2  {
                   
@@ -563,12 +579,29 @@
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 7px;
-               
+                margin: 1.5px 0px 0px 0px;
                 float: right;
                 color: #2A1563;
                
             }
   
+
+
+            .altResendotp2{
+              font-family: "Proxima Nova",'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 7px;
+                opacity: 0.5;
+                float: right;
+                color: #2A1563;
+                position: absolute;
+                margin: 1.5px 0px 0px 0px;
+                right: 0px;
+            }
+
+
               .otpverifyBtn {
                 position: relative;
                 display: block;
@@ -612,6 +645,27 @@
                   display: flex;
                   justify-content: center;
               }
+
+              .altSetpwd{
+                font-family: "Proxima Nova",'Open Sans', sans-serif;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 7px;
+                                text-align: center;
+                                color: #2A1563;
+                                display: flex;
+                                justify-content: center;
+                                position: absolute;
+                                margin: 0px;
+                                top: 0px;
+                                left: 50%;
+                                transform: translate(-50%,0);
+                                display: none;
+                                opacity: 0.5;
+              }            
+
+
   
   #statpinbtn{
     top: 65px;
