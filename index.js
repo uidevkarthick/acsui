@@ -1,18 +1,18 @@
 //error box toast appearance
-function box(){
-  if(window.screen.width>=1440){
-    document.getElementById("errorBox").style.visibility= "visible";
-    document.getElementById("errorBox").style.opacity= "1";
-    document.getElementById("errorBox").style.bottom= "100px";
+
+function Err1440(){
+  document.getElementById("errorBox").style.visibility= "visible";
+  document.getElementById("errorBox").style.opacity= "1";
+  document.getElementById("errorBox").style.bottom= "100px";
 setTimeout(() => {
-    document.getElementById("errorBox").style.visibility= "visible";
-    document.getElementById("errorBox").style.opacity= "0";
-    document.getElementById("errorBox").style.bottom= "43px";
+  document.getElementById("errorBox").style.visibility= "visible";
+  document.getElementById("errorBox").style.opacity= "0";
+  document.getElementById("errorBox").style.bottom= "43px";
 }, 3000);
 }
-  
- else if(window.screen.width<=1439 && window.screen.width>=1366){
-    document.getElementById("errorBox").style.visibility= "visible";
+
+function Err1366(){
+  document.getElementById("errorBox").style.visibility= "visible";
     document.getElementById("errorBox").style.opacity= "1";
     document.getElementById("errorBox").style.bottom= "90px";
 setTimeout(() => {
@@ -22,7 +22,7 @@ setTimeout(() => {
 }, 3000);
 }
 
-else if(window.screen.width<=1365 && window.screen.width>=700){
+function Err700(){
   document.getElementById("errorBox").style.visibility= "visible";
   document.getElementById("errorBox").style.opacity= "1";
   document.getElementById("errorBox").style.bottom= "75px";
@@ -33,8 +33,7 @@ setTimeout(() => {
 }, 3000);
 }
 
-else if(window.screen.width<=599 && window.screen.width>=500){
-  
+function Err500(){
   document.getElementById("errorBox").style.visibility= "visible";
   document.getElementById("errorBox").style.opacity= "1";
   document.getElementById("errorBox").style.bottom= "200px";
@@ -62,6 +61,24 @@ function subm(){
     document.getElementById("errorBox").style.bottom= "80px";
   }, 3000);
 }
+}
+
+function box(){
+  if(window.screen.width>=1440){
+    Err1440();
+}
+  
+ else if(window.screen.width<=1439 && window.screen.width>=1366){
+    Err1366();
+}
+
+else if(window.screen.width<=1365 && window.screen.width>=700){
+  Err700();
+}
+
+else if(window.screen.width<=599 && window.screen.width>=500){
+  
+  Err500();
 }
 
 else{
@@ -182,7 +199,7 @@ function disablelink2(){
 
   }, 61500);
 }
-
+//disable buttons
 function dblotpbtn (){
   const otpbtn=document.getElementById("otpverifybtn")
     otpbtn.disabled="true";
@@ -423,8 +440,17 @@ var secs1 = mins1 * 60;
         document.getElementById("tabbar").style.display="none";
         document.getElementById("otpins").innerHTML="Please enter your PASSWORD in the field below to confirm your identy for this purchase. This information is not shared with the merchant.";
       }
-
-
+//Redirect link after timout
       window.setTimeout( function(){
         window.location = "https://yappay.in";
     }, 300000 );
+
+//next otp box
+function mvCursor(from, to){
+  var lgth=from.value.length;
+  var maxLgth=from.getAttribute("maxlength");
+  if(lgth==maxLgth){
+      document.getElementById(to).focus();
+  }
+ 
+}
