@@ -29,17 +29,8 @@
   background: #2A1563;
   display: flex;
   align-items: center;
-  justify-content: center;
     }
   
-    .logowrapper{
-      position: relative;
-      display: flex;
-      align-items: center;
-      width: 742px;
-      height: 80px;
-    }
-
     #footer{
       position:absolute;
         bottom: 0px;  
@@ -48,12 +39,12 @@
     height: 78px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    
     }
     
     #bank_logo{
                 position: absolute;
-                left:0px;
+                left:310px;
                 background-color: white;
                 width: 162px;
                 height: auto;
@@ -64,14 +55,14 @@
                 width: 106px;
                 height: auto;
                 position: absolute;
-                right:0px; 
+                right:310px; 
                 background-color: white;
     }
     
     .pci{
           position: absolute;
           display: flex;
-          left: 0px;
+          left: 310px;
           align-items: center;
     }
     
@@ -85,7 +76,7 @@
                 height: auto;
                 
                 position: absolute; 
-                right: 0px;
+                right: 310px;
     }
     
     
@@ -484,7 +475,7 @@
           max-height: 42px;
           max-width: 42px;
           border: 0.5px solid #E1E7F3;
-          padding: 9px 0px 9px 16.5px;
+          padding: 9px 0px 9px 16px;
           background: #f1f3f8;
           outline: none;
           border-radius: 2px;

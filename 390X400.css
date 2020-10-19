@@ -30,75 +30,8 @@
   background: #2A1563;
   display: flex;
   align-items: center;
-  justify-content: center;
     }
   
-    .logowrapper{
-      position: relative;
-      display: flex;
-      align-items: center;
-      width: 326px;
-      height: 43px;
-    }
-
-
-    #footer{
-      position:absolute;
-        bottom: 0px;
-        width:100%;
-        height:40px;  
-       display: flex;
-        justify-content: center;
-    background: #F2F2FF;
-    }
-    
-    
-    #bank_logo{
-      position: absolute;
-      left:0px;
-      background-color: white;
-      width: 76.5px;
-      height: auto;
-     
-    }
-    
-    #visa_logo{
-      width: 47px;
-      height: auto;
-      position: absolute;
-      right:0px; 
-      background-color: white;
-    }
-    
-    #pci_logo{
-      width: 23px;
-      height: auto;
-      top: 15.5px;
-      position: absolute; 
-      left: 0px;
-    
-    } 
-    #yap_logo{
-      width: 16px;
-      height: auto;
-      top: 7.25px;
-      position: absolute; 
-      right: 0px;
-    }
-    
-    
-    .copyright{
-        position: absolute;
-        font-family: "Proxima Nova",'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 4px;
-    padding-left: 21px;
-    top: 11px;
-    }
-
-
-
     .errorBoxcontainer{
       display: flex;
       align-items: center;
@@ -470,11 +403,11 @@
           max-height: 19px;
           max-width: 19px;
           border: 0.5px solid #E1E7F3;
-          padding: 9.6px 0px 9px 6.3px;
+          padding: 9px 0px 9px 6.3px;
           background: #f1f3f8;
           outline: none;
           border-radius: 2px;
-          box-sizing: border-box;
+  
     }      
   
     .passbox {
@@ -678,7 +611,7 @@
             max-height: 19px;
             max-width: 19px;
             border: 0.5px solid #E1E7F3;
-            padding: 5px 0px 5px 6.5px;
+            padding: 5px 0px 5px 5.5px;
             background: #f1f3f8;
             outline: none;
             border-radius: 2px;
@@ -916,7 +849,62 @@
               bottom: 52px;
           }
   
+  #footer{
+    position:absolute;
+      bottom: 0px;
+      width:100%;
+      height:40px;  
+     display: flex;
+     align-items: center;
+      
   
+  background: #F2F2FF;
+  }
+  
+  
+  #bank_logo{
+    position: absolute;
+    left:24px;
+    background-color: white;
+    width: 76.5px;
+    height: auto;
+   
+  }
+  
+  #visa_logo{
+    width: 47px;
+    height: auto;
+    position: absolute;
+    right:24px; 
+    background-color: white;
+  }
+  
+  #pci_logo{
+    width: 23px;
+    height: auto;
+    top: 15.5px;
+    position: absolute; 
+    left: 24px;
+  
+  } 
+  #yap_logo{
+    width: 16px;
+    height: auto;
+    top: 7.25px;
+    position: absolute; 
+    right: 24px;
+  }
+  
+  
+  .copyright{
+      position: absolute;
+      font-family: "Proxima Nova",'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4px;
+  padding-left: 45px;
+  top: 11px;
+  }
   
   form {
     position: relative;
