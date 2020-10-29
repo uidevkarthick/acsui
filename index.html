@@ -141,27 +141,28 @@
             <div class="otp">
               <input type="password" class="otpbox" id="otpbox1" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox1','otpbox2',this.pattern);otpemptied(event);" />
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox1','otpbox2',this.pattern);otpemptied(event);"
+                onkeydown="backsp(this, 'otpbox1');" />
               <input type="password" class="otpbox" id="otpbox2" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox2','otpbox3',this.pattern);otpemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'otpbox1');" disabled />
               <input type="password" class="otpbox" id="otpbox3" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox3','otpbox4',this.pattern);otpemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'otpbox2');" disabled />
               <input type="password" class="otpbox" id="otpbox4" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox4','otpbox5',this.pattern);otpemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'otpbox3');" disabled />
               <input type="password" class="otpbox" id="otpbox5" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox5','otpbox6',this.pattern);otpemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'otpbox4');" disabled />
               <input type="password" class="otpbox" id="otpbox6" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox6','otpverifybtn',this.pattern);otpemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'otpbox5');" disabled />
               <img class="otpexclaim" id="otpexclaim" src="img/exclaim.png" alt="">
               <div class="req">
                 Your OTP must be in numbers.
@@ -203,19 +204,20 @@
                 <div class="atmpin">
                   <input type="password" class="pinbox" id="pinbox1" name="PIN[]" maxlength="1" required placeholder=" "
                     pattern="(?=.*\d).{1,1}"
-                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('pinbox1','pinbox2',this.pattern);pinemptied(event);" />
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('pinbox1','pinbox2',this.pattern);pinemptied(event);"
+                    onkeydown="backsp(this, 'pinbox1');" />
                   <input type="password" class="pinbox" id="pinbox2" name="PIN[]" maxlength="1" required placeholder=" "
                     pattern="(?=.*\d).{1,1}"
                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('pinbox2','pinbox3',this.pattern);pinemptied(event);"
-                    disabled />
+                    onkeydown="backsp(this, 'pinbox1');" disabled />
                   <input type="password" class="pinbox" id="pinbox3" name="PIN[]" maxlength="1" required placeholder=" "
                     pattern="(?=.*\d).{1,1}"
                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('pinbox3','pinbox4',this.pattern);pinemptied(event);"
-                    disabled />
+                    onkeydown="backsp(this, 'pinbox2');" disabled />
                   <input type="password" class="pinbox" id="pinbox4" name="PIN[]" maxlength="1" required placeholder=" "
                     pattern="(?=.*\d).{1,1}"
                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('pinbox4','month',this.pattern);pinemptied(event);"
-                    disabled />
+                    onkeydown="backsp(this, 'pinbox3');" disabled />
                   <img class="pinexclaim" id="pinexclaim" src="img/exclaim.png" alt="">
                   <div class="req">
                     Your ATM PIN must be in numbers.
@@ -353,27 +355,28 @@
             <div id="rstotp">
               <input type="password" class="rstOtpbox" id="rstotpbox1" name="RESET[]" maxlength="1" required
                 placeholder=" " pattern="(?=.*\d).{1,1}"
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox1','rstotpbox2',this.pattern);subemptied(event);" />
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox1','rstotpbox2',this.pattern);subemptied(event);"
+                onkeydown="backsp(this, 'rstotpbox1');" />
               <input type="password" class="rstOtpbox" id="rstotpbox2" name="RESET[]" maxlength="1" required
                 placeholder=" " pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox2','rstotpbox3',this.pattern);subemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'rstotpbox1');" disabled />
               <input type="password" class="rstOtpbox" id="rstotpbox3" name="RESET[]" maxlength="1" required
                 placeholder=" " pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox3','rstotpbox4',this.pattern);subemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'rstotpbox2');" disabled />
               <input type="password" class="rstOtpbox" id="rstotpbox4" name="RESET[]" maxlength="1" required
                 placeholder=" " pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox4','rstotpbox5',this.pattern);subemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'rstotpbox3');" disabled />
               <input type="password" class="rstOtpbox" id="rstotpbox5" name="RESET[]" maxlength="1" required
                 placeholder=" " pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox5','rstotpbox6',this.pattern);subemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'rstotpbox4');" disabled />
               <input type="password" class="rstOtpbox" id="rstotpbox6" name="RESET[]" maxlength="1" required
                 placeholder=" " pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox6','rstmonth',this.pattern);subemptied(event);"
-                disabled />
+                onkeydown="backsp(this, 'rstotpbox5');" disabled />
               <img class="rstotpexclaim" id="rstotpexclaim" src="img/exclaim.png" alt="">
               <div class="req">
                 Your OTP must be in numbers.

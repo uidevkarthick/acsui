@@ -455,3 +455,13 @@ function subemptied(e) {
     document.getElementById("submitbtn").disabled = false;
   }
 }
+
+function backsp(from, pre) {
+  pre = document.getElementById(pre);
+  var key = event.keyCode || event.charCode;
+  if (key == 8 || key == 46) {
+    pre.value = "";
+    from.value = "";
+    pre.focus();
+  }
+}
