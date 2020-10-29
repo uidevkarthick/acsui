@@ -426,7 +426,6 @@ function pinemptied(e) {
   monthindex = document.getElementById("month").selectedIndex;
   yearindex = document.getElementById("year").selectedIndex;
   if (boxes == 0 && monthindex != 0 && yearindex != 0) {
-    alert("success");
     document.getElementById("pinverifybtn").disabled = false;
   }
 }
