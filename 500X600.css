@@ -733,6 +733,10 @@ a.disabled {
   outline: none;
   cursor: pointer;
 }
+.otpverifyBtn:hover {
+  box-shadow: 0 4px 8px 0 rgba(95, 48, 226, 0.2),
+    0 6px 20px 0 rgba(95, 48, 226, 0.19);
+}
 
 .pinverifyBtn {
   position: relative;
@@ -749,6 +753,20 @@ a.disabled {
   box-sizing: border-box;
   outline: none;
   cursor: pointer;
+}
+
+.pinverifyBtn:hover {
+  box-shadow: 0 4px 8px 0 rgba(95, 48, 226, 0.2),
+    0 6px 20px 0 rgba(95, 48, 226, 0.19);
+}
+
+.pinverifyBtn:disabled:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0),
+    0 6px 20px 0 rgba(255, 255, 255, 0);
+}
+.otpverifyBtn:disabled:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0),
+    0 6px 20px 0 rgba(255, 255, 255, 0);
 }
 
 .cancel {
@@ -872,7 +890,7 @@ a.disabled {
 :root {
   --radius: 2px;
   --baseFg: #d3ddff;
-  --baseBg: #ffffff;
+  --baseBg: #fcfcfc;
   --accentFg: #5f30e2;
   --accentBg: #dfe6fc;
   --bordercl: #e1e7f3;
@@ -1006,7 +1024,7 @@ input:default {
 
 input:invalid:not(:focus) {
   border: 0.5px solid #e1e7f3;
-  background: #ffffff;
+  background: #fcfcfc;
 }
 
 input:invalid:not(:focus):not(:placeholder-shown) {

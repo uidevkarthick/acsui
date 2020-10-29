@@ -353,7 +353,7 @@ function mvCursor(from, to, valid) {
   if (lgth == minLgth) {
     document.getElementById("resetconfirm").disabled = false;
   } else if (lgth !== maxLgth && !from.value.match(valid)) {
-    to.disabled = "true";
+    //to.disabled = "true";
     from.focus();
     return false;
   } else if (lgth == maxLgth && from.value.match(valid)) {
