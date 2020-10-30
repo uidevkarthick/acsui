@@ -98,7 +98,7 @@
 }
 
 .errorBox {
-  position: absolute;
+  position: fixed;
   bottom: 33px;
   height: 36px;
   width: 250px;
@@ -206,6 +206,7 @@
 .contentwrapper {
   width: 100%;
   float: left;
+  position: relative;
 }
 
 #otpinfo {
@@ -470,7 +471,7 @@ button.active {
 }
 
 .resendwrapper {
-  margin-top: 7.3px;
+  margin-top: 12px;
   width: 100%;
   float: left;
   display: flex;
@@ -870,7 +871,7 @@ a.disabled {
 :root {
   --radius: 2px;
   --baseFg: #d3ddff;
-  --baseBg: #fcfcfc;
+  --baseBg: #ffffff;
   --accentFg: #5f30e2;
   --accentBg: #dfe6fc;
   --bordercl: #b9c5dd;
@@ -1004,7 +1005,7 @@ input:default {
 
 input:invalid:not(:focus) {
   border: 0.5px solid #b9c5dd;
-  background: #fcfcfc;
+  background: #ffffff;
 }
 
 input:invalid:not(:focus):not(:placeholder-shown) {
@@ -1057,4 +1058,8 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+a:active {
+  color: greenyellow;
 }

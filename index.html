@@ -39,7 +39,7 @@
       <div class="errorBox" id="errorBox">
         <img class="exclaim" src="img/exclaim.png" alt="">
         <p class="invalidotp" id="msginvalid">Invaild OTP</p>
-        <img class="crossbar" src="img/crossbar.png" alt="" onclick="clserr();">
+        <img class="crossbar" id="crossbar" src="img/crossbar.png" alt="" onclick="clserr();">
       </div>
     </div>
     <div class="contentwrapper">
@@ -172,7 +172,7 @@
           <div class="resendwrapper">
             <div class="resendOTP">
 
-              <a href="#" class="disablelnk" id="resendOTPbtn1" onclick="">RESEND OTP</a>
+              <a href="#" class="disablelnk" id="resendOTPbtn1" onclick="msgbox()">RESEND OTP</a>
             </div>
           </div>
 
@@ -323,7 +323,7 @@
           <div class="setPwdwrapper">
             <div class="resendOTP">
               <a href="#" class="setPwd" id="setPwd"
-                onclick="tabOpen(event, 'resetPwd');container(480);container1(850);container2(1000);tabclr2();foot1(95,110);foc();">SET
+                onclick="tabOpen(event, 'resetPwd');container(480);container1(850);container2(1000);tabclr2();foot1(95,110);">SET
                 / RESET PIN</a>
               <p class="altSetpwd" id="altSetpwd">SET / RESET PIN</p>
             </div>
@@ -385,7 +385,7 @@
           </div>
           <div class="resentwrapper">
             <div class="resentOTP">
-              <a href="#" class="disablelnk" id="resendOTPbtn2" onclick="">RESEND OTP</a>
+              <a href="#" class="disablelnk" id="resendOTPbtn2" onclick="msgbox();">RESEND OTP</a>
             </div>
           </div>
 

@@ -363,7 +363,11 @@ function mvCursor(from, to, valid) {
 }
 
 $("#resetconfirm,#resetcreate").on("keyup", function () {
-  if ($("#resetcreate").val() == $("#resetconfirm").val()) {
+  if (
+    $("#resetcreate").val() == $("#resetconfirm").val() &&
+    $("#resetcreate").val() != "" &&
+    $("#resetconfirm").val() != ""
+  ) {
     $("#resetconfirm").css("border", "0.5px solid #7CFC00");
     $("#resetconfirm").css("color", "#7CFC00");
     $("#resetcreate").css("border", "0.5px solid #7CFC00");
@@ -385,12 +389,25 @@ function otpvalid(val, idi) {
   }
 }
 
-window.onload = foc();
-function foc() {
-  document.getElementById("otpbox1").focus();
-  document.getElementById("pinbox1").focus();
-  document.getElementById("passbox").focus();
-  document.getElementById("rstotpbox1").focus();
+setInterval(focsuport, 1000);
+
+function focsuport() {
+  obox = document.getElementById("otpbox1");
+  pbox = document.getElementById("pinbox1");
+  pabox = document.getElementById("passbox");
+  rotpbox = document.getElementById("rstotpbox1");
+  if (obox.value == "") {
+    document.getElementById("otpbox1").focus();
+  }
+  if (pbox.value == "") {
+    document.getElementById("pinbox1").focus();
+  }
+  if (pabox.value == "") {
+    document.getElementById("passbox").focus();
+  }
+  if (rotpbox.value == "") {
+    document.getElementById("rstotpbox1").focus();
+  }
 }
 
 function otpemptied(e) {
@@ -464,4 +481,40 @@ function backsp(from, pre) {
     from.value = "";
     pre.focus();
   }
+}
+
+document
+  .getElementById("resendOTPbtn1")
+  .addEventListener("click", function Resendbtn() {
+    this.style.color = "green";
+    setTimeout(() => {
+      this.style.color = "#2a1563";
+    }, 3000);
+  });
+
+document
+  .getElementById("resendOTPbtn2")
+  .addEventListener("click", function Resendbtn() {
+    this.style.color = "green";
+    setTimeout(() => {
+      this.style.color = "#2a1563";
+    }, 3000);
+  });
+
+function msgbox(response = "Response Message") {
+  box();
+  document.getElementById("msginvalid").innerHTML =
+    "OTP has been sent to your mobile";
+  document.getElementById("msginvalid").style.color = "#228B22";
+  document.getElementById("errorBox").style.border = "0.3px solid #228B22";
+  document.getElementById("errorBox").style.background = "#caffca";
+  document.getElementById("crossbar").style.opacity = "0.6";
+
+  setTimeout(() => {
+    document.getElementById("msginvalid").style.color = "#ff0031";
+    document.getElementById("errorBox").style.border =
+      "0.3px solid rgb(255, 0, 49, 0.6)";
+    document.getElementById("errorBox").style.background = "#ffeff2";
+    document.getElementById("crossbar").style.opacity = "1";
+  }, 3000);
 }

@@ -99,7 +99,7 @@
 }
 
 .errorBox {
-  position: absolute;
+  position: fixed;
   bottom: 33px;
   height: 67px;
   width: 465px;
@@ -212,6 +212,7 @@
 .contentwrapper {
   width: 100%;
   float: left;
+  position: relative;
 }
 
 #otpinfo {
@@ -649,7 +650,7 @@ a.disabled {
 }
 
 .resentwrapper {
-  margin-top: 5px;
+  margin-top: 10px;
   width: 100%;
   float: left;
   display: flex;
@@ -849,6 +850,7 @@ a.disabled {
 }
 #rstexpboxcontainer {
   height: 35px;
+  margin-top: 17px;
 }
 
 .expin {
@@ -881,7 +883,7 @@ a.disabled {
 :root {
   --radius: 3px;
   --baseFg: #d3ddff;
-  --baseBg: #fcfcfc;
+  --baseBg: #ffffff;
   --accentFg: #5f30e2;
   --accentBg: #dfe6fc;
   --bordercl: #b9c5dd;
@@ -1023,7 +1025,7 @@ input[type="password"]:disabled {
 
 input:invalid:not(:focus) {
   border: 0.5px solid #b9c5dd;
-  background: #fcfcfc;
+  background: #ffffff;
 }
 
 input:invalid:not(:focus):not(:placeholder-shown) {
@@ -1076,4 +1078,8 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+a:active {
+  color: greenyellow;
 }
