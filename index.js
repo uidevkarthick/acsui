@@ -369,14 +369,12 @@ $("#resetconfirm,#resetcreate").on("keyup", function () {
     $("#resetconfirm").val() != ""
   ) {
     $("#resetconfirm").css("border", "0.5px solid #7CFC00");
-    $("#resetconfirm").css("color", "#7CFC00");
     $("#resetcreate").css("border", "0.5px solid #7CFC00");
-    $("#resetcreate").css("color", "#7CFC00");
+    $("#resetconfirm").css("color", "black");
   } else {
     $("#resetconfirm").css("color", "red");
     $("#resetconfirm").css("border", "0.5px solid #e1e7f3");
     $("#resetcreate").css("color", "black");
-    $("#resetcreate").css("border", "0.5px solid #e1e7f3");
   }
 });
 
@@ -505,16 +503,20 @@ function msgbox(response = "Response Message") {
   box();
   document.getElementById("msginvalid").innerHTML =
     "OTP has been sent to your mobile";
-  document.getElementById("msginvalid").style.color = "#228B22";
-  document.getElementById("errorBox").style.border = "0.3px solid #228B22";
-  document.getElementById("errorBox").style.background = "#caffca";
-  document.getElementById("crossbar").style.opacity = "0.6";
+  document.getElementById("msginvalid").style.color = "#00BC35";
+  document.getElementById("errorBox").style.border = "0.3px solid #00BC35";
+  document.getElementById("errorBox").style.background = "#eaffef";
+  document.getElementById("errorBox").style.justifyContent = "center";
+  document.getElementById("crossbar").style.display = "none";
+  document.getElementById("exclaim").style.display = "none";
 
   setTimeout(() => {
     document.getElementById("msginvalid").style.color = "#ff0031";
     document.getElementById("errorBox").style.border =
       "0.3px solid rgb(255, 0, 49, 0.6)";
     document.getElementById("errorBox").style.background = "#ffeff2";
-    document.getElementById("crossbar").style.opacity = "1";
-  }, 3000);
+    document.getElementById("crossbar").style.display = "block";
+    document.getElementById("exclaim").style.display = "block";
+    document.getElementById("errorBox").style.justifyContent = "";
+  }, 4000);
 }

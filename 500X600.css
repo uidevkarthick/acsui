@@ -1028,7 +1028,7 @@ input:invalid:not(:focus) {
 }
 
 input:invalid:not(:focus):not(:placeholder-shown) {
-  background: rgb(255, 216, 222);
+  background: rgb(255, 241, 244);
   border: 0.5px solid rgba(255, 0, 0, 0.288);
 }
 
