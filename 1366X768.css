@@ -959,6 +959,10 @@ form {
   float: left;
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 input[type="password"]:focus {
   background: #ffffff;
 }
