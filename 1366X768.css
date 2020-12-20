@@ -49,20 +49,28 @@
   justify-content: center;
 }
 
-#bank_logo {
+.bankholder {
+  height: 45px;
   position: absolute;
   left: 0px;
-  background-color: white;
-  width: 152px;
-  height: auto;
+  display: flex;
+  align-items: center;
 }
 
-#visa_logo {
-  width: 96px;
-  height: auto;
+#bank_logo {
+  height: 100%;
+  object-fit: contain;
+}
+.visaholder {
+  height: 35px;
   position: absolute;
   right: 0px;
-  background-color: white;
+  display: flex;
+  align-items: center;
+}
+#visa_logo {
+  height: 100%;
+  object-fit: contain;
 }
 
 .pci {
@@ -79,9 +87,21 @@
 #yap_logo {
   width: 35px;
   height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
 
+.partnerholder {
   position: absolute;
   right: 0px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+.partnerlogo {
+  height: 100%;
+  object-fit: contain;
 }
 
 .copyright {
@@ -234,7 +254,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 15px;
   width: 100%;
   float: left;
 }
@@ -273,11 +293,11 @@ hr {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1;
   text-align: left;
   width: 127px;
-  color: #162531;
+  color: #17222b;
   vertical-align: top;
 }
 
@@ -286,18 +306,18 @@ hr {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1;
   text-align: left;
 
-  color: #646a7c;
+  color: #17222b;
 }
 
 .wrapperBar {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 25px;
   width: 100%;
   float: left;
 }
@@ -317,7 +337,7 @@ hr {
   position: relative;
   width: 100%;
   float: left;
-  margin-top: 25px;
+  margin-top: 20px;
   display: none;
   animation: fadeEffect 1s;
 }
@@ -380,7 +400,7 @@ button.active {
   float: left;
   margin-top: 11px;
   position: relative;
-  height: 40px;
+  height: 35px;
 }
 
 .statpin {
@@ -442,7 +462,7 @@ button.active {
 }
 
 .otp {
-  width: 261px;
+  width: fit-content;
   max-width: fit-content;
 }
 
@@ -582,7 +602,7 @@ a.disabled {
   align-items: center;
   justify-content: center;
   background: transparent;
-  margin-top: 25px;
+  margin-top: 20px;
   width: 100%;
   float: left;
 }
@@ -607,9 +627,15 @@ a.disabled {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  margin-right: 105px;
-  margin-left: 0px;
+  margin: 0px;
   color: #273a49;
+}
+
+.resetotpcontainer {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 
 .rstOtpbox {
@@ -626,8 +652,9 @@ a.disabled {
 }
 
 #rstotp {
-  width: 215px;
   max-width: fit-content;
+  position: absolute;
+  right: 0px;
 }
 
 .rstexpBoxcontainer {
@@ -766,8 +793,8 @@ a.disabled {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 8px;
-  margin: 0px 20px 0px 0px;
+  font-size: 13px;
+  margin: 0px;
   color: #273a49;
 }
 
@@ -775,8 +802,8 @@ a.disabled {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 8px;
-  margin: 0px 11px 0px 0px;
+  font-size: 13px;
+  margin: 0px;
   color: #273a49;
 }
 
@@ -800,15 +827,15 @@ a.disabled {
 }
 
 .expin {
-  height: 30px;
-  top: 0px;
-  bottom: 0px;
   position: absolute;
   right: 0px;
+  display: flex;
+  align-items: center;
 }
 #year {
   width: 84px;
   height: 25px;
+  margin-left: 4px;
 }
 
 #month {
@@ -875,35 +902,15 @@ select:active {
 .insidewrapper {
   position: absolute;
   width: 300px;
-  height: 40px;
+
   height: fit-content;
   display: flex;
   align-items: center;
 }
 
-.pinlable {
-  position: absolute;
-  font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  margin-right: 55px;
-  color: #273a49;
-}
-
-.explable {
-  position: absolute;
-  font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  margin-right: 31px;
-  color: #273a49;
-}
-
 .atmpin {
   position: absolute;
-  width: 185px;
+
   max-width: fit-content;
   right: 0px;
 }

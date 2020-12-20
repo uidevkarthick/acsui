@@ -1,3 +1,4 @@
+document.addEventListener("contextmenu", (event) => event.preventDefault());
 //error box toast appearance
 
 function Err1440() {

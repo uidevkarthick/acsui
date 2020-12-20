@@ -23,7 +23,7 @@
 
 #header {
   width: 100%;
-  height: 57px;
+  height: 50px;
   background: #2a1563;
   display: flex;
   align-items: center;
@@ -43,26 +43,34 @@
   bottom: 0px;
   background: #f2f2ff;
   width: 100%;
-  height: 6%;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#bank_logo {
+.bankholder {
+  height: 35px;
   position: absolute;
-  left: 0;
-  background-color: white;
-  width: 100px;
-  height: auto;
+  left: 0px;
+  display: flex;
+  align-items: center;
 }
 
-#visa_logo {
-  width: 65px;
-  height: auto;
+#bank_logo {
+  height: 100%;
+  object-fit: contain;
+}
+.visaholder {
+  height: 25px;
   position: absolute;
-  right: 0;
-  background-color: white;
+  right: 0px;
+  display: flex;
+  align-items: center;
+}
+#visa_logo {
+  height: 100%;
+  object-fit: contain;
 }
 
 .pci {
@@ -80,7 +88,20 @@
   width: 19px;
   height: auto;
   position: absolute;
-  right: 0;
+  left: 50%;
+  transform: translate(-50, 0);
+}
+
+.partnerholder {
+  position: absolute;
+  right: 0px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+}
+.partnerlogo {
+  height: 100%;
+  object-fit: contain;
 }
 
 .copyright {
@@ -211,7 +232,7 @@
 
 #otpinfo {
   position: relative;
-  margin-top: 8px;
+  margin-top: 3px;
   display: flex;
   justify-content: center;
   color: #273a49;
@@ -232,7 +253,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 18px;
+  margin-top: 10px;
   width: 100%;
   float: left;
 }
@@ -282,11 +303,11 @@ hr {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1;
   text-align: left;
   width: 105px;
-  color: #162531;
+  color: #17222b;
   vertical-align: top;
 }
 
@@ -295,18 +316,18 @@ hr {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1;
   text-align: left;
 
-  color: #646a7c;
+  color: #17222b;
 }
 
 .wrapperBar {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 18px;
   width: 100%;
   float: left;
 }
@@ -326,7 +347,7 @@ hr {
   position: relative;
   width: 100%;
   float: left;
-  margin-top: 20px;
+  margin-top: 13px;
   display: none;
   animation: fadeEffect 1s;
 }
@@ -416,13 +437,13 @@ button.active {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 7px;
+  margin-top: 5px;
   float: left;
   height: 22px;
 }
 
 .otp {
-  width: 203px;
+  width: fit-content;
   max-width: fit-content;
 }
 
@@ -598,7 +619,7 @@ a.disabled {
   justify-content: center;
   background: transparent;
   height: 30px;
-  margin-top: 25px;
+  margin-top: 8px;
   width: 100%;
   float: left;
 }
@@ -623,9 +644,14 @@ a.disabled {
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  margin-right: 46px;
-  margin-left: 1px;
+  margin: 0;
   color: #273a49;
+}
+.resetotpcontainer {
+  width: 290px;
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 
 .rstOtpbox {
@@ -641,9 +667,9 @@ a.disabled {
 }
 
 #rstotp {
-  width: 202px;
   max-width: fit-content;
-  margin-left: 4px;
+  position: absolute;
+  right: 0;
 }
 
 .rstexpBoxcontainer {
@@ -670,7 +696,7 @@ a.disabled {
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  margin-right: 10px;
+  margin: 0px;
   color: #273a49;
 }
 
@@ -678,7 +704,7 @@ a.disabled {
   position: absolute;
   width: 205px;
   max-width: fit-content;
-  margin-top: 0px;
+  margin: 0px;
   right: 0px;
 }
 
@@ -721,13 +747,13 @@ a.disabled {
 .pinverifyBtn {
   position: relative;
   display: block;
-  width: 130px;
-  height: 24px;
+  width: 120px;
+  height: 20px;
   margin: 0px 0;
   background: #5f30e2;
   color: white;
   border: 0;
-  font-size: 10px;
+  font-size: 8px;
   font-weight: medium;
   border-radius: 2px;
   box-sizing: border-box;
@@ -765,7 +791,7 @@ a.disabled {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 8px;
   width: 100%;
   float: left;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
@@ -793,7 +819,7 @@ a.disabled {
 .insidewrapper {
   position: absolute;
   width: 170px;
-  height: 22px;
+
   height: fit-content;
   display: flex;
   align-items: center;
@@ -807,21 +833,12 @@ a.disabled {
   height: 25px;
 }
 
-.pinlable {
-  font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 8px;
-  margin: 0px 20px 0px 0px;
-  color: #273a49;
-}
-
 .explable {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  margin: 0px 11px 0px 0px;
+  margin: 0px;
   color: #273a49;
 }
 
@@ -830,14 +847,16 @@ a.disabled {
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  margin: 0px 11px 0px 6px;
+  margin: 0px;
   color: #273a49;
 }
 .rstexpin {
   height: 25px;
 
   position: absolute;
-  right: 01px;
+  right: 0px;
+  display: flex;
+  align-items: center;
 }
 #rstexpboxcontainer {
   height: 25px;
@@ -845,13 +864,14 @@ a.disabled {
 }
 
 .expin {
-  height: 22px;
-
   position: absolute;
-  right: 04px;
+  right: 0px;
+  display: flex;
+  align-items: center;
 }
 #year {
   width: 48px;
+  margin-left: 4px;
 }
 
 #month {
@@ -861,6 +881,7 @@ a.disabled {
 #rstyear {
   width: 98px;
   height: 25px;
+  margin-left: 5.1px;
 }
 
 #rstmonth {
@@ -915,22 +936,14 @@ select:active {
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  margin-right: 40px;
-  color: #273a49;
-}
-
-.explable {
-  font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 8px;
-  margin-right: 20px;
+  margin: 0px;
   color: #273a49;
 }
 
 .atmpin {
-  width: 110px;
   max-width: fit-content;
+  right: 0px;
+  position: absolute;
 }
 
 #atmpin1 {

@@ -31,8 +31,12 @@
   <div id="container">
     <div id="header">
       <div class="logowrapper">
-        <img src="img/bank_logo.png" id="bank_logo" />
-        <img src="img/visa_logo.png" id="visa_logo" />
+        <div class="bankholder">
+          <img src="img/RBL Logo (white).png" id="bank_logo" />
+        </div>
+        <div class="visaholder">
+          <img src="img/Verified By Visa.png" id="visa_logo" />
+        </div>
       </div>
     </div>
     <div class="errorBoxcontainer">
@@ -349,35 +353,37 @@
 
         <form class="rstForm" action="#" onsubmit="">
           <div class="otpBoxcontainer" id="resetboxcontainer">
-            <p class="resetlable">Enter OTP</p>
-            <div id="rstotp">
-              <input type="password" class="rstOtpbox" id="rstotpbox1" name="RESET[]" maxlength="1" required
-                placeholder=" " pattern="(?=.*\d).{1,1}"
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox1','rstotpbox2',this.pattern);subemptied(event);"
-                onkeydown="backsp(this, 'rstotpbox1');" />
-              <input type="password" class="rstOtpbox" id="rstotpbox2" name="RESET[]" maxlength="1" required
-                placeholder=" " pattern="(?=.*\d).{1,1}"
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox2','rstotpbox3',this.pattern);subemptied(event);"
-                onkeydown="backsp(this, 'rstotpbox1');" disabled />
-              <input type="password" class="rstOtpbox" id="rstotpbox3" name="RESET[]" maxlength="1" required
-                placeholder=" " pattern="(?=.*\d).{1,1}"
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox3','rstotpbox4',this.pattern);subemptied(event);"
-                onkeydown="backsp(this, 'rstotpbox2');" disabled />
-              <input type="password" class="rstOtpbox" id="rstotpbox4" name="RESET[]" maxlength="1" required
-                placeholder=" " pattern="(?=.*\d).{1,1}"
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox4','rstotpbox5',this.pattern);subemptied(event);"
-                onkeydown="backsp(this, 'rstotpbox3');" disabled />
-              <input type="password" class="rstOtpbox" id="rstotpbox5" name="RESET[]" maxlength="1" required
-                placeholder=" " pattern="(?=.*\d).{1,1}"
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox5','rstotpbox6',this.pattern);subemptied(event);"
-                onkeydown="backsp(this, 'rstotpbox4');" disabled />
-              <input type="password" class="rstOtpbox" id="rstotpbox6" name="RESET[]" maxlength="1" required
-                placeholder=" " pattern="(?=.*\d).{1,1}"
-                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox6','rstmonth',this.pattern);subemptied(event);"
-                onkeydown="backsp(this, 'rstotpbox5');" disabled />
-              <img class="rstotpexclaim" id="rstotpexclaim" src="img/exclaim.png" alt="">
-              <div class="req">
-                Your OTP must be in numbers.
+            <div class="resetotpcontainer">
+              <p class="resetlable">Enter OTP</p>
+              <div id="rstotp">
+                <input type="password" class="rstOtpbox" id="rstotpbox1" name="RESET[]" maxlength="1" required
+                  placeholder=" " pattern="(?=.*\d).{1,1}"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox1','rstotpbox2',this.pattern);subemptied(event);"
+                  onkeydown="backsp(this, 'rstotpbox1');" />
+                <input type="password" class="rstOtpbox" id="rstotpbox2" name="RESET[]" maxlength="1" required
+                  placeholder=" " pattern="(?=.*\d).{1,1}"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox2','rstotpbox3',this.pattern);subemptied(event);"
+                  onkeydown="backsp(this, 'rstotpbox1');" disabled />
+                <input type="password" class="rstOtpbox" id="rstotpbox3" name="RESET[]" maxlength="1" required
+                  placeholder=" " pattern="(?=.*\d).{1,1}"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox3','rstotpbox4',this.pattern);subemptied(event);"
+                  onkeydown="backsp(this, 'rstotpbox2');" disabled />
+                <input type="password" class="rstOtpbox" id="rstotpbox4" name="RESET[]" maxlength="1" required
+                  placeholder=" " pattern="(?=.*\d).{1,1}"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox4','rstotpbox5',this.pattern);subemptied(event);"
+                  onkeydown="backsp(this, 'rstotpbox3');" disabled />
+                <input type="password" class="rstOtpbox" id="rstotpbox5" name="RESET[]" maxlength="1" required
+                  placeholder=" " pattern="(?=.*\d).{1,1}"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox5','rstotpbox6',this.pattern);subemptied(event);"
+                  onkeydown="backsp(this, 'rstotpbox4');" disabled />
+                <input type="password" class="rstOtpbox" id="rstotpbox6" name="RESET[]" maxlength="1" required
+                  placeholder=" " pattern="(?=.*\d).{1,1}"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox6','rstmonth',this.pattern);subemptied(event);"
+                  onkeydown="backsp(this, 'rstotpbox5');" disabled />
+                <img class="rstotpexclaim" id="rstotpexclaim" src="img/exclaim.png" alt="">
+                <div class="req">
+                  Your OTP must be in numbers.
+                </div>
               </div>
             </div>
           </div>
@@ -502,6 +508,9 @@
           <p class="copyright">Copyright © All Rights Reserved</p>
         </div>
         <img src="img/yap.png" id="yap_logo" />
+        <div class="partnerholder">
+          <img src="img/Linq.svg" class="partnerlogo">
+        </div>
       </div>
     </div>
 
