@@ -337,6 +337,7 @@ button {
   height: 28px;
   font-weight: medium;
   line-height: 0;
+  -webkit-appearance: none;
   font-size: 14px;
   color: #2a1563;
   border-radius: 25px;

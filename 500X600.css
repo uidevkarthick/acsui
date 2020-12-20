@@ -365,7 +365,7 @@ button {
   font-weight: medium;
   line-height: 0;
   font-size: 8px;
-
+  -webkit-appearance: none;
   color: #2a1563;
   border-radius: 25px;
   outline: none;
