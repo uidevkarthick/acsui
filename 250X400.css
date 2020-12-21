@@ -49,10 +49,10 @@
 .fixed {
   bottom: 0;
   position: absolute;
+  opacity: 1;
 }
 .outofview {
-  bottom: -50px;
-  position: absolute;
+  opacity: 0;
 }
 
 .bankholder {
