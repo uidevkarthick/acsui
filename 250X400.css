@@ -50,6 +50,10 @@
   bottom: 0;
   position: absolute;
 }
+.outofview {
+  bottom: -50px;
+  position: absolute;
+}
 
 .bankholder {
   height: 25px;

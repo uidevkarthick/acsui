@@ -528,9 +528,11 @@ $(document).ready(function () {
     if ($(window).width() + $(window).height() != _originalSize) {
       console.log("keyboard active");
       $(".footer").removeClass("fixed");
+      $(".footer").addClass("outofview");
     } else {
       console.log("keyboard closed");
       $(".footer").addClass("fixed");
+      $(".footer").removeClass("outofview");
     }
   });
 });
