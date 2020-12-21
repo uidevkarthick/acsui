@@ -21,7 +21,7 @@
 
 #header {
   width: 100%;
-  height: 43px;
+  height: 36px;
   background: #2a1563;
   display: flex;
   align-items: center;
@@ -33,11 +33,11 @@
   display: flex;
   align-items: center;
   width: 200px;
-  height: 35px;
+  height: 20px;
 }
 
 #footer {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 25px;
   display: flex;
@@ -48,7 +48,7 @@
 
 .fixed {
   bottom: 0;
-  position: fixed;
+  position: absolute;
 }
 
 .bankholder {
@@ -75,17 +75,17 @@
   object-fit: contain;
 }
 
+.pci {
+  display: flex;
+  align-items: center;
+}
+
 #pci_logo {
   width: 23px;
-  height: auto;
-  top: 15.5px;
-  position: absolute;
-  left: 0px;
 }
 #yap_logo {
   width: 16px;
   height: auto;
-  top: 7.25px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -109,7 +109,6 @@
   font-weight: normal;
   font-size: 3.5px;
   padding-left: 20px;
-  top: 11px;
 }
 
 .errorBoxcontainer {
@@ -183,7 +182,7 @@
   color: #273a49;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   text-align: justify;
-  font-size: 7px;
+  font-size: 7.2px;
   width: 100%;
   height: auto;
   float: left;
@@ -258,7 +257,7 @@ hr {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 7px;
+  font-size: 7.2px;
   line-height: 1;
   text-align: left;
   width: 60px;
@@ -271,7 +270,7 @@ hr {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 6px;
+  font-size: 6.2px;
   line-height: 1;
   text-align: left;
 
@@ -470,7 +469,7 @@ button.active {
   max-height: 22px;
   max-width: 22px;
   border: 0.5px solid #e1e7f3;
-  padding: 9px 0px 9px 8.3px;
+  text-align: center;
   background: #f1f3f8;
   outline: none;
   border-radius: 2px;
@@ -663,7 +662,8 @@ a.disabled {
   width: 202px;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: relative;
+  justify-content: space-between;
 }
 
 .rstOtpbox {
@@ -672,16 +672,24 @@ a.disabled {
   max-height: 19px;
   max-width: 19px;
   border: 0.5px solid #e1e7f3;
-  padding: 5px 3px 5px 6.2px;
+  text-align: center;
   background: #f1f3f8;
   outline: none;
   border-radius: 2px;
 }
 
+#resetcreate {
+  padding: 0px 6.5px 0px 6.5px;
+  text-align: left;
+}
+#resetconfirm {
+  padding: 0px 6.5px 0px 6.5px;
+  text-align: left;
+}
+
 #rstotp {
   max-width: fit-content;
-  position: absolute;
-  right: 0;
+  position: relative;
 }
 
 .rstexpBoxcontainer {
@@ -733,7 +741,6 @@ a.disabled {
 .resetexpbox {
   width: 135px !important;
   height: 19px !important;
-  max-height: 17px;
   max-width: 135px;
   border: 0.5px solid #e1e7f3;
   padding: 10px 2px 9px 8.3px;

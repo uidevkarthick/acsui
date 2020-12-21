@@ -243,7 +243,7 @@
   color: #273a49;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   text-align: justify;
-  font-size: 8px;
+  font-size: 8.4px;
   width: 100%;
   float: left;
   height: auto;
@@ -319,7 +319,7 @@ hr {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 8px;
+  font-size: 8.4px;
   line-height: 1;
   text-align: left;
   width: 86px;
@@ -332,7 +332,7 @@ hr {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 8px;
+  font-size: 8.4px;
   line-height: 1;
   text-align: left;
 
@@ -464,7 +464,7 @@ button.active {
   max-height: 22px;
   max-width: 22px;
   border: 0.5px solid #e1e7f3;
-  padding: 9px 0px 9px 8px;
+  text-align: center;
   background: #f1f3f8;
   outline: none;
   border-radius: 2px;
@@ -476,7 +476,7 @@ button.active {
   max-height: 19px;
   max-width: 19px;
   border: 0.5px solid #e1e7f3;
-  padding: 8px 0px 8px 6px;
+  text-align: center;
   background: #f1f3f8;
   outline: none;
   border-radius: 2px;
@@ -659,7 +659,8 @@ a.disabled {
   width: 260px;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: relative;
+  justify-content: space-between;
 }
 
 .rstOtpbox {
@@ -668,7 +669,7 @@ a.disabled {
   max-height: 24px;
   max-width: 24px;
   border: 0.5px solid #e1e7f3;
-  padding: 5px 0px 5px 9px;
+  text-align: center;
   background: #f1f3f8;
   outline: none;
   border-radius: 2px;
@@ -676,8 +677,16 @@ a.disabled {
 
 #rstotp {
   max-width: fit-content;
-  position: absolute;
-  right: 0;
+  position: relative;
+}
+
+#resetcreate {
+  padding: 0px 8px 0px 8px;
+  text-align: left;
+}
+#resetconfirm {
+  padding: 0px 8px 0px 8px;
+  text-align: left;
 }
 
 .rstexpBoxcontainer {
@@ -718,7 +727,6 @@ a.disabled {
 .resetexpbox {
   width: 166px !important;
   height: 19px !important;
-  max-height: 17px;
   max-width: 166px;
   border: 0.5px solid #e1e7f3;
   padding: 10px 2px 9px 8.3px;
@@ -824,10 +832,11 @@ a.disabled {
 }
 
 .insidewrapper {
-  position: absolute;
+  position: relative;
   width: 140px;
   height: fit-content;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 #inside {
@@ -948,8 +957,7 @@ select:active {
 
 .atmpin {
   max-width: fit-content;
-  right: 0px;
-  position: absolute;
+  position: relative;
 }
 
 #atmpin1 {
