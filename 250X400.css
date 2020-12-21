@@ -482,7 +482,7 @@ button.active {
   max-height: 22px;
   max-width: 22px;
   border: 0.5px solid #e1e7f3;
-  padding: 9px 0px 9px 8.35px;
+  text-align: center;
   background: #f1f3f8;
   outline: none;
   border-radius: 2px;
@@ -754,7 +754,7 @@ a.disabled {
   width: 120px;
   height: 22px;
   margin: 0px 0;
-  background: #020008;
+  background: #5f30e2;
   color: white;
   border: 0;
   font-size: 8px;
@@ -840,7 +840,9 @@ a.disabled {
 }
 
 .insidewrapper {
-  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
   width: 153px;
   height: fit-content;
   display: flex;
@@ -957,8 +959,7 @@ select:active {
 
 .atmpin {
   max-width: fit-content;
-  position: absolute;
-  right: 0px;
+  position: relative;
 }
 
 #atmpin {
