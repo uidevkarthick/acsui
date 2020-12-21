@@ -1035,7 +1035,7 @@ select:active {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 18px;
+  font-size: 14px;
   color: #273a49;
 }
 
@@ -1046,7 +1046,7 @@ select:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: -30px;
+  top: -15px;
 }
 
 form {
