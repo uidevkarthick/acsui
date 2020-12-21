@@ -40,7 +40,7 @@
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   background: #f2f2ff;
   width: 100%;

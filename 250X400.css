@@ -32,12 +32,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 200px;
+  width: 85%;
   height: 35px;
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   width: 100%;
   height: 25px;
@@ -187,7 +187,7 @@
 }
 
 .otpins {
-  width: 200px;
+  width: 85%;
   line-height: 150%;
   margin: 0;
 }
@@ -221,7 +221,7 @@
 }
 
 #user_details {
-  width: 201px;
+  width: 85%;
   height: fit-content;
   max-height: fit-content;
   background: #f4f7ff;
@@ -306,7 +306,7 @@ hr {
 
 button {
   background-color: inherit;
-  width: 67px;
+  width: 71px;
   height: 16px;
   font-weight: medium;
   line-height: 0;
@@ -657,7 +657,7 @@ a.disabled {
   color: #273a49;
 }
 .resetotpcontainer {
-  width: 195px;
+  width: 83%;
   display: flex;
   align-items: center;
   position: absolute;
@@ -704,7 +704,7 @@ a.disabled {
 
 .rstwrap {
   position: relative;
-  width: 195px;
+  width: 83%;
   height: 20px;
   display: flex;
   align-items: center;
@@ -838,7 +838,7 @@ a.disabled {
 
 .insidewrapper {
   position: absolute;
-  width: 153px;
+  width: 73%;
   height: fit-content;
   display: flex;
   align-items: center;
@@ -848,7 +848,7 @@ a.disabled {
 }
 
 #rstinside {
-  width: 195px;
+  width: 83%;
   height: 22px;
 }
 
