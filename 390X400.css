@@ -296,7 +296,6 @@
   height: fit-content;
   max-height: fit-content;
   background: #f4f7ff;
-  opacity: 0.5;
   border: 0.5px solid #d0e1f9;
   border-radius: 4px;
   display: flex;
@@ -390,8 +389,10 @@ button {
   color: #2a1563;
   border-radius: 25px;
   outline: none;
-  padding-top: 2px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {

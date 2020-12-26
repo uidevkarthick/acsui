@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
 
 .loader {
-  height: 45px;
+  height: 18px;
   width: auto;
   position: absolute;
   opacity: 0;
@@ -12,18 +12,16 @@
 #container {
   position: absolute;
   display: block;
-  height: auto;
-  min-height: 100% !important;
   width: 100%;
   max-width: 100%;
-  background-color: white;
   margin: 0;
   padding: 0;
+  /*border: 0.5px solid black;*/
 }
 
 #header {
   width: 100%;
-  height: 75px;
+  height: 36px;
   background: #2a1563;
   display: flex;
   align-items: center;
@@ -34,33 +32,33 @@
   position: relative;
   display: flex;
   align-items: center;
-  float: left;
-  width: 799px;
-  height: 75px;
+  width: 245px;
+  height: 20px;
 }
 
 #footer {
-  position: fixed;
-  background: #f2f2ff;
+  position: absolute;
   width: 100%;
-  height: 75px;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #f2f2ff;
 }
+
 .fixed {
   bottom: 0;
   position: absolute;
+  opacity: 1;
 }
 .outofview {
   bottom: 0;
   position: absolute;
+  opacity: 1;
 }
 
 .bankholder {
-  height: 55px;
-  width: fit-content;
-  width: -moz-fit-content;
+  height: 25px;
   position: absolute;
   left: 0px;
   display: flex;
@@ -71,38 +69,29 @@
   height: 100%;
   object-fit: contain;
 }
-
 .visaholder {
-  height: 42px;
-  width: fit-content;
-  width: -moz-fit-content;
-
+  height: 15px;
   position: absolute;
   right: 0px;
   display: flex;
   align-items: center;
 }
-
 #visa_logo {
   height: 100%;
   object-fit: contain;
 }
 
 .pci {
-  position: absolute;
   display: flex;
-  left: 0px;
   align-items: center;
 }
 
 #pci_logo {
-  width: 51px;
-  height: auto;
+  width: 23px;
 }
 #yap_logo {
-  width: 45px;
+  width: 16px;
   height: auto;
-
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -110,7 +99,7 @@
 .partnerholder {
   position: absolute;
   right: 0px;
-  height: 33px;
+  height: 13px;
   display: flex;
   align-items: center;
 }
@@ -120,11 +109,12 @@
 }
 
 .copyright {
+  position: absolute;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  left: 23.5%;
+  font-size: 3.5px;
+  padding-left: 20px;
 }
 
 .errorBoxcontainer {
@@ -136,8 +126,8 @@
 .errorBox {
   position: fixed;
   bottom: 33px;
-  height: 67px;
-  width: 465px;
+  height: 22px;
+  width: 154px;
   background-color: #ffeff2;
   border: 0.3px solid rgb(255, 0, 49, 0.6);
   border-radius: 4px;
@@ -149,139 +139,97 @@
   transition: 0.5s ease-in-out;
 }
 
+.exclaim {
+  height: auto;
+  width: 9px;
+  margin-left: 5px;
+}
+
 .crossbar {
   position: absolute;
   height: auto;
-  width: 24px;
+  width: 8px;
   right: 7px;
   cursor: pointer;
 }
 
-.crossbar::active .errorBox {
-  opacity: 0;
-}
-
-.exclaim {
-  height: auto;
-  width: 21px;
-  margin-left: 5px;
-}
-
-#otpexclaim {
+.crossbar:active ~ .errorBox {
   position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 17px;
-  margin-left: 5px;
+  bottom: 33px;
+  height: 22px;
+  width: 154px;
+  background-color: #ffeff2;
+  border: 0.3px solid rgb(255, 0, 49, 0.6);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  visibility: hidden;
   opacity: 0;
-}
-
-#pinexclaim {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 16px;
-  margin-left: 5px;
-  opacity: 0;
-}
-
-#pinExpexclaim {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 12px;
-  margin-left: 5px;
-  opacity: 0;
-}
-
-#passexclaim {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 17px;
-  margin-left: 5px;
-  opacity: 0;
-}
-
-#rstotpexclaim {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 9px;
-  margin-left: 5px;
-  opacity: 0;
-}
-
-#rstexpexclaim {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 9px;
-  margin-left: 5px;
-  opacity: 0;
-}
-
-#createexclaim {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 9px;
-  margin-left: 5px;
-  opacity: 0;
-}
-
-#confirmexclaim {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 9px;
-  margin-left: 5px;
-  opacity: 0;
+  transition: 0.5s ease-in-out;
 }
 
 .invalidotp {
   color: #ff0031;
-  font-size: 18px;
+  font-size: 6.5px;
 }
 
 .contentwrapper {
   width: 100%;
   float: left;
-  position: relative;
 }
 
 #otpinfo {
   position: relative;
-  margin-top: 4px;
-  width: 100%;
-  float: left;
+  margin-top: 6px;
   display: flex;
+
   justify-content: center;
   color: #273a49;
-  font-family: "Proxima Nova", "PT Sans", sans-serif;
+  font-family: "Proxima Nova", "Open Sans", sans-serif;
   text-align: justify;
-  font-size: 17px;
+  font-size: 7.2px;
   width: 100%;
   height: auto;
+  float: left;
 }
 
 .otpins {
-  width: 799px;
+  width: 245px;
   line-height: 150%;
-  margin: 5px 0px 5px 0px;
+  margin: 0;
 }
 
 .wrapperUser {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 7px;
   width: 100%;
   float: left;
 }
 
+.wrapperBar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  float: left;
+  width: 100%;
+}
+
+#wrapperotp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#reqOTP {
+  top: 48px;
+}
+
 #user_details {
-  width: 510px;
+  width: 245px;
   height: fit-content;
   max-height: fit-content;
   background: #f4f7ff;
@@ -290,7 +238,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 8px 8px 8px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 p {
@@ -298,14 +247,14 @@ p {
 }
 
 #user_details > table {
-  width: 450px;
+  width: 220px;
   padding: 0px;
   margin: 0px;
 }
 
 td,
 hr {
-  padding: 6px 0px 6px 0px;
+  padding: 0px;
   margin: 0px;
 }
 
@@ -313,39 +262,30 @@ hr {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 7.2px;
   line-height: 1;
   text-align: left;
-  width: 128px;
+  width: 60px;
   color: #17222b;
   vertical-align: top;
 }
 
 .user_fieldValue {
-  padding-left: 94px;
+  padding-left: 22px;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 6.2px;
   line-height: 1;
   text-align: left;
 
   color: #17222b;
 }
 
-.wrapperBar {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  width: 100%;
-  float: left;
-}
-
 .tabbar {
   position: relative;
   width: fit-content;
-  height: 36px;
+  height: 16px;
   background: #f2f2ff;
   border-radius: 25px;
   display: flex;
@@ -355,11 +295,11 @@ hr {
 
 .dyncnt {
   position: relative;
-  margin-top: 20px;
-  width: 100%;
-  float: left;
+  margin-top: 15px;
   display: none;
   animation: fadeEffect 1s;
+  float: left;
+  width: 100%;
 }
 
 @keyframes fadeEffect {
@@ -371,21 +311,20 @@ hr {
   }
 }
 
-#resetPwd {
-  margin-top: 20px;
-}
-
 button {
   background-color: inherit;
-  width: 150px;
-  height: 36px;
+  width: 72px;
+  height: 16px;
   font-weight: medium;
   line-height: 0;
-  font-size: 16px;
+  font-size: 8px;
+
   -webkit-appearance: none;
+
   color: #2a1563;
   border-radius: 25px;
   outline: none;
+
   border: none;
   display: flex;
   align-items: center;
@@ -393,7 +332,7 @@ button {
 }
 
 button:hover {
-  background-color: #988ab8;
+  background-color: #634d92;
   cursor: pointer;
   color: white;
 }
@@ -403,22 +342,11 @@ button.active {
   color: white;
 }
 
-#wrapperotp {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-#reqOTP {
-  top: 86px;
-}
-
 #quest_otp {
   position: relative;
   top: 40px;
-  font-size: 20px;
-  width: 435px;
-  line-height: 150%;
+  font-size: 8px;
+  width: 182px;
   text-align: center;
   color: #737a8d;
 }
@@ -429,23 +357,21 @@ button.active {
   align-items: center;
   justify-content: center;
   background: transparent;
-  top: 17px;
 }
 
 .sendotpBtn {
   display: block;
-  width: 210px;
-  height: 54px;
-  margin: 10px 0;
+  width: 89px;
+  height: 22px;
+  margin: 20px 0;
   background: #5f30e2;
   color: white;
   border: 0;
-  font-size: 20px;
+  font-size: 8px;
   font-weight: bold;
   border-radius: 2px;
   box-sizing: border-box;
   outline: none;
-  top: 2px;
   cursor: pointer;
 }
 
@@ -454,80 +380,145 @@ button.active {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 0px;
   float: left;
-  height: 48px;
-}
-
-.expBoxcontainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 14px;
-  float: left;
-  height: 50px;
-}
-
-.statpin {
-  width: 360px;
-  max-width: fit-content;
-}
-
-.otpbox {
-  width: 54px !important;
-  height: 54px !important;
-  max-height: 54px;
-  max-width: 54px;
-  border: 0.5px solid #e1e7f3;
-  text-align: center;
-  outline: none;
-  border-radius: 2px;
-  font-size: 22px;
-}
-
-.pinbox {
-  width: 50px !important;
-  height: 50px !important;
-  max-height: 50px;
-  max-width: 50px;
-  border: 0.5px solid #e1e7f3;
-  text-align: center;
-  background: #f1f3f8;
-  outline: none;
-  border-radius: 2px;
-  font-size: 22px;
-}
-
-.passbox {
-  width: 360px !important;
-  height: 54px !important;
-  max-height: 54px;
-  max-width: 360px;
-  border: 0.5px solid #e1e7f3;
-  padding: 15px 14px 15px 14px;
-  background: #f1f3f8;
-  outline: none;
-  border-radius: 2px;
-  font-size: 22px;
-  letter-spacing: 15.1px;
-}
-
-.resendwrapper {
-  margin-top: 18px;
-  width: 100%;
-  float: left;
-  display: flex;
-  justify-content: center;
-}
-
-.resendOTP {
-  position: relative;
-  width: auto;
+  height: 22px;
 }
 
 .otp {
   width: fit-content;
   max-width: fit-content;
+}
+
+#otpexclaim {
+  position: absolute;
+  height: 9.5px;
+  width: 10px;
+  top: 7px;
+  margin-left: 5px;
+  opacity: 0;
+}
+
+#pinexclaim {
+  position: absolute;
+  height: 9.5px;
+  width: 10px;
+  top: 6px;
+  margin-left: 5px;
+  opacity: 0;
+}
+
+#pinExpexclaim {
+  position: absolute;
+  height: 9.5px;
+  width: 10px;
+  top: 6px;
+  margin-left: 5px;
+  opacity: 0;
+}
+
+#passexclaim {
+  position: absolute;
+  height: 9.5px;
+  width: 10px;
+  top: 6px;
+  margin-left: 5px;
+  opacity: 0;
+}
+
+#rstotpexclaim {
+  position: absolute;
+  height: 9.5px;
+  width: 10px;
+  top: 6px;
+  margin-left: 5px;
+  opacity: 0;
+}
+
+#rstexpexclaim {
+  position: absolute;
+  height: 9.5px;
+  width: 10px;
+  top: 6px;
+  margin-left: 5px;
+  opacity: 0;
+}
+
+#createexclaim {
+  position: absolute;
+  height: 9.5px;
+  width: 10px;
+  top: 6px;
+  margin-left: 5px;
+  opacity: 0;
+}
+
+#confirmexclaim {
+  position: absolute;
+  height: 9.5px;
+  width: 10px;
+  top: 6px;
+  margin-left: 5px;
+  opacity: 0;
+}
+
+.statpin {
+  width: 167px;
+  max-width: fit-content;
+}
+
+#statpinbtn {
+  margin-top: 10px;
+}
+
+.otpbox {
+  width: 25px !important;
+  height: 25px !important;
+  max-height: 25px;
+  max-width: 25px;
+  border: 0.5px solid #e1e7f3;
+  text-align: center;
+  background: #f1f3f8;
+  outline: none;
+  border-radius: 2px;
+}
+
+.pinbox {
+  width: 25px !important;
+  height: 25px !important;
+  max-height: 25px;
+  max-width: 25px;
+  border: 0.5px solid #e1e7f3;
+  text-align: center;
+  background: #f1f3f8;
+  outline: none;
+  border-radius: 2px;
+}
+
+.passbox {
+  width: 167px !important;
+  height: 25px !important;
+  max-height: 25px;
+  max-width: 167px;
+  border: 0.5px solid #e1e7f3;
+  padding: 9px 8px 9px 8px;
+  background: #f1f3f8;
+  outline: none;
+  border-radius: 2px;
+  letter-spacing: 5.7px;
+}
+
+.resendwrapper {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  float: left;
+}
+
+.resendOTP {
+  position: relative;
+  width: auto;
 }
 
 a[disabled] {
@@ -543,18 +534,18 @@ a.disabled {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 6px;
   color: #2a1563;
-  margin: 0px;
+  margin: 0.5px;
 }
 
 #resendOTPbtn1 {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 7px;
   line-height: 7px;
-  margin: 1.5px 0px 0px 0px;
+  margin: 0.5px;
   float: right;
   color: #2a1563;
 }
@@ -564,12 +555,12 @@ a.disabled {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 6px;
   line-height: 7px;
   position: absolute;
   float: right;
   color: #2a1563;
-  margin: 1.5px 0px 0px 0px;
+  margin: 0.5px;
   right: 0px;
   display: none;
 }
@@ -578,9 +569,9 @@ a.disabled {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 6px;
   line-height: 7px;
-  margin: 1.5px 0px 0px 0px;
+  margin: 1px 0px 0px 0px;
   float: right;
   color: #2a1563;
 }
@@ -589,51 +580,29 @@ a.disabled {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 6px;
   line-height: 7px;
   opacity: 0.5;
   float: right;
   color: #2a1563;
   position: absolute;
-  margin: 1.5px 0px 0px 0px;
+  margin: 1px 0px 0px 0px;
   right: 0px;
 }
 
-.otpverifyBtn {
-  position: relative;
-  display: block;
-  width: 250px;
-  height: 50px;
-  margin: 0px 0;
-  background: #5f30e2;
-  color: white;
-  border: 0;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 2px;
-  box-sizing: border-box;
-  outline: none;
-  top: 0px;
-  cursor: pointer;
-}
-.otpverifyBtn:hover {
-  box-shadow: 0 4px 8px 0 rgba(95, 48, 226, 0.2),
-    0 6px 20px 0 rgba(95, 48, 226, 0.19);
-}
-
 .setPwdwrapper {
-  margin-top: 18px;
-  width: 100%;
-  float: left;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
+  width: 100%;
+  float: left;
 }
 
 .setPwd {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 7px;
   line-height: 7px;
   text-align: center;
   color: #2a1563;
@@ -645,7 +614,7 @@ a.disabled {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 6px;
   line-height: 7px;
   text-align: center;
   color: #2a1563;
@@ -666,63 +635,64 @@ a.disabled {
   align-items: center;
   justify-content: center;
   background: transparent;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   float: left;
 }
 
 #pinverify {
-  margin-top: 12px;
-}
-
-#verifyreset {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .resentOTP {
   position: relative;
   width: auto;
-  padding-left: 170px;
-  box-sizing: border-box;
+  margin-left: 60px;
 }
 
 .resentwrapper {
-  margin-top: 10px;
-  width: 100%;
-  float: left;
+  margin-top: 3.5px;
   display: flex;
   justify-content: center;
+  width: 100%;
+  float: left;
 }
 
 .resetlable {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 7px;
   margin: 0;
   color: #273a49;
 }
-
 .resetotpcontainer {
-  width: 433px;
+  width: 210px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: relative;
+  justify-content: space-between;
 }
 
 .rstOtpbox {
-  width: 40px !important;
-  height: 40px !important;
-  max-height: 40px;
-  max-width: 40px;
+  width: 19px !important;
+  height: 19px !important;
+  max-height: 19px;
+  max-width: 19px;
   border: 0.5px solid #e1e7f3;
   text-align: center;
   background: #f1f3f8;
   outline: none;
   border-radius: 2px;
-  font-size: 22px;
-  margin-left: 0.9px;
+}
+
+#resetcreate {
+  padding: 0px 6.5px 0px 6.5px;
+  text-align: left;
+}
+#resetconfirm {
+  padding: 0px 6.5px 0px 6.5px;
+  text-align: left;
 }
 
 #rstotp {
@@ -730,73 +700,106 @@ a.disabled {
   position: relative;
 }
 
-#resetcreate {
-  padding: 0px 15px 0px 15px;
-  text-align: left;
-}
-#resetconfirm {
-  padding: 0px 15px 0px 15px;
-  text-align: left;
-}
-
 .rstexpBoxcontainer {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 13px;
   float: left;
-  height: 38px;
+  margin-top: 8px;
   color: #273a49;
+}
+#rstexpboxcontainer {
+  height: 15px;
+}
+
+#createpassword {
+  margin-top: 8px;
+}
+
+#confirmpassword {
+  margin-top: 8px;
 }
 
 .rstwrap {
   position: relative;
-  width: 435px;
-  height: 38px;
+  width: 210px;
+  height: 20px;
   display: flex;
   align-items: center;
+}
+.rstExplable {
+  position: absolute;
+  font-family: "Proxima Nova", "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  margin: 0px;
+  color: #273a49;
 }
 
 .rstExpbox {
   position: absolute;
-  width: 265px;
+  width: 135px;
   max-width: fit-content;
-  margin-top: 0px;
+  margin: 0px;
   right: 0px;
 }
 
 .resetexpbox {
-  width: 265px !important;
-  height: 38px !important;
-  max-height: 38px;
-  max-width: 285px;
+  width: 135px !important;
+  height: 19px !important;
+  max-width: 135px;
   border: 0.5px solid #e1e7f3;
   padding: 10px 2px 9px 8.3px;
   background: #f1f3f8;
   outline: none;
   border-radius: 2px;
-  font-size: 18px;
-  letter-spacing: 4px;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
-.pinverifyBtn {
+#resetPwd {
+  margin-top: 15px;
+}
+
+.otpverifyBtn {
   position: relative;
   display: block;
-  width: 250px;
-  height: 50px;
+  width: 120px;
+  height: 22px;
   margin: 0px 0;
   background: #5f30e2;
   color: white;
   border: 0;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 8px;
+  font-weight: medium;
   border-radius: 2px;
   box-sizing: border-box;
   outline: none;
   cursor: pointer;
 }
 
+.otpverifyBtn:hover {
+  box-shadow: 0 4px 8px 0 rgba(95, 48, 226, 0.2),
+    0 6px 20px 0 rgba(95, 48, 226, 0.19);
+}
+.pinverifyBtn {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 22px;
+  margin: 0px 0;
+  background: #5f30e2;
+  color: white;
+  border: 0;
+  font-size: 8px;
+  font-weight: medium;
+  border-radius: 2px;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+}
 .pinverifyBtn:hover {
   box-shadow: 0 4px 8px 0 rgba(95, 48, 226, 0.2),
     0 6px 20px 0 rgba(95, 48, 226, 0.19);
@@ -827,46 +830,46 @@ a.disabled {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 18px;
-  width: 100%;
-  float: left;
+  margin-top: 7px;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 6.5px;
   color: #273a49;
-  opacity: 0.7;
+  width: 100%;
+  float: left;
 }
 
 .pincancel {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 17px;
-  width: 100%;
-  float: left;
+  margin-top: 8px;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 6.5px;
   color: #273a49;
+  width: 100%;
+  float: left;
 }
 
 .insidewrapper {
   position: relative;
-  width: 349px;
   display: flex;
   justify-content: space-between;
+  width: 175px;
+  height: fit-content;
+  display: flex;
   align-items: center;
 }
-
 #inside {
-  height: 30px;
+  height: 22px;
 }
 
 #rstinside {
-  width: 433px;
-  height: 35px;
+  width: 210px;
+  height: 22px;
 }
 
 .pinlable {
@@ -874,16 +877,15 @@ a.disabled {
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
-  margin: 0px 20px 0px 0px;
   color: #273a49;
+  margin: 0px;
 }
 
-.rstExplable {
-  position: absolute;
+.explable {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 8px;
   margin: 0px;
   color: #273a49;
 }
@@ -892,20 +894,16 @@ a.disabled {
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 7px;
   margin: 0px;
   color: #273a49;
 }
 .rstexpin {
-  height: 35px;
+  height: 22px;
   position: absolute;
   right: 0px;
   display: flex;
   align-items: center;
-}
-#rstexpboxcontainer {
-  height: 35px;
-  margin-top: 17px;
 }
 
 .expin {
@@ -915,53 +913,49 @@ a.disabled {
   align-items: center;
 }
 #year {
-  width: 104px;
-  height: 30px;
-  margin-left: 5px;
+  width: 54px;
+  margin-left: 4.2px;
 }
 
 #month {
-  width: 104px;
-  height: 30px;
+  width: 54px;
 }
 
 #rstyear {
-  width: 130px;
-  height: 35px;
-  margin-left: 4px;
+  width: 65px;
+  margin-left: 5px;
 }
 
 #rstmonth {
-  width: 130px;
-  height: 35px;
+  width: 65px;
 }
 
 :root {
-  --radius: 3px;
+  --radius: 2px;
   --baseFg: #d3ddff;
   --baseBg: #ffffff;
   --accentFg: #5f30e2;
   --accentBg: #dfe6fc;
-  --bordercl: #b9c5dd;
+  --bordercl: #e1e7f3;
 }
 
 select {
-  font: 400 12px/1.3 "Open Sans";
+  font: 400 6px/1.3 "Open Sans";
   -webkit-appearance: none;
   appearance: none;
   color: dimgray;
-  border: 1px solid var(--bordercl);
+  border: 0.5px solid var(--bordercl);
   line-height: 1;
   outline: 0;
-  padding: 0.65em 2.5em 0.55em 0.75em;
+  padding: 0.35em 2.5em 0.3em 1.2em;
   border-radius: var(--radius);
   background-color: var(--baseBg);
   background-image: url("img/arrow.svg");
   background-repeat: no-repeat;
-  background-size: 25px;
+  background-size: 13px;
   background-position: right 0px center;
-  width: 100px;
-  height: 40px;
+  margin: 0px;
+  height: 17px;
   cursor: pointer;
 }
 
@@ -978,55 +972,44 @@ select:active {
   background-color: var(--baseBg);
 }
 
-#resetcancel {
-  margin-top: 15px;
-}
-
-.pinlable {
-  font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  margin-right: 71px;
-  color: #273a49;
-}
-
-.explable {
-  font-family: "Proxima Nova", "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  margin: 0px;
-  color: #273a49;
-}
-
 .atmpin {
   max-width: fit-content;
   position: relative;
 }
 
-#atmpin1 {
-  top: 75px;
+#atmpin {
+  margin-top: 15px;
 }
 
 .expbox {
-  width: 214px !important;
-  height: 42px !important;
-  max-height: 42px;
-  max-width: 214px;
+  width: 100px !important;
+  height: 22px !important;
+  max-height: 22px;
+  max-width: 100px;
   border: 0.5px solid #e1e7f3;
   padding: 10px 7px 9px 8.3px;
   background: #f1f3f8;
   outline: none;
   border-radius: 2px;
-  font-size: 15px;
+  font-size: 10px;
+}
+
+.expBoxcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 7px;
+  float: left;
+  height: 22px;
+  position: relative;
 }
 
 ::placeholder {
   bottom: 1.4px;
   color: rgba(0, 0, 0, 0.18);
   position: relative;
-  font-size: 15px;
+  font-size: 9px;
 }
 
 .expireinfo {
@@ -1034,21 +1017,21 @@ select:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 14px;
+  font-size: 7px;
   color: #273a49;
 }
 
 .expirewrapper {
   position: absolute;
   width: 100%;
-  height: fit-content;
+  float: left;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: -15px;
+  top: -8px;
 }
 
 form {
@@ -1076,13 +1059,12 @@ input:invalid {
   border: 0.5px solid rgba(255, 0, 0, 0.288);
 }
 
-input[type="password"]:disabled {
+input:default {
   border: 0.5px solid #e1e7f3;
-  background: #f1f3f8;
 }
 
 input:invalid:not(:focus) {
-  border: 0.5px solid #b9c5dd;
+  border: 0.5px solid #e1e7f3;
   background: #ffffff;
 }
 
@@ -1098,7 +1080,7 @@ input:invalid:not(:focus):not(:placeholder-shown) + label {
 input:invalid:focus:not(:placeholder-shown) ~ .req {
   max-height: auto;
   height: auto;
-  padding: 5px 5px 5px 5px;
+  padding: 3px 3px 3px 3px;
   opacity: 1;
   visibility: visible;
 }
@@ -1111,7 +1093,7 @@ input:invalid:focus:not(:placeholder-shown) ~ .req {
   overflow: hidden;
   z-index: 1;
   font-style: italic;
-  font-size: 13px;
+  font-size: 6px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -1120,18 +1102,19 @@ input:invalid:focus:not(:placeholder-shown) ~ .req {
   visibility: hidden;
   background-color: #f1f3f8;
   border: 0.5px solid red;
-  border-radius: 3px;
+  border-radius: 2px;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 265px;
+  width: 135px;
   margin-top: 2px;
 }
 
+html,
 body {
-  background-color: #f2f2ff;
-  font-family: "Proxima Nova", "Open Sans", sans-serif;
+  font-family: "Proxima Nova", "Open Sans", "PT Sans", sans-serif;
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 * {
