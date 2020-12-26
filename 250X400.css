@@ -109,12 +109,12 @@
 }
 
 .copyright {
-  position: absolute;
+  position: relative;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 3.5px;
-  padding-left: 20px;
+  margin: 0px 0px 0px 2px;
 }
 
 .errorBoxcontainer {

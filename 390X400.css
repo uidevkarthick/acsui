@@ -90,8 +90,6 @@
 #pci_logo {
   width: 23px;
   height: auto;
-  position: absolute;
-  left: 0px;
 }
 #yap_logo {
   width: 16px;
@@ -113,13 +111,12 @@
 }
 
 .copyright {
-  position: absolute;
+  position: relative;
   font-family: "Proxima Nova", "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 4px;
-  padding-left: 21px;
-  margin-top: 2px;
+  margin: 0px 0px 0px 2px;
 }
 
 .errorBoxcontainer {

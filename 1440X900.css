@@ -97,7 +97,6 @@
 
 #pci_logo {
   width: 51px;
-  height: auto;
 }
 #yap_logo {
   width: 45px;
@@ -124,7 +123,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  left: 23.5%;
+  margin: 0px 0px 0px 2px;
 }
 
 .errorBoxcontainer {
