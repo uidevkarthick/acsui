@@ -32,7 +32,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 245px;
+  width: 270px;
   height: 20px;
 }
 
@@ -87,7 +87,7 @@
 }
 
 #pci_logo {
-  width: 23px;
+  width: 70px;
 }
 #yap_logo {
   width: 16px;
@@ -195,7 +195,7 @@
 }
 
 .otpins {
-  width: 245px;
+  width: 270px;
   line-height: 150%;
   margin: 0;
 }
@@ -229,7 +229,7 @@
 }
 
 #user_details {
-  width: 245px;
+  width: 270px;
   height: fit-content;
   max-height: fit-content;
   background: #f4f7ff;
