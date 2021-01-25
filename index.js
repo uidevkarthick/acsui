@@ -1,6 +1,13 @@
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 //error box toast appearance
 
+setTimeout(() => {
+  document.getElementById("errorBox").style.visibility = "visible";
+}, 3000);
+setTimeout(() => {
+  document.getElementById("visa_logo").style.visibility = "visible";
+}, 100);
+
 function Err1440() {
   document.getElementById("errorBox").style.visibility = "visible";
   document.getElementById("errorBox").style.opacity = "1";

@@ -77,6 +77,7 @@
 #visa_logo {
   height: 100%;
   object-fit: contain;
+  visibility: visible;
 }
 
 #pci_logo {

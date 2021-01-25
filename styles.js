@@ -1,4 +1,4 @@
-window.onload = first();
+window.readyState = first();
 window.setInterval(first, 1000);
 function first() {
   var id1440 = "css1440";
