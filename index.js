@@ -6,7 +6,10 @@ setTimeout(() => {
 }, 3000);
 setTimeout(() => {
   document.getElementById("visa_logo").style.visibility = "visible";
-}, 100);
+}, 600);
+setTimeout(() => {
+  document.getElementById("body").style.visibility = "visible";
+}, 600);
 
 function Err1440() {
   document.getElementById("errorBox").style.visibility = "visible";
@@ -287,68 +290,8 @@ function foot1(hgt, pos) {
   }
 }
 //resend timer
-window.onload = countdown2();
-var mins2 = 5;
-var secs2 = mins2 * 60;
 
-function countdown2() {
-  setTimeout("Decrement2()", 60);
-  mins2 = 1;
-  secs2 = mins2 * 60;
-}
-
-function Decrement2() {
-  if (document.getElementById) {
-    minutes2 = document.getElementById("minutes2");
-    seconds2 = document.getElementById("seconds2");
-    if (seconds2 < 59) {
-      seconds2.innerHTML = secs2;
-    } else {
-      minutes2.innerHTML = getminutes2();
-      seconds2.innerHTML = getseconds2();
-    }
-
-    if (mins2 < 0) {
-      minutes2.innerHTML = 0;
-      seconds2.innerHTML = 0;
-    } else {
-      secs2--;
-      setTimeout("Decrement2()", 1000);
-    }
-  }
-}
-
-function getminutes2() {
-  mins2 = Math.floor(secs2 / 60);
-  return mins2;
-}
-
-function getseconds2() {
-  return secs2 - Math.round(mins2 * 60);
-}
 //Tabbar configuration
-function otpcnt() {
-  document.getElementById("tabbar").style.display = "none";
-  document.getElementById("otptab").click();
-}
-
-function pincnt() {
-  document.getElementById("atmpin_tab").click();
-  document.getElementById("tabbar").style.display = "none";
-  document.getElementById("otpins").innerHTML =
-    "Please enter your ATM PIN in the field below to confirm your identy for this purchase. This information is not shared with the merchant.";
-}
-
-function passcnt() {
-  document.getElementById("staticpin_tab").click();
-  document.getElementById("tabbar").style.display = "none";
-  document.getElementById("otpins").innerHTML =
-    "Please enter your PASSWORD in the field below to confirm your identy for this purchase. This information is not shared with the merchant.";
-}
-//Redirect link after timout
-/*    window.setTimeout( function(){
-      window.location = "https://yappay.in";
-  }, 300000 );*/
 
 //next otp box
 function mvCursor(from, to, valid) {
@@ -392,27 +335,6 @@ function otpvalid(val, idi) {
     document.getElementById("pinverifybtn").disabled = false;
     document.getElementById("passbtn").disabled = false;
     document.getElementById("submitbtn").disabled = false;
-  }
-}
-
-setInterval(focsuport, 1000);
-
-function focsuport() {
-  obox = document.getElementById("otpbox1");
-  pbox = document.getElementById("pinbox1");
-  pabox = document.getElementById("passbox");
-  rotpbox = document.getElementById("rstotpbox1");
-  if (obox.value == "") {
-    document.getElementById("otpbox1").focus();
-  }
-  if (pbox.value == "") {
-    document.getElementById("pinbox1").focus();
-  }
-  if (pabox.value == "") {
-    document.getElementById("passbox").focus();
-  }
-  if (rotpbox.value == "") {
-    document.getElementById("rstotpbox1").focus();
   }
 }
 
@@ -541,3 +463,104 @@ $(document).ready(function () {
     }
   });
 });
+
+//page timer
+window.onload = countdown2();
+var mins2 = 5;
+var secs2 = mins2 * 60;
+
+function countdown2() {
+  setTimeout("Decrement2()", 60);
+  mins2 = 1;
+  secs2 = mins2 * 60;
+}
+
+function Decrement2() {
+  if (document.getElementById) {
+    minutes2 = document.getElementById("minutes2");
+    seconds2 = document.getElementById("seconds2");
+    if (seconds2 < 59) {
+      seconds2.innerHTML = secs2;
+    } else {
+      minutes2.innerHTML = getminutes2();
+      seconds2.innerHTML = getseconds2();
+    }
+
+    if (mins2 < 0) {
+      minutes2.innerHTML = 0;
+      seconds2.innerHTML = 0;
+    } else {
+      secs2--;
+      setTimeout("Decrement2()", 1000);
+    }
+  }
+}
+
+function getminutes2() {
+  mins2 = Math.floor(secs2 / 60);
+  return mins2;
+}
+
+function getseconds2() {
+  return secs2 - Math.round(mins2 * 60);
+}
+
+//Date set today
+document.getElementById("fromdatebox").valueAsDate = new Date();
+
+//Minimum date set as today
+function mindate() {
+  var dat = document.getElementById("fromdatebox").value;
+  var todat = document.getElementById("todatebox");
+  todat.min = dat;
+
+  if (!document.getElementById("preauth").checked) {
+    document.getElementById("nooftrans").value = "";
+    todat.value = "";
+  }
+}
+
+//radio change one as block other as value null
+function seamless(evt, radio, other) {
+  var i, dyncnt;
+  dyncnt = document.getElementsByClassName("choices");
+  for (i = 0; i < dyncnt.length; i++) {
+    dyncnt[i].style.display = "none";
+  }
+
+  document.getElementById(radio).style.display = "block";
+  document.getElementById(other).value = "";
+  mindate();
+}
+document.getElementById("seamlessdate").click();
+
+function preauthpopup() {
+  if (document.getElementById("preauth").checked) {
+    document.getElementById("seamlesswrap").style.display = "block";
+    document.getElementById("seamlesspopup").style.display = "flex";
+    document.getElementById("seamlesspopup").style.opacity = "1";
+    document.getElementById("seamlesswrap").style.transform = "scale(1)";
+    document.getElementById("container").style.filter = "brightness(0.5)";
+  } else {
+  }
+}
+function closepopup() {
+  document.getElementById("seamlesswrap").style.display = "none";
+  document.getElementById("seamlesspopup").style.display = "none";
+  document.getElementById("container").style.filter = "none";
+  document.getElementById("todatebox").value = "";
+  document.getElementById("nooftrans").value = "";
+  document.getElementById("preauth").checked = false;
+}
+
+function donepopup() {
+  if (
+    !document.getElementById("nooftrans").value == "" ||
+    !document.getElementById("todatebox").value == ""
+  ) {
+    document.getElementById("preauth").checked = "true";
+    document.getElementById("seamlesswrap").style.display = "none";
+    document.getElementById("seamlesspopup").style.display = "none";
+    document.getElementById("container").style.filter = "none";
+  }
+}

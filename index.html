@@ -4,12 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="refresh" content="300;https://yappay.in" /> -->
   <title>Document</title>
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!--<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>-->
+  <link rel="stylesheet" media="screen" href="styles.css">
   <style>
     .config {
       position: absolute;
@@ -19,8 +17,77 @@
   </style>
 </head>
 
-<body>
+<body id="body" style="visibility: visible;">
 
+  <div class="seamlesspopup" id="seamlesspopup">
+    <div class="seamlesswrap" id="seamlesswrap">
+      <div class="optinheader">
+        <p class="optintext">OPT IN</p>
+        <a class="optclose" id="optclose" href="#" onclick="closepopup();">Close</a>
+      </div>
+      <div class="optinbody">
+        <p style="margin-left: 0px;margin-top: 0;">Seamless Pay</p>
+        <div class="radiowrap">
+          <div class="seamlessdate">
+            <input type="radio" id="seamlessdate" class="seamlessradio" name="seamlessradio" value=""
+              onclick="seamless(event, 'seamlessdatewrap','nooftrans');" style="-webkit-appearance: radio;">
+            <label class="labelseamless" for="seamlessdate"> Select Date</label>
+          </div>
+          <div class="seamlesstrans">
+            <input type="radio" id="seamlesstransactions" class="seamlessradio" name="seamlessradio" value=""
+              onclick="seamless(event, 'seamlessnooftrans','todatebox');" style="-webkit-appearance: radio;">
+            <label class="labelseamless" for="seamlesstransactions"> No. of Transactions</label>
+          </div>
+        </div>
+        <div class="seamlessdatewrap choices" id="seamlessdatewrap">
+          <p style="margin-left: 0px;">Today</p>
+          <input type="date" class="datebox" id="fromdatebox" name="date[]" value="" placeholder=" " disabled />
+          <input type="date" class="datebox todatebox" value="" id="todatebox" name="date[]" min="" max="2050-12-31"
+            placeholder="To date" />
+        </div>
+        <div class="seamlessnooftrans choices" id="seamlessnooftrans">
+          <p style="margin-left: 0px;">No. of Transactions</p>
+          <select name="nooftrans" class="nooftrans" id="nooftrans">
+            <option value="0">00</option>
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+          </select>
+        </div>
+
+      </div>
+      <div class="donewrap">
+        <a class="seamlessdone" onclick="donepopup();" href="#">Done</a>
+      </div>
+    </div>
+  </div>
   <div id="container">
     <div id="header">
       <div class="logowrapper">
@@ -28,7 +95,7 @@
           <img src="img/RBL Logo (white).png" id="bank_logo" />
         </div>
         <div class="visaholder">
-          <img src="img/Verified By Visa.svg" id="visa_logo" style="visibility: hidden;" />
+          <img src="img/Verified By Visa.svg" id="visa_logo" style="visibility: visible;" />
         </div>
       </div>
     </div>
@@ -39,7 +106,8 @@
         <img class="crossbar" id="crossbar" src="img/crossbar.png" alt="" onclick="clserr();">
       </div>
     </div>
-    <div class="contentwrapper">
+
+    <div class="contentwrapper" style="visibility: visible;">
       <div id="otpinfo">
 
         <p class="otpins" id="otpins">Please enter your Received OTP in the field below to confirm your identity for
@@ -134,33 +202,33 @@
 
       <div class="dyncnt" id="otpenter">
 
-        <form id="otpform" name="otpauth" action="" onsubmit="">
+        <form id="otpform" name="otpauth" action="" onsubmit="" autocomplete="off">
           <div class="otpBoxcontainer">
             <div class="otp">
-              <input type="password" class="otpbox" id="otpbox1" name="OTP[]" maxlength="1" required placeholder=" "
+              <input type="tel" class="otpbox" id="otpbox1" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox1','otpbox2',this.pattern);otpemptied(event);"
                 onkeydown="backsp(this, 'otpbox1');" />
-              <input type="password" class="otpbox" id="otpbox2" name="OTP[]" maxlength="1" required placeholder=" "
+              <input type="tel" class="otpbox" id="otpbox2" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox2','otpbox3',this.pattern);otpemptied(event);"
-                onkeydown="backsp(this, 'otpbox1');" disabled />
-              <input type="password" class="otpbox" id="otpbox3" name="OTP[]" maxlength="1" required placeholder=" "
+                onkeydown="backsp(this, 'otpbox1');" />
+              <input type="tel" class="otpbox" id="otpbox3" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox3','otpbox4',this.pattern);otpemptied(event);"
-                onkeydown="backsp(this, 'otpbox2');" disabled />
-              <input type="password" class="otpbox" id="otpbox4" name="OTP[]" maxlength="1" required placeholder=" "
+                onkeydown="backsp(this, 'otpbox2');" />
+              <input type="tel" class="otpbox" id="otpbox4" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox4','otpbox5',this.pattern);otpemptied(event);"
-                onkeydown="backsp(this, 'otpbox3');" disabled />
-              <input type="password" class="otpbox" id="otpbox5" name="OTP[]" maxlength="1" required placeholder=" "
+                onkeydown="backsp(this, 'otpbox3');" />
+              <input type="tel" class="otpbox" id="otpbox5" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox5','otpbox6',this.pattern);otpemptied(event);"
-                onkeydown="backsp(this, 'otpbox4');" disabled />
-              <input type="password" class="otpbox" id="otpbox6" name="OTP[]" maxlength="1" required placeholder=" "
+                onkeydown="backsp(this, 'otpbox4');" />
+              <input type="tel" class="otpbox" id="otpbox6" name="OTP[]" maxlength="1" required placeholder=" "
                 pattern="(?=.*\d).{1,1}"
                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('otpbox6','otpverifybtn',this.pattern);otpemptied(event);"
-                onkeydown="backsp(this, 'otpbox5');" disabled />
+                onkeydown="backsp(this, 'otpbox5');" />
               <img class="otpexclaim" id="otpexclaim" src="img/exclaim.png" alt="">
               <div class="req">
                 Your OTP must be in numbers.
@@ -169,7 +237,9 @@
           </div>
           <div class="resendwrapper">
             <div class="resendOTP">
-
+              <input type="checkbox" id="preauth" class="preauth" name="optin" value="opt"
+                onclick="preauthpopup();mindate();">
+              <label class="labelpreauth" for="preauth"> SEAMLESS PAY</label><br>
               <a href="#" class="disablelnk" id="resendOTPbtn1" onclick="msgbox()">RESEND OTP</a>
             </div>
           </div>
@@ -207,15 +277,15 @@
                   <input type="password" class="pinbox" id="pinbox2" name="PIN[]" maxlength="1" required placeholder=" "
                     pattern="(?=.*\d).{1,1}"
                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('pinbox2','pinbox3',this.pattern);pinemptied(event);"
-                    onkeydown="backsp(this, 'pinbox1');" disabled />
+                    onkeydown="backsp(this, 'pinbox1');" />
                   <input type="password" class="pinbox" id="pinbox3" name="PIN[]" maxlength="1" required placeholder=" "
                     pattern="(?=.*\d).{1,1}"
                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('pinbox3','pinbox4',this.pattern);pinemptied(event);"
-                    onkeydown="backsp(this, 'pinbox2');" disabled />
+                    onkeydown="backsp(this, 'pinbox2');" />
                   <input type="password" class="pinbox" id="pinbox4" name="PIN[]" maxlength="1" required placeholder=" "
                     pattern="(?=.*\d).{1,1}"
                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('pinbox4','month',this.pattern);pinemptied(event);"
-                    onkeydown="backsp(this, 'pinbox3');" disabled />
+                    onkeydown="backsp(this, 'pinbox3');" />
                   <img class="pinexclaim" id="pinexclaim" src="img/exclaim.png" alt="">
                   <div class="req">
                     Your ATM PIN must be in numbers.
@@ -234,14 +304,14 @@
                     <option value="2">02</option>
                     <option value="3">03</option>
                     <option value="4">04</option>
-                    <option value="1">05</option>
-                    <option value="2">06</option>
-                    <option value="3">07</option>
-                    <option value="4">08</option>
-                    <option value="1">09</option>
-                    <option value="2">10</option>
-                    <option value="3">11</option>
-                    <option value="4">12</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
 
                   </select>
 
@@ -317,7 +387,7 @@
           </div>
 
           <div class="setPwdwrapper">
-            <div class="resendOTP">
+            <div class="resendOTP resendorresetotp">
               <a href="#" class="setPwd" id="setPwd"
                 onclick="tabOpen(event, 'resetPwd');container(480);container1(850);container2(1000);tabclr2();foot1(95,110);">SET
                 / RESET PIN</a>
@@ -345,35 +415,35 @@
 
       <div class="dyncnt" id="resetPwd">
 
-        <form class="rstForm" action="#" onsubmit="">
+        <form class="rstForm" action="#" onsubmit="" autocomplete="off">
           <div class="otpBoxcontainer" id="resetboxcontainer">
             <div class="resetotpcontainer">
               <p class="resetlable">Enter OTP</p>
               <div id="rstotp">
-                <input type="password" class="rstOtpbox" id="rstotpbox1" name="RESET[]" maxlength="1" required
+                <input type="tel" class="rstOtpbox" id="rstotpbox1" name="RESET[]" maxlength="1" required
                   placeholder=" " pattern="(?=.*\d).{1,1}"
                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox1','rstotpbox2',this.pattern);subemptied(event);"
                   onkeydown="backsp(this, 'rstotpbox1');" />
-                <input type="password" class="rstOtpbox" id="rstotpbox2" name="RESET[]" maxlength="1" required
+                <input type="tel" class="rstOtpbox" id="rstotpbox2" name="RESET[]" maxlength="1" required
                   placeholder=" " pattern="(?=.*\d).{1,1}"
                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox2','rstotpbox3',this.pattern);subemptied(event);"
-                  onkeydown="backsp(this, 'rstotpbox1');" disabled />
-                <input type="password" class="rstOtpbox" id="rstotpbox3" name="RESET[]" maxlength="1" required
+                  onkeydown="backsp(this, 'rstotpbox1');" />
+                <input type="tel" class="rstOtpbox" id="rstotpbox3" name="RESET[]" maxlength="1" required
                   placeholder=" " pattern="(?=.*\d).{1,1}"
                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox3','rstotpbox4',this.pattern);subemptied(event);"
-                  onkeydown="backsp(this, 'rstotpbox2');" disabled />
-                <input type="password" class="rstOtpbox" id="rstotpbox4" name="RESET[]" maxlength="1" required
+                  onkeydown="backsp(this, 'rstotpbox2');" />
+                <input type="tel" class="rstOtpbox" id="rstotpbox4" name="RESET[]" maxlength="1" required
                   placeholder=" " pattern="(?=.*\d).{1,1}"
                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox4','rstotpbox5',this.pattern);subemptied(event);"
-                  onkeydown="backsp(this, 'rstotpbox3');" disabled />
-                <input type="password" class="rstOtpbox" id="rstotpbox5" name="RESET[]" maxlength="1" required
+                  onkeydown="backsp(this, 'rstotpbox3');" />
+                <input type="tel" class="rstOtpbox" id="rstotpbox5" name="RESET[]" maxlength="1" required
                   placeholder=" " pattern="(?=.*\d).{1,1}"
                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox5','rstotpbox6',this.pattern);subemptied(event);"
-                  onkeydown="backsp(this, 'rstotpbox4');" disabled />
-                <input type="password" class="rstOtpbox" id="rstotpbox6" name="RESET[]" maxlength="1" required
+                  onkeydown="backsp(this, 'rstotpbox4');" />
+                <input type="tel" class="rstOtpbox" id="rstotpbox6" name="RESET[]" maxlength="1" required
                   placeholder=" " pattern="(?=.*\d).{1,1}"
                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');mvCursor('rstotpbox6','rstmonth',this.pattern);subemptied(event);"
-                  onkeydown="backsp(this, 'rstotpbox5');" disabled />
+                  onkeydown="backsp(this, 'rstotpbox5');" />
                 <img class="rstotpexclaim" id="rstotpexclaim" src="img/exclaim.png" alt="">
                 <div class="req">
                   Your OTP must be in numbers.
@@ -502,14 +572,14 @@
         </div>
         <img src="img/yap.png" id="yap_logo" />
         <div class="partnerholder">
-          <img src="img/Linq.svg" class="partnerlogo">
+          <img src="img/SBEIGHT.svg" class="partnerlogo">
         </div>
       </div>
     </div>
   </div>
 
 
-  <script src="styles.js"></script>
+  <!--<script src="styles.js"></script>-->
   <script src="index.js"></script>
 </body>
 
