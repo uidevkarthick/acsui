@@ -40,7 +40,8 @@
         </div>
         <div class="seamlessdatewrap choices" id="seamlessdatewrap">
           <p style="margin-left: 0px;">Today</p>
-          <input type="date" class="datebox" id="fromdatebox" name="date[]" value="" placeholder=" " disabled />
+          <input type="date" class="datebox fromdatebox" id="fromdatebox" name="date[]" value="" placeholder=" "
+            disabled />
           <input type="date" class="datebox todatebox" value="" id="todatebox" name="date[]" min="" max="2050-12-31"
             placeholder="To date" />
         </div>
@@ -167,11 +168,11 @@
 
       <div class="wrapperBar">
         <div class="tabbar" id="tabbar">
-          <button class="tabbtn" onclick="tabOpen(event, 'otpenter');container( 0, 100);foot1(196,210);"
+          <button class="tabbtn" onclick="tabOpen(event, 'otpenter');container( 0, 100);foot1(180,190);"
             id="otptab"><span>OTP</span></button>
-          <button class="tabbtn" onclick="tabOpen(event, 'atmpin');container( 0, 100);foot1(196,210);"
+          <button class="tabbtn" onclick="tabOpen(event, 'atmpin');container( 0, 100);foot1(180,190);"
             id="atmpin_tab"><span>ATM PIN</span></button>
-          <button class="tabbtn" onclick="tabOpen(event, 'staticpin');container( 0,100);foot1(196,210);"
+          <button class="tabbtn" onclick="tabOpen(event, 'staticpin');container( 0,100);foot1(180,190);"
             id="staticpin_tab"><span>STATIC PIN</span></button>
         </div>
       </div>
@@ -236,9 +237,11 @@
           </div>
           <div class="resendwrapper">
             <div class="resendOTP">
-              <input type="checkbox" id="preauth" class="preauth" name="optin" value="opt"
-                onclick="preauthpopup();mindate();">
-              <label class="labelpreauth" for="preauth"> SEAMLESS PAY</label><br>
+              <div class="checkbox">
+                <input type="checkbox" id="preauth" class="preauth" name="optin" value="opt"
+                  onclick="preauthpopup();mindate();">
+                <label class="labelpreauth" for="preauth"> SEAMLESS PAY</label><br>
+              </div>
               <a href="#" class="disablelnk" id="resendOTPbtn1" onclick="msgbox()">RESEND OTP</a>
             </div>
           </div>

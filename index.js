@@ -265,6 +265,9 @@ function tabclr2() {
 function container(ht, htn) {
   document.getElementById("container").style.height = ht + "px";
   document.getElementById("container").style.height = htn + "%";
+  if (window.screen.width <= 1365 && window.screen.width >= 700) {
+    document.getElementById("container").style.height = "";
+  }
 }
 
 function container1(ht, htn) {
@@ -278,6 +281,7 @@ function container2(ht, htn) {
   if (window.screen.width >= 1440) {
     document.getElementById("container").style.height = ht + "px";
     document.getElementById("container").style.height = htn + "%";
+    document.getElementById("container").style.height = "";
   }
 }
 //Footer adjustment

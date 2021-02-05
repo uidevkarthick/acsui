@@ -1,5 +1,50 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+@media only screen and (all) {
+  form {
+    position: relative;
+    width: 100%;
+    float: left;
+  }
 
+  input[type="password"],
+  input[type="tel"] {
+    -webkit-appearance: none;
+  }
+
+  input[type="password"],
+  input[type="tel"]:focus {
+    background: #ffffff;
+  }
+
+  input[type="password"],
+  input[type="tel"]:valid {
+    background: white;
+  }
+
+  input[type="password"],
+  input[type="tel"] :invalid {
+    border: 0.5px solid rgba(255, 0, 0, 0.288);
+  }
+
+  input[type="password"],
+  input[type="tel"]:default {
+    border: 0.5px solid #e1e7f3;
+  }
+
+  input[password]:invalid:not(:focus) {
+    border: 0.5px solid #e1e7f3;
+    background: #ffffff;
+  }
+
+  input:invalid:not(:focus):not(:placeholder-shown) {
+    background: rgb(255, 241, 244);
+    border: 0.5px solid rgba(255, 0, 0, 0.288);
+  }
+
+  input:invalid:not(:focus):not(:placeholder-shown) + label {
+    opacity: 0;
+  }
+}
 @media only screen and (max-width: 299px) {
   .loader {
     height: 18px;
@@ -14,13 +59,12 @@
     position: absolute;
     display: block;
     width: 100%;
-    max-width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: white;
     filter: none;
     -webkit-filter: none;
-    /*border: 0.5px solid black;brightness(0.4)*/
   }
 
   #header {
@@ -192,8 +236,8 @@
     justify-content: center;
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
-    text-align: justify;
-    font-size: 8.5px;
+
+    font-size: 11px;
     width: 100%;
     height: auto;
     float: left;
@@ -201,7 +245,7 @@
 
   .otpins {
     width: 220px;
-    line-height: 150%;
+    line-height: 120%;
     margin: 0;
   }
 
@@ -209,7 +253,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 7px;
+    margin-top: 10px;
     width: 100%;
     float: left;
   }
@@ -218,7 +262,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 10px;
     float: left;
     width: 100%;
   }
@@ -243,8 +287,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 
   p {
@@ -267,20 +311,21 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.2px;
+    font-size: 9.8px;
     line-height: 1;
     text-align: left;
-    width: 60px;
+    width: 85px;
     color: #17222b;
     vertical-align: top;
+    margin: 1px;
   }
 
   .user_fieldValue {
-    padding-left: 22px;
+    padding-left: 5px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7.5px;
+    font-size: 9px;
     line-height: 1;
     text-align: left;
 
@@ -300,7 +345,7 @@
 
   .dyncnt {
     position: relative;
-    margin-top: 15px;
+    margin-top: 10px;
     display: none;
     animation: fadeEffect 1s;
     float: left;
@@ -521,15 +566,19 @@
   }
 
   .preauth {
-    width: 7.6px;
-    height: 7.6px;
-    -webkit-appearance: checkbox;
-    margin-left: 0px;
+    width: 12px;
+    height: 12px;
+    margin: 0 3px 0 0;
     border: #2a1563;
   }
 
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
   .labelpreauth {
-    font-size: 7px;
+    font-size: 8.5px;
     color: #2a1563;
   }
 
@@ -677,7 +726,7 @@
     position: absolute;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 8.5px;
     line-height: 7px;
     margin: 0.5px;
     right: 0;
@@ -703,7 +752,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8.5px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
@@ -742,7 +791,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8.5px;
     line-height: 7px;
     text-align: center;
     color: #2a1563;
@@ -974,7 +1023,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 7px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -988,7 +1037,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 7px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -1159,7 +1208,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 6px;
+    font-size: 9px;
     color: #273a49;
   }
 
@@ -1172,49 +1221,6 @@
     align-items: center;
     justify-content: center;
     top: -8px;
-  }
-
-  form {
-    position: relative;
-    width: 100%;
-    float: left;
-  }
-
-  input {
-    -webkit-appearance: none;
-  }
-
-  input[type="password"]:focus {
-    background: #ffffff;
-  }
-
-  input[type="password"]:valid {
-    background: white;
-  }
-  input[type="number"]:valid {
-    background: white;
-  }
-
-  input:invalid {
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:default {
-    border: 0.5px solid #e1e7f3;
-  }
-
-  input:invalid:not(:focus) {
-    border: 0.5px solid #e1e7f3;
-    background: #ffffff;
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) {
-    background: rgb(255, 241, 244);
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) + label {
-    opacity: 0;
   }
 
   input:invalid:focus:not(:placeholder-shown) ~ .req {
@@ -1457,7 +1463,7 @@
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
-    font-size: 8.5px;
+    font-size: 11px;
     width: 100%;
     height: auto;
     float: left;
@@ -1473,7 +1479,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 7px;
+    margin-top: 12px;
     width: 100%;
     float: left;
   }
@@ -1516,7 +1522,7 @@
   }
 
   #user_details > table {
-    width: 220px;
+    width: 95%;
     padding: 0px;
     margin: 0px;
   }
@@ -1531,20 +1537,20 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.2px;
+    font-size: 10px;
     line-height: 1;
     text-align: left;
-    width: 60px;
+    width: 90px;
     color: #17222b;
     vertical-align: top;
   }
 
   .user_fieldValue {
-    padding-left: 22px;
+    padding-left: 10px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7.5px;
+    font-size: 9px;
     line-height: 1;
     text-align: left;
 
@@ -1586,7 +1592,7 @@
     height: 16px;
     font-weight: medium;
     line-height: 0;
-    font-size: 8px;
+    font-size: 10px;
 
     -webkit-appearance: none;
 
@@ -1786,15 +1792,20 @@
   }
 
   .preauth {
-    width: 7.5px;
-    height: 7.5px;
+    width: 12px;
+    height: 12px;
     -webkit-appearance: checkbox;
     margin: 0px 3px 0px 0px;
     border: #2a1563;
   }
 
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
   .labelpreauth {
-    font-size: 7px;
+    font-size: 8.5px;
     color: #2a1563;
   }
   .seamlesspopup {
@@ -1951,7 +1962,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 8.5px;
     line-height: 7px;
     margin: 0.5px;
     right: 0px;
@@ -1977,7 +1988,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8.5px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
@@ -2016,7 +2027,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 8.5px;
     line-height: 7px;
     text-align: center;
     color: #2a1563;
@@ -2065,7 +2076,7 @@
   }
 
   .resentwrapper {
-    margin-top: 3.5px;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -2076,7 +2087,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 7px;
+    font-size: 9px;
     margin: 0;
     color: #273a49;
   }
@@ -2120,7 +2131,7 @@
     justify-content: center;
     width: 100%;
     float: left;
-    margin-top: 8px;
+    margin-top: 10px;
     color: #273a49;
   }
   #rstexpboxcontainer {
@@ -2147,7 +2158,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 7px;
+    font-size: 9px;
     margin: 0px;
     color: #273a49;
   }
@@ -2181,12 +2192,12 @@
     position: relative;
     display: block;
     width: 120px;
-    height: 22px;
+    height: 25px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
     border: 0;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: medium;
     border-radius: 2px;
     box-sizing: border-box;
@@ -2236,7 +2247,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8.5px;
     color: #273a49;
   }
 
@@ -2244,11 +2255,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 7px;
+    margin-top: 10px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6.5px;
+    font-size: 8.5px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -2262,7 +2273,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6.5px;
+    font-size: 8.5px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -2290,7 +2301,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 9px;
     color: #273a49;
     margin: 0px;
   }
@@ -2299,7 +2310,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 9px;
     margin: 0px;
     color: #273a49;
   }
@@ -2308,7 +2319,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 7px;
+    font-size: 9px;
     margin: 0px;
     color: #273a49;
   }
@@ -2433,7 +2444,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 7px;
+    font-size: 10px;
     color: #273a49;
   }
 
@@ -2452,43 +2463,6 @@
     position: relative;
     width: 100%;
     float: left;
-  }
-
-  input {
-    -webkit-appearance: none;
-  }
-
-  input[type="password"]:focus {
-    background: #ffffff;
-  }
-
-  input[type="password"]:valid {
-    background: white;
-  }
-  input[type="number"]:valid {
-    background: white;
-  }
-
-  input:invalid {
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:default {
-    border: 0.5px solid #e1e7f3;
-  }
-
-  input:invalid:not(:focus) {
-    border: 0.5px solid #e1e7f3;
-    background: #ffffff;
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) {
-    background: rgb(255, 241, 244);
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) + label {
-    opacity: 0;
   }
 
   input:invalid:focus:not(:placeholder-shown) ~ .req {
@@ -2578,7 +2552,7 @@
   }
 
   #footer {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 25px;
     display: flex;
@@ -2788,7 +2762,7 @@
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
-    font-size: 9.3px;
+    font-size: 11px;
     width: 100%;
     float: left;
     height: auto;
@@ -2796,7 +2770,7 @@
 
   .otpins {
     width: 326px;
-    line-height: 150%;
+    line-height: 135%;
     margin: 0;
   }
 
@@ -2813,7 +2787,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100%;
     float: left;
   }
@@ -2829,7 +2803,7 @@
   }
 
   #user_details {
-    width: 241px;
+    width: 280px;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -2862,12 +2836,13 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.4px;
+    font-size: 10px;
     line-height: 1;
     text-align: left;
-    width: 70px;
+    width: 90px;
     color: #17222b;
     vertical-align: top;
+    margin: 2px;
   }
 
   .user_fieldValue {
@@ -2875,10 +2850,10 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 9px;
     line-height: 1;
     text-align: left;
-
+    margin: 5px;
     color: #17222b;
   }
 
@@ -2917,11 +2892,11 @@
 
   button {
     background-color: inherit;
-    width: 67px;
+    width: 90px;
     height: 16px;
     font-weight: medium;
     line-height: 0;
-    font-size: 8px;
+    font-size: 11px;
     -webkit-appearance: none;
     color: #2a1563;
     border-radius: 25px;
@@ -2983,6 +2958,7 @@
     width: 100%;
     float: left;
     height: 20px;
+    margin-top: 10px;
   }
 
   .otp {
@@ -3042,15 +3018,20 @@
   }
 
   .preauth {
-    width: 8px;
-    height: 8px;
+    width: 13px;
+    height: 13px;
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
   }
 
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
   .labelpreauth {
-    font-size: 7px;
+    font-size: 8.5px;
     color: #2a1563;
   }
 
@@ -3208,7 +3189,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8.5px;
     line-height: 7px;
     margin: 0.5px;
     right: 0px;
@@ -3256,7 +3237,7 @@
   }
 
   .setPwdwrapper {
-    margin-top: 7.3px;
+    margin-top: 12px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -3273,7 +3254,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8.5px;
     line-height: 7px;
     text-align: center;
     color: #2a1563;
@@ -3306,7 +3287,7 @@
     align-items: center;
     justify-content: center;
     background: transparent;
-    margin-top: 7px;
+    margin-top: 15px;
     width: 100%;
     float: left;
   }
@@ -3329,13 +3310,13 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 7px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
 
   .resetotpcontainer {
-    width: 205px;
+    width: 225px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3386,7 +3367,7 @@
 
   .rstwrap {
     position: relative;
-    width: 207px;
+    width: 225px;
     height: 20px;
     display: flex;
     align-items: center;
@@ -3396,7 +3377,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 7px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -3424,13 +3405,13 @@
   .otpverifyBtn {
     position: relative;
     display: block;
-    width: 90px;
-    height: 20px;
+    width: 130px;
+    height: 25px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
     border: 0;
-    font-size: 7px;
+    font-size: 9px;
     font-weight: medium;
     border-radius: 2px;
     box-sizing: border-box;
@@ -3446,13 +3427,13 @@
   .pinverifyBtn {
     position: relative;
     display: block;
-    width: 90px;
-    height: 20px;
+    width: 130px;
+    height: 25px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
     border: 0;
-    font-size: 7px;
+    font-size: 9px;
     font-weight: medium;
     border-radius: 2px;
     box-sizing: border-box;
@@ -3482,7 +3463,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8px;
     color: #273a49;
   }
 
@@ -3490,11 +3471,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 7px;
+    margin-top: 15px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8px;
     color: #273a49;
     opacity: 0.7;
     width: 100%;
@@ -3505,11 +3486,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 6px;
+    margin-top: 12px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 9px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -3517,7 +3498,7 @@
 
   .insidewrapper {
     position: relative;
-    width: 140px;
+    width: 165px;
     height: fit-content;
     display: flex;
     justify-content: space-between;
@@ -3528,7 +3509,7 @@
   }
 
   #rstinside {
-    width: 205px;
+    width: 225px;
     height: 22px;
   }
 
@@ -3536,7 +3517,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -3545,7 +3526,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -3554,7 +3535,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 7px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -3639,9 +3620,6 @@
     max-width: fit-content;
     position: relative;
   }
-  #atmpin {
-    margin-top: 14px;
-  }
 
   .expbox {
     width: 88px !important;
@@ -3680,7 +3658,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 6px;
+    font-size: 9.5px;
     color: #273a49;
   }
 
@@ -3698,43 +3676,6 @@
     position: relative;
     width: 100%;
     float: left;
-  }
-
-  input {
-    -webkit-appearance: none;
-  }
-
-  input[type="password"]:focus {
-    background: #ffffff;
-  }
-
-  input[type="password"]:valid {
-    background: white;
-  }
-  input[type="number"]:valid {
-    background: white;
-  }
-
-  input:invalid {
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:default {
-    border: 0.5px solid #e1e7f3;
-  }
-
-  input:invalid:not(:focus) {
-    border: 0.5px solid #e1e7f3;
-    background: #ffffff;
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) {
-    background: rgb(255, 241, 244);
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) + label {
-    opacity: 0;
   }
 
   input:invalid:focus:not(:placeholder-shown) ~ .req {
@@ -3824,7 +3765,7 @@
   #footer {
     position: fixed;
     width: 100%;
-    height: 196px;
+    height: 180px;
     background: #f2f2ff;
     display: flex;
     justify-content: center;
@@ -4051,7 +3992,7 @@
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
-    font-size: 10px;
+    font-size: 11px;
     width: 100%;
     float: left;
     height: auto;
@@ -4066,7 +4007,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 18px;
+    margin-top: 12px;
     width: 100%;
     float: left;
   }
@@ -4091,7 +4032,7 @@
   }
 
   #user_details {
-    width: 283px;
+    width: 330px;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -4109,7 +4050,7 @@
   }
 
   #user_details > table {
-    width: 259px;
+    width: 90%;
     padding: 0px;
     margin: 0px;
   }
@@ -4124,10 +4065,10 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 10.5px;
     line-height: 1;
     text-align: left;
-    width: 85px;
+    width: 95px;
     color: #17222b;
     vertical-align: top;
   }
@@ -4147,7 +4088,7 @@
   .tabbar {
     position: relative;
     width: fit-content;
-    height: 16px;
+    height: 20px;
     background: #f2f2ff;
     border-radius: 25px;
     display: flex;
@@ -4175,11 +4116,11 @@
 
   button {
     background-color: inherit;
-    width: 67px;
-    height: 16px;
+    width: 80px;
+    height: 20px;
     font-weight: medium;
     line-height: 0;
-    font-size: 8px;
+    font-size: 10px;
     -webkit-appearance: none;
     color: #2a1563;
     border-radius: 25px;
@@ -4277,10 +4218,10 @@
   }
 
   .pinbox {
-    width: 19px !important;
-    height: 19px !important;
-    max-height: 19px;
-    max-width: 19px;
+    width: 22px !important;
+    height: 22px !important;
+    max-height: 22px;
+    max-width: 22px;
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -4309,16 +4250,19 @@
     float: left;
   }
   .preauth {
-    width: 10px;
-    height: 10px;
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
   }
 
   .labelpreauth {
-    font-size: 7px;
+    font-size: 8.5px;
     color: #2a1563;
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center;
   }
 
   .seamlesspopup {
@@ -4475,7 +4419,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 8.5px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -4501,7 +4445,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 8.5px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
@@ -4523,7 +4467,7 @@
   }
 
   .setPwdwrapper {
-    margin-top: 7.3px;
+    margin-top: 13px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -4540,7 +4484,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8.5px;
     line-height: 7px;
     text-align: center;
     color: #2a1563;
@@ -4598,7 +4542,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -4642,7 +4586,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100%;
     float: left;
     color: #273a49;
@@ -4654,6 +4598,7 @@
 
   #confirmpassword {
     position: relative;
+    margin-top: 13px;
   }
 
   .rstwrap {
@@ -4668,7 +4613,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -4682,7 +4627,7 @@
 
   .resetexpbox {
     width: 166px !important;
-    height: 19px !important;
+    height: 22px !important;
     max-width: 166px;
     border: 0.5px solid #e1e7f3;
     padding: 10px 2px 9px 8.3px;
@@ -4717,13 +4662,13 @@
   .pinverifyBtn {
     position: relative;
     display: block;
-    width: 120px;
-    height: 22px;
+    width: 130px;
+    height: 25px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
     border: 0;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: bold;
     border-radius: 2px;
     box-sizing: border-box;
@@ -4765,7 +4710,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 9px;
     color: #273a49;
     opacity: 0.7;
     width: 100%;
@@ -4776,11 +4721,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 4px;
+    margin-top: 10px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 9px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -4788,7 +4733,7 @@
 
   .insidewrapper {
     position: relative;
-    width: 140px;
+    width: 170px;
     height: fit-content;
     display: flex;
     justify-content: space-between;
@@ -4807,7 +4752,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -4816,7 +4761,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -4838,13 +4783,13 @@
     align-items: center;
   }
   #year {
-    width: 42.5px;
+    width: 49.2px;
     padding-left: 0.7em;
     margin-left: 3px;
   }
 
   #month {
-    width: 42.5px;
+    width: 49.2px;
     padding-left: 0.7em;
   }
 
@@ -4867,7 +4812,7 @@
   }
 
   select {
-    font: 400 6px/1.3 "Open Sans";
+    font: 400 8.5px/1.3 "Open Sans";
     -webkit-appearance: none;
     appearance: none;
     color: dimgray;
@@ -4882,7 +4827,7 @@
     background-size: 13px;
     background-position: right 0px center;
     margin: 0px;
-    height: 17px;
+    height: 22px;
     cursor: pointer;
   }
 
@@ -4903,7 +4848,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -4944,7 +4889,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 8px;
+    font-size: 10px;
     color: #273a49;
   }
 
@@ -4962,43 +4907,6 @@
     position: relative;
     width: 100%;
     float: left;
-  }
-
-  input {
-    -webkit-appearance: none;
-  }
-
-  input[type="password"]:focus {
-    background: #ffffff;
-  }
-
-  input[type="password"]:valid {
-    background: white;
-  }
-  input[type="number"]:valid {
-    background: white;
-  }
-
-  input:invalid {
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:default {
-    border: 0.5px solid #e1e7f3;
-  }
-
-  input:invalid:not(:focus) {
-    border: 0.5px solid #e1e7f3;
-    background: #ffffff;
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) {
-    background: rgb(255, 241, 244);
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) + label {
-    opacity: 0;
   }
 
   input:invalid:focus:not(:placeholder-shown) ~ .req {
@@ -5087,7 +4995,7 @@
   }
 
   #footer {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 28px;
     background: #f2f2ff;
@@ -5294,7 +5202,7 @@
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
-    font-size: 8.4px;
+    font-size: 11px;
     width: 100%;
     float: left;
     height: auto;
@@ -5353,7 +5261,7 @@
   }
 
   #user_details > table {
-    width: 274px;
+    width: 95%;
     padding: 0px;
     margin: 0px;
   }
@@ -5369,7 +5277,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.4px;
+    font-size: 10px;
     line-height: 1;
     text-align: left;
     width: 86px;
@@ -5378,11 +5286,11 @@
   }
 
   .user_fieldValue {
-    padding-left: 32px;
+    padding-left: 20px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.4px;
+    font-size: 9.8px;
     line-height: 1;
     text-align: left;
 
@@ -5392,7 +5300,7 @@
   .tabbar {
     position: relative;
     width: fit-content;
-    height: 18px;
+    height: 21px;
     background: #f2f2ff;
     border-radius: 25px;
     display: flex;
@@ -5420,11 +5328,11 @@
 
   button {
     background-color: inherit;
-    width: 77px;
-    height: 18px;
+    width: 90px;
+    height: 21px;
     font-weight: medium;
     line-height: 0;
-    font-size: 8px;
+    font-size: 10px;
     -webkit-appearance: none;
     color: #2a1563;
     border-radius: 25px;
@@ -5496,7 +5404,7 @@
     justify-content: center;
     width: 100%;
     float: left;
-    margin-top: 7px;
+    margin-top: 13px;
     height: 17px;
   }
 
@@ -5511,10 +5419,9 @@
   }
 
   .otpbox {
-    width: 22px !important;
-    height: 22px !important;
-    max-height: 22px;
-    max-width: 22px;
+    width: 26px !important;
+    height: 26px !important;
+
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -5523,10 +5430,8 @@
   }
 
   .pinbox {
-    width: 19px !important;
-    height: 19px !important;
-    max-height: 19px;
-    max-width: 19px;
+    width: 22.5px;
+    height: 22.5px;
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -5556,15 +5461,18 @@
   }
 
   .preauth {
-    width: 10px;
-    height: 10px;
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
   }
 
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
   .labelpreauth {
-    font-size: 8px;
+    font-size: 9px;
     color: #2a1563;
   }
 
@@ -5696,7 +5604,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 152.7px;
+    width: 176.7px;
   }
 
   a[disabled] {
@@ -5722,7 +5630,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 9px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -5748,7 +5656,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 8.5px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
@@ -5771,6 +5679,7 @@
 
   .setPwdwrapper {
     margin-top: 11px;
+    margin-bottom: 8px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -5788,7 +5697,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 8.5px;
     line-height: 7px;
     text-align: center;
     color: #2a1563;
@@ -5850,7 +5759,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -5893,7 +5802,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 9px;
+    margin-top: 10px;
     float: left;
     color: #273a49;
     height: 21px;
@@ -5911,7 +5820,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -5939,13 +5848,13 @@
   .otpverifyBtn {
     position: relative;
     display: block;
-    width: 100px;
-    height: 20px;
+    width: 140px;
+    height: 25px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
     border: 0;
-    font-size: 7px;
+    font-size: 10px;
     font-weight: bold;
     border-radius: 2px;
     box-sizing: border-box;
@@ -5961,13 +5870,13 @@
   .pinverifyBtn {
     position: relative;
     display: block;
-    width: 100px;
-    height: 20px;
+    width: 140px;
+    height: 25px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
     border: 0;
-    font-size: 7px;
+    font-size: 10px;
     font-weight: medium;
     border-radius: 2px;
     box-sizing: border-box;
@@ -6005,11 +5914,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 4px;
+    margin-top: 10px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 9px;
     color: #273a49;
     opacity: 0.7;
     width: 100%;
@@ -6020,11 +5929,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 11px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 9px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -6032,7 +5941,7 @@
 
   .insidewrapper {
     position: relative;
-    width: 140px;
+    width: 175px;
     height: fit-content;
     display: flex;
     justify-content: space-between;
@@ -6051,7 +5960,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -6060,7 +5969,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -6069,7 +5978,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -6091,13 +6000,13 @@
     align-items: center;
   }
   #year {
-    width: 42.5px;
+    width: 49.2px;
     padding-left: 0.7em;
     margin-left: 4px;
   }
 
   #month {
-    width: 42.5px;
+    width: 49.2px;
     padding-left: 0.7em;
   }
 
@@ -6122,7 +6031,7 @@
   }
 
   select {
-    font: 400 6px/1.3 "Open Sans";
+    font: 400 8px/1.3 "Open Sans";
     -webkit-appearance: none;
     appearance: none;
     color: dimgray;
@@ -6190,7 +6099,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 7px;
+    font-size: 10px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -6203,50 +6112,13 @@
     align-items: center;
     justify-content: center;
     float: left;
-    top: -8px;
+    top: -9px;
   }
 
   form {
     position: relative;
     width: 100%;
     float: left;
-  }
-
-  input {
-    -webkit-appearance: none;
-  }
-
-  input[type="password"]:focus {
-    background: #ffffff;
-  }
-
-  input[type="password"]:valid {
-    background: white;
-  }
-  input[type="number"]:valid {
-    background: white;
-  }
-
-  input:invalid {
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:default {
-    border: 0.5px solid #e1e7f3;
-  }
-
-  input:invalid:not(:focus) {
-    border: 0.5px solid #e1e7f3;
-    background: #ffffff;
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) {
-    background: rgb(255, 241, 244);
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) + label {
-    opacity: 0;
   }
 
   input:invalid:focus:not(:placeholder-shown) ~ .req {
@@ -6335,7 +6207,7 @@
   }
 
   #footer {
-    position: fixed;
+    position: absolute;
     background: #f2f2ff;
     width: 100%;
     height: 45px;
@@ -6541,7 +6413,7 @@
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
-    font-size: 10.3px;
+    font-size: 11px;
     width: 100%;
     float: left;
   }
@@ -6589,7 +6461,7 @@
   }
 
   #user_details > table {
-    width: 314px;
+    width: 90%;
     padding: 0px;
     margin: 0px;
   }
@@ -6637,7 +6509,7 @@
   .tabbar {
     position: relative;
     width: fit-content;
-    height: 18px;
+    height: 20px;
     background: #f2f2ff;
     border-radius: 25px;
     display: flex;
@@ -6665,11 +6537,11 @@
 
   button {
     background-color: inherit;
-    width: 77px;
-    height: 18px;
+    width: 85px;
+    height: 20px;
     font-weight: medium;
     line-height: 0;
-    font-size: 8px;
+    font-size: 11px;
     -webkit-appearance: none;
     color: #2a1563;
     border-radius: 25px;
@@ -6770,10 +6642,8 @@
   }
 
   .pinbox {
-    width: 22px !important;
-    height: 22px !important;
-    max-height: 22px;
-    max-width: 22px;
+    width: 23px;
+    height: 23px;
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -6804,15 +6674,18 @@
   }
 
   .preauth {
-    width: 10px;
-    height: 10px;
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
   }
 
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
   .labelpreauth {
-    font-size: 8px;
+    font-size: 10px;
     color: #2a1563;
   }
 
@@ -6977,7 +6850,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 10px;
     line-height: 7px;
     right: 0px;
     color: #2a1563;
@@ -7041,7 +6914,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 7px;
     text-align: center;
     color: #2a1563;
@@ -7075,7 +6948,7 @@
     justify-content: center;
     background: transparent;
     height: 30px;
-    margin-top: 8px;
+    margin-top: 15px;
     width: 100%;
     float: left;
   }
@@ -7099,12 +6972,12 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0;
     color: #273a49;
   }
   .resetotpcontainer {
-    width: 290px;
+    width: 310px;
     display: flex;
     align-items: center;
     position: relative;
@@ -7150,7 +7023,7 @@
 
   .rstwrap {
     position: relative;
-    width: 290px;
+    width: 310px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -7160,7 +7033,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -7188,8 +7061,8 @@
   .otpverifyBtn {
     position: relative;
     display: block;
-    width: 140px;
-    height: 26px;
+    width: 145px;
+    height: 30px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
@@ -7210,13 +7083,13 @@
   .pinverifyBtn {
     position: relative;
     display: block;
-    width: 120px;
-    height: 20px;
+    width: 145px;
+    height: 30px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
     border: 0;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: medium;
     border-radius: 2px;
     box-sizing: border-box;
@@ -7254,13 +7127,13 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 15px;
     width: 100%;
     float: left;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 9px;
     color: #273a49;
     opacity: 0.7;
   }
@@ -7269,11 +7142,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 15px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 10px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -7293,7 +7166,7 @@
   }
 
   #rstinside {
-    width: 290px;
+    width: 310px;
     height: 25px;
   }
 
@@ -7301,7 +7174,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -7310,7 +7183,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -7334,12 +7207,12 @@
     align-items: center;
   }
   #year {
-    width: 48px;
+    width: 50.2px;
     margin-left: 4px;
   }
 
   #month {
-    width: 48px;
+    width: 50.2px;
   }
 
   #rstyear {
@@ -7378,7 +7251,7 @@
     background-size: 15px;
     background-position: right 0px center;
     margin: 0px;
-    height: 17px;
+    height: 20px;
     cursor: pointer;
   }
 
@@ -7399,7 +7272,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 8px;
+    font-size: 10px;
     margin: 0px;
     color: #273a49;
   }
@@ -7458,43 +7331,6 @@
     position: relative;
     width: 100%;
     float: left;
-  }
-
-  input {
-    -webkit-appearance: none;
-  }
-
-  input[type="password"]:focus {
-    background: #ffffff;
-  }
-
-  input[type="password"]:valid {
-    background: white;
-  }
-  input[type="number"]:valid {
-    background: white;
-  }
-
-  input:invalid {
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:default {
-    border: 0.5px solid #e1e7f3;
-  }
-
-  input:invalid:not(:focus) {
-    border: 0.5px solid #b9c5dd;
-    background: #ffffff;
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) {
-    background: rgb(255, 241, 244);
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) + label {
-    opacity: 0;
   }
 
   input:invalid:focus:not(:placeholder-shown) ~ .req {
@@ -7583,7 +7419,7 @@
   }
 
   #footer {
-    position: fixed;
+    position: absolute;
     background: #f2f2ff;
     width: 100%;
     height: 58px;
@@ -8012,15 +7848,18 @@
   }
 
   .preauth {
-    width: 10px;
-    height: 10px;
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
   }
 
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+
   .labelpreauth {
-    font-size: 10px;
+    font-size: 10.5px;
     color: #2a1563;
   }
 
@@ -8067,7 +7906,7 @@
   .optclose {
     position: absolute;
     right: 0;
-    margin: 10px 30px 10px 10px;
+    margin: 10px 15px 10px 10px;
   }
 
   .optintext {
@@ -8173,7 +8012,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 10.5px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -8461,7 +8300,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 10.5px;
     color: #273a49;
     opacity: 0.7;
   }
@@ -8666,43 +8505,6 @@
     float: left;
   }
 
-  input {
-    -webkit-appearance: none;
-  }
-
-  input[type="password"]:focus {
-    background: #ffffff;
-  }
-
-  input[type="password"]:valid {
-    background: white;
-  }
-  input[type="number"]:valid {
-    background: white;
-  }
-
-  input:invalid {
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-  input[type="password"]:disabled {
-    border: 0.5px solid #e1e7f3;
-    background: #f1f3f8;
-  }
-
-  input:invalid:not(:focus) {
-    border: 0.5px solid #b9c5dd;
-    background: #ffffff;
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) {
-    background: rgb(255, 241, 244);
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) + label {
-    opacity: 0;
-  }
-
   input:invalid:focus:not(:placeholder-shown) ~ .req {
     max-height: auto;
     height: auto;
@@ -8790,7 +8592,7 @@
   }
 
   #footer {
-    position: fixed;
+    position: absolute;
     background: #f2f2ff;
     width: 100%;
     height: 75px;
@@ -9271,10 +9073,10 @@
   }
 
   .preauth {
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
     -webkit-appearance: checkbox;
-    margin-left: 0px;
+    margin: 0 3px 0 0;
     border: #2a1563;
   }
 
@@ -9954,44 +9756,6 @@
     position: relative;
     width: 100%;
     float: left;
-  }
-
-  input {
-    -webkit-appearance: none;
-  }
-
-  input[type="password"]:focus {
-    background: #ffffff;
-  }
-
-  input[type="password"]:valid {
-    background: white;
-  }
-  input[type="number"]:valid {
-    background: white;
-  }
-
-  input:invalid {
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input[type="password"]:disabled {
-    border: 0.5px solid #e1e7f3;
-    background: #f1f3f8;
-  }
-
-  input:invalid:not(:focus) {
-    border: 0.5px solid #b9c5dd;
-    background: #ffffff;
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) {
-    background: rgb(255, 241, 244);
-    border: 0.5px solid rgba(255, 0, 0, 0.288);
-  }
-
-  input:invalid:not(:focus):not(:placeholder-shown) + label {
-    opacity: 0;
   }
 
   input:invalid:focus:not(:placeholder-shown) ~ .req {
