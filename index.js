@@ -437,8 +437,8 @@ function msgbox(response = "Response Message") {
   box();
   document.getElementById("msginvalid").innerHTML =
     "OTP has been sent to your mobile";
-  document.getElementById("msginvalid").style.color = "#00BC35";
-  document.getElementById("errorBox").style.border = "0.3px solid #00BC35";
+  document.getElementById("msginvalid").style.color = "#007C23";
+  document.getElementById("errorBox").style.border = "0.3px solid #007C23";
   document.getElementById("errorBox").style.background = "#eaffef";
   document.getElementById("errorBox").style.justifyContent = "center";
   document.getElementById("crossbar").style.display = "none";
