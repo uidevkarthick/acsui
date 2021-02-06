@@ -462,14 +462,14 @@ $(document).ready(function () {
       $(".footer").removeClass("fixed");
       $(".footer").addClass("outofview");
       if (window.screen.width <= 499) {
-        document.getElementById("footer").style.position = "relative";
+        document.getElementById("footer").style.opacity = "0";
       } else {
-        document.getElementById("footer").style.position = "absolute";
+        document.getElementById("footer").style.opacity = "1";
       }
     } else {
       $(".footer").addClass("fixed");
       $(".footer").removeClass("outofview");
-      document.getElementById("footer").style.position = "absolute";
+      document.getElementById("footer").style.opacity = "1";
     }
   });
 });
