@@ -247,7 +247,7 @@
   }
 
   .otpins {
-    width: 220px;
+    width: 90%;
     line-height: 120%;
     margin: 0;
   }
@@ -281,7 +281,7 @@
   }
 
   #user_details {
-    width: 220px;
+    width: 90%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -299,7 +299,7 @@
   }
 
   #user_details > table {
-    width: 200px;
+    width: 95%;
     padding: 0px;
     margin: 0px;
   }
@@ -573,6 +573,7 @@
     height: 12px;
     margin: 0 3px 0 0;
     border: #2a1563;
+    cursor: pointer;
   }
 
   .checkbox {
@@ -583,6 +584,7 @@
   .labelpreauth {
     font-size: 8.5px;
     color: #2a1563;
+    cursor: pointer;
   }
 
   .seamlesspopup {
@@ -652,6 +654,23 @@
     position: relative;
     margin-top: 15px;
   }
+  .seamlessdate {
+    display: flex;
+    align-items: center;
+  }
+  .seamlesstrans {
+    display: flex;
+    align-items: center;
+  }
+
+  .seamlesstrans {
+    position: absolute;
+    right: 0px;
+  }
+
+  .seamlessradio {
+    margin: 0 3px 0 0;
+  }
 
   .datebox {
     width: 90px;
@@ -667,18 +686,6 @@
   #todatebox {
     position: absolute;
     right: 0px;
-  }
-
-  .seamlesstrans {
-    position: absolute;
-    right: 0px;
-  }
-
-  .seamlessradio {
-    height: 6.2px;
-    width: 6.2px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .seamlessnooftrans {
@@ -701,12 +708,12 @@
   .seamlessdone {
     position: relative;
     width: 100%;
-    font-size: 10px;
+    font-size: 12px;
     text-align: right;
     margin: 10px;
     float: right;
     text-decoration: none;
-    color: #62a6ff;
+    color: #5f30e2;
   }
 
   .resendOTP {
@@ -1014,7 +1021,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6px;
+    font-size: 8.5px;
     color: #273a49;
   }
 
@@ -1022,11 +1029,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 7px;
+    margin-top: 15px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 8.5px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -1036,11 +1043,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 10px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 7px;
+    font-size: 8.5px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -1750,10 +1757,10 @@
   }
 
   .otpbox {
-    width: 25px !important;
-    height: 25px !important;
-    max-height: 25px;
-    max-width: 25px;
+    width: 32px !important;
+    height: 32px !important;
+    max-height: 32px;
+    max-width: 32px;
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -1800,6 +1807,7 @@
     -webkit-appearance: checkbox;
     margin: 0px 3px 0px 0px;
     border: #2a1563;
+    cursor: pointer;
   }
 
   .checkbox {
@@ -1810,6 +1818,7 @@
   .labelpreauth {
     font-size: 8.5px;
     color: #2a1563;
+    cursor: pointer;
   }
   .seamlesspopup {
     position: absolute;
@@ -1826,7 +1835,7 @@
 
   .seamlesswrap {
     position: relative;
-    font-size: 9.2px;
+    font-size: 10px;
     width: 90%;
     z-index: 3000;
     background-color: #fff;
@@ -1879,6 +1888,24 @@
     margin-top: 15px;
   }
 
+  .seamlessdate {
+    display: flex;
+    align-items: center;
+  }
+  .seamlesstrans {
+    display: flex;
+    align-items: center;
+  }
+
+  .seamlesstrans {
+    position: absolute;
+    right: 0px;
+  }
+
+  .seamlessradio {
+    margin: 0 3px 0 0;
+  }
+
   .datebox {
     width: 100px;
     height: 23px;
@@ -1898,13 +1925,6 @@
   .seamlesstrans {
     position: absolute;
     right: 0px;
-  }
-
-  .seamlessradio {
-    height: 6.2px;
-    width: 6.2px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .seamlessnooftrans {
@@ -1927,19 +1947,19 @@
   .seamlessdone {
     position: relative;
     width: 100%;
-    font-size: 10px;
+    font-size: 13px;
     text-align: right;
     margin: 10px 15px 10px 15px;
     float: right;
     text-decoration: none;
-    color: #62a6ff;
+    color: #5f30e2;
   }
 
   .resendOTP {
     position: relative;
     display: flex;
     align-items: center;
-    width: 170.7px;
+    width: 212.7px;
   }
 
   a[disabled] {
@@ -2078,7 +2098,7 @@
   .resentOTP {
     position: relative;
     width: auto;
-    margin-left: 60px;
+    margin-left: 90px;
   }
 
   .resentwrapper {
@@ -2553,7 +2573,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 326px;
+    width: 90%;
     height: 35px;
   }
 
@@ -2775,7 +2795,7 @@
   }
 
   .otpins {
-    width: 326px;
+    width: 90%;
     line-height: 135%;
     margin: 0;
   }
@@ -2809,7 +2829,7 @@
   }
 
   #user_details {
-    width: 280px;
+    width: 80%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -2978,10 +2998,10 @@
   }
 
   .otpbox {
-    width: 22px !important;
-    height: 22px !important;
-    max-height: 22px;
-    max-width: 22px;
+    width: 32px !important;
+    height: 32px !important;
+    max-height: 32px;
+    max-width: 32px;
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -2990,10 +3010,10 @@
   }
 
   .pinbox {
-    width: 19px !important;
-    height: 19px !important;
-    max-height: 19px;
-    max-width: 19px;
+    width: 25px !important;
+    height: 25px !important;
+    max-height: 25px;
+    max-width: 25px;
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -3029,6 +3049,7 @@
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
+    cursor: pointer;
   }
 
   .checkbox {
@@ -3039,6 +3060,7 @@
   .labelpreauth {
     font-size: 8.5px;
     color: #2a1563;
+    cursor: pointer;
   }
 
   .seamlesspopup {
@@ -3109,6 +3131,24 @@
     margin-top: 15px;
   }
 
+  .seamlessdate {
+    display: flex;
+    align-items: center;
+  }
+  .seamlesstrans {
+    display: flex;
+    align-items: center;
+  }
+
+  .seamlesstrans {
+    position: absolute;
+    right: 0px;
+  }
+
+  .seamlessradio {
+    margin: 0 3px 0 0;
+  }
+
   .datebox {
     width: 100px;
     height: 23px;
@@ -3128,13 +3168,6 @@
   .seamlesstrans {
     position: absolute;
     right: 0px;
-  }
-
-  .seamlessradio {
-    height: 8px;
-    width: 8px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .seamlessnooftrans {
@@ -3162,14 +3195,14 @@
     margin: 10px 15px 10px 15px;
     float: right;
     text-decoration: none;
-    color: #62a6ff;
+    color: #5f30e2;
   }
 
   .resendOTP {
     position: relative;
     display: flex;
     align-items: center;
-    width: 152.7px;
+    width: 212.7px;
   }
 
   a[disabled] {
@@ -3221,7 +3254,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 6.5px;
+    font-size: 8.5px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
@@ -3301,7 +3334,7 @@
   .resentOTP {
     position: relative;
     width: auto;
-    margin-left: 60px;
+    margin-left: 100px;
   }
 
   .resentwrapper {
@@ -3322,7 +3355,7 @@
   }
 
   .resetotpcontainer {
-    width: 225px;
+    width: 260px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3330,10 +3363,10 @@
   }
 
   .rstOtpbox {
-    width: 19px !important;
-    height: 19px !important;
-    max-height: 19px;
-    max-width: 19px;
+    width: 23px !important;
+    height: 23px !important;
+    max-height: 23px;
+    max-width: 23px;
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -3373,7 +3406,7 @@
 
   .rstwrap {
     position: relative;
-    width: 225px;
+    width: 260px;
     height: 20px;
     display: flex;
     align-items: center;
@@ -3390,15 +3423,15 @@
 
   .rstExpbox {
     position: absolute;
-    width: 135px;
+    width: 158.7px;
     max-width: fit-content;
     right: 0px;
   }
 
   .resetexpbox {
-    width: 135px !important;
-    height: 19px !important;
-    max-width: 135px;
+    width: 158.7px !important;
+    height: 20px !important;
+    max-width: 158.7px;
     border: 0.5px solid #e1e7f3;
     padding: 10px 2px 9px 8.3px;
     background: #f1f3f8;
@@ -3481,7 +3514,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 8.5px;
     color: #273a49;
     opacity: 0.7;
     width: 100%;
@@ -3496,7 +3529,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 8.5px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -3504,7 +3537,7 @@
 
   .insidewrapper {
     position: relative;
-    width: 165px;
+    width: 195px;
     height: fit-content;
     display: flex;
     justify-content: space-between;
@@ -3515,7 +3548,7 @@
   }
 
   #rstinside {
-    width: 225px;
+    width: 260px;
     height: 22px;
   }
 
@@ -3563,21 +3596,21 @@
     align-items: center;
   }
   #year {
-    width: 42.5px;
+    width: 55px;
     margin-left: 3px;
   }
 
   #month {
-    width: 42.5px;
+    width: 55px;
   }
 
   #rstyear {
-    width: 65px;
+    width: 78px;
     margin-left: 3.3px;
   }
 
   #rstmonth {
-    width: 65px;
+    width: 78px;
   }
 
   :root {
@@ -3605,7 +3638,7 @@
     background-size: 13px;
     background-position: right 0px center;
     margin: 0px;
-    height: 17px;
+    height: 20px;
     cursor: pointer;
   }
 
@@ -3764,7 +3797,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 398px;
+    width: 85%;
     height: 43px;
   }
 
@@ -4006,7 +4039,7 @@
   }
 
   .otpins {
-    width: 398px;
+    width: 85%;
     line-height: 150%;
   }
 
@@ -4039,7 +4072,7 @@
   }
 
   #user_details {
-    width: 330px;
+    width: 75%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -4057,7 +4090,7 @@
   }
 
   #user_details > table {
-    width: 90%;
+    width: 95%;
     padding: 0px;
     margin: 0px;
   }
@@ -4197,7 +4230,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 7px;
+    margin-top: 10px;
     float: left;
     height: 22px;
   }
@@ -4213,10 +4246,10 @@
   }
 
   .otpbox {
-    width: 22px !important;
-    height: 22px !important;
-    max-height: 22px;
-    max-width: 22px;
+    width: 32px !important;
+    height: 32px !important;
+    max-height: 32px;
+    max-width: 32px;
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -4225,10 +4258,10 @@
   }
 
   .pinbox {
-    width: 22px !important;
-    height: 22px !important;
-    max-height: 22px;
-    max-width: 22px;
+    width: 28px !important;
+    height: 28px !important;
+    max-height: 28px;
+    max-width: 28px;
     border: 0.5px solid #e1e7f3;
     text-align: center;
     background: #f1f3f8;
@@ -4238,8 +4271,8 @@
 
   .passbox {
     width: 168px !important;
-    height: 24px !important;
-    max-height: 24px;
+    height: 28px !important;
+    max-height: 28px;
     max-width: 168px;
     border: 0.5px solid #e1e7f3;
     padding: 9px 7.5px 9px 7.5px;
@@ -4260,11 +4293,13 @@
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
+    cursor: pointer;
   }
 
   .labelpreauth {
     font-size: 8.5px;
     color: #2a1563;
+    cursor: pointer;
   }
 
   .checkbox {
@@ -4340,6 +4375,24 @@
     margin-top: 25px;
   }
 
+  .seamlessdate {
+    display: flex;
+    align-items: center;
+  }
+  .seamlesstrans {
+    display: flex;
+    align-items: center;
+  }
+
+  .seamlesstrans {
+    position: absolute;
+    right: 0px;
+  }
+
+  .seamlessradio {
+    margin: 0 3px 0 0;
+  }
+
   .datebox {
     width: 120px;
     height: 30px;
@@ -4359,13 +4412,6 @@
   .seamlesstrans {
     position: absolute;
     right: 0px;
-  }
-
-  .seamlessradio {
-    height: 10px;
-    width: 12px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .seamlessnooftrans {
@@ -4393,14 +4439,14 @@
     margin: 15px;
     float: right;
     text-decoration: none;
-    color: #62a6ff;
+    color: #5f30e2;
   }
 
   .resendOTP {
     position: relative;
     display: flex;
     align-items: center;
-    width: 152.7px;
+    width: 212.7px;
   }
 
   a[disabled] {
@@ -4491,7 +4537,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.5px;
+    font-size: 9px;
     line-height: 7px;
     text-align: center;
     color: #2a1563;
@@ -4533,7 +4579,7 @@
   .resentOTP {
     position: relative;
     width: auto;
-    padding-left: 83px;
+    padding-left: 95px;
     box-sizing: border-box;
   }
 
@@ -4717,7 +4763,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 8.5px;
     color: #273a49;
     opacity: 0.7;
     width: 100%;
@@ -4732,7 +4778,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 8.5px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -4740,7 +4786,7 @@
 
   .insidewrapper {
     position: relative;
-    width: 170px;
+    width: 200px;
     height: fit-content;
     display: flex;
     justify-content: space-between;
@@ -4790,13 +4836,13 @@
     align-items: center;
   }
   #year {
-    width: 49.2px;
+    width: 60.8px;
     padding-left: 0.7em;
     margin-left: 3px;
   }
 
   #month {
-    width: 49.2px;
+    width: 60.8px;
     padding-left: 0.7em;
   }
 
@@ -5471,6 +5517,7 @@
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
+    cursor: pointer;
   }
 
   .checkbox {
@@ -5481,6 +5528,7 @@
   .labelpreauth {
     font-size: 9px;
     color: #2a1563;
+    cursor: pointer;
   }
 
   .seamlesspopup {
@@ -5551,6 +5599,24 @@
     margin-top: 25px;
   }
 
+  .seamlessdate {
+    display: flex;
+    align-items: center;
+  }
+  .seamlesstrans {
+    display: flex;
+    align-items: center;
+  }
+
+  .seamlesstrans {
+    position: absolute;
+    right: 0px;
+  }
+
+  .seamlessradio {
+    margin: 0 3px 0 0;
+  }
+
   .datebox {
     width: 120px;
     height: 30px;
@@ -5570,13 +5636,6 @@
   .seamlesstrans {
     position: absolute;
     right: 0px;
-  }
-
-  .seamlessradio {
-    height: 10px;
-    width: 12px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .seamlessnooftrans {
@@ -5604,7 +5663,7 @@
     margin: 15px;
     float: right;
     text-decoration: none;
-    color: #62a6ff;
+    color: #5f30e2;
   }
 
   .resendOTP {
@@ -5663,7 +5722,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.5px;
+    font-size: 9px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
@@ -6684,6 +6743,7 @@
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
+    cursor: pointer;
   }
 
   .checkbox {
@@ -6694,6 +6754,7 @@
   .labelpreauth {
     font-size: 10px;
     color: #2a1563;
+    cursor: pointer;
   }
 
   .seamlesspopup {
@@ -6764,6 +6825,24 @@
     margin-top: 25px;
   }
 
+  .seamlessdate {
+    display: flex;
+    align-items: center;
+  }
+  .seamlesstrans {
+    display: flex;
+    align-items: center;
+  }
+
+  .seamlesstrans {
+    position: absolute;
+    right: 0px;
+  }
+
+  .seamlessradio {
+    margin: 0 5px 0 0;
+  }
+
   .datebox {
     width: 120px;
     height: 30px;
@@ -6783,13 +6862,6 @@
   .seamlesstrans {
     position: absolute;
     right: 0px;
-  }
-
-  .seamlessradio {
-    height: 11px;
-    width: 11px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .seamlessnooftrans {
@@ -6817,7 +6889,7 @@
     margin: 15px 30px 15px 10px;
     float: right;
     text-decoration: none;
-    color: #62a6ff;
+    color: #5f30e2;
   }
 
   .resendOTP {
@@ -6882,7 +6954,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 10px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
@@ -7140,7 +7212,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 10px;
     color: #273a49;
     opacity: 0.7;
   }
@@ -7153,7 +7225,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 10.5px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -7858,6 +7930,7 @@
     -webkit-appearance: checkbox;
     margin-left: 0px;
     border: #2a1563;
+    cursor: pointer;
   }
 
   .checkbox {
@@ -7868,6 +7941,7 @@
   .labelpreauth {
     font-size: 10.5px;
     color: #2a1563;
+    cursor: pointer;
   }
 
   .seamlesspopup {
@@ -7938,6 +8012,24 @@
     margin-top: 25px;
   }
 
+  .seamlessdate {
+    display: flex;
+    align-items: center;
+  }
+  .seamlesstrans {
+    display: flex;
+    align-items: center;
+  }
+
+  .seamlesstrans {
+    position: absolute;
+    right: 0px;
+  }
+
+  .seamlessradio {
+    margin: 0 5px 0 0;
+  }
+
   .datebox {
     width: 120px;
     height: 30px;
@@ -7957,13 +8049,6 @@
   .seamlesstrans {
     position: absolute;
     right: 0px;
-  }
-
-  .seamlessradio {
-    height: 11px;
-    width: 11px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .seamlessnooftrans {
@@ -7991,7 +8076,7 @@
     margin: 15px 30px 15px 10px;
     float: right;
     text-decoration: none;
-    color: #62a6ff;
+    color: #5f30e2;
   }
 
   .resendOTP {
@@ -8045,7 +8130,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 10.5px;
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
@@ -8107,7 +8192,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 10.5px;
     line-height: 7px;
     text-align: center;
     color: #2a1563;
@@ -8322,7 +8407,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 10.5px;
     color: #273a49;
   }
 
@@ -9085,11 +9170,13 @@
     -webkit-appearance: checkbox;
     margin: 0 3px 0 0;
     border: #2a1563;
+    cursor: pointer;
   }
 
   .labelpreauth {
     font-size: 14px;
     color: #2a1563;
+    cursor: pointer;
   }
 
   .seamlesspopup {
@@ -9162,6 +9249,24 @@
     margin-top: 25px;
   }
 
+  .seamlessdate {
+    display: flex;
+    align-items: center;
+  }
+  .seamlesstrans {
+    display: flex;
+    align-items: center;
+  }
+
+  .seamlesstrans {
+    position: absolute;
+    right: 0px;
+  }
+
+  .seamlessradio {
+    margin: 0 5px 0 0;
+  }
+
   .datebox {
     width: 135px;
     height: 40px;
@@ -9181,13 +9286,6 @@
   .seamlesstrans {
     position: absolute;
     right: 0px;
-  }
-
-  .seamlessradio {
-    height: 11px;
-    width: 11px;
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .seamlessnooftrans {
@@ -9215,7 +9313,7 @@
     margin: 25px 30px 25px 10px;
     float: right;
     text-decoration: none;
-    color: #62a6ff;
+    color: #5f30e2;
   }
 
   .resendOTP {
