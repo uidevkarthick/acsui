@@ -461,9 +461,15 @@ $(document).ready(function () {
     if ($(window).width() + $(window).height() != _originalSize) {
       $(".footer").removeClass("fixed");
       $(".footer").addClass("outofview");
+      if (window.screen.width <= 499) {
+        document.getElementById("footer").style.position = "relative";
+      } else {
+        document.getElementById("footer").style.position = "absolute";
+      }
     } else {
       $(".footer").addClass("fixed");
       $(".footer").removeClass("outofview");
+      document.getElementById("footer").style.position = "absolute";
     }
   });
 });
