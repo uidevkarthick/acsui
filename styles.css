@@ -1548,13 +1548,13 @@
     font-size: 12px;
     line-height: 1;
     text-align: left;
-    width: 90px;
+    width: 100px;
     color: #17222b;
     vertical-align: top;
   }
 
   .user_fieldValue {
-    padding-left: 10px;
+    padding-left: 4px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
