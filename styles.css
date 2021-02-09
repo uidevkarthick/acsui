@@ -179,7 +179,6 @@
     position: fixed;
     top: 33px;
     height: fit-content;
-    width: fit-content;
     padding: 5px;
     background-color: #ffeff2;
     border: 0.3px solid rgb(255, 0, 49, 0.6);
@@ -1316,7 +1315,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 95%;
     height: 20px;
   }
 
@@ -1412,7 +1411,6 @@
     position: fixed;
     top: 40px;
     height: fit-content;
-    width: fit-content;
     padding: 5px;
     background-color: #ffeff2;
     border: 0.3px solid rgb(255, 0, 49, 0.6);
@@ -1456,7 +1454,7 @@
 
   .invalidotp {
     color: #ff0031;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .contentwrapper {
@@ -1473,14 +1471,14 @@
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
-    font-size: 11px;
+    font-size: 13.5px;
     width: 100%;
     height: auto;
     float: left;
   }
 
   .otpins {
-    width: 90%;
+    width: 95%;
     line-height: 130%;
     margin: 0;
   }
@@ -1514,7 +1512,7 @@
   }
 
   #user_details {
-    width: 90%;
+    width: 95%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -1532,7 +1530,7 @@
   }
 
   #user_details > table {
-    width: 95%;
+    width: 100%;
     padding: 0px;
     margin: 0px;
   }
@@ -1547,7 +1545,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1;
     text-align: left;
     width: 90px;
@@ -1560,7 +1558,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 11.5px;
     line-height: 1;
     text-align: left;
 
@@ -1602,7 +1600,7 @@
     height: 16px;
     font-weight: medium;
     line-height: 0;
-    font-size: 10px;
+    font-size: 11px;
 
     -webkit-appearance: none;
 
@@ -1794,7 +1792,7 @@
   }
 
   .resendwrapper {
-    margin-top: 8px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1816,7 +1814,7 @@
   }
 
   .labelpreauth {
-    font-size: 8.5px;
+    font-size: 10px;
     color: #2a1563;
     cursor: pointer;
   }
@@ -1985,7 +1983,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.5px;
+    font-size: 10px;
     line-height: 7px;
     margin: 0.5px;
     right: 0px;
@@ -2217,13 +2215,13 @@
   .otpverifyBtn {
     position: relative;
     display: block;
-    width: 120px;
-    height: 25px;
+    width: 130px;
+    height: 30px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
     border: 0;
-    font-size: 9px;
+    font-size: 10.5px;
     font-weight: medium;
     border-radius: 2px;
     box-sizing: border-box;
@@ -2281,11 +2279,11 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.5px;
+    font-size: 10px;
     color: #273a49;
     width: 100%;
     float: left;
@@ -2470,7 +2468,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 10px;
+    font-size: 12px;
     color: #273a49;
   }
 
@@ -2482,7 +2480,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -8px;
+    top: -9px;
   }
 
   form {
@@ -2671,7 +2669,6 @@
     position: fixed;
     top: 40px;
     height: fit-content;
-    width: fit-content;
     padding: 5px;
     background-color: #ffeff2;
     border: 0.3px solid rgb(255, 0, 49, 0.6);
@@ -2788,7 +2785,7 @@
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
-    font-size: 11px;
+    font-size: 14px;
     width: 100%;
     float: left;
     height: auto;
@@ -2813,7 +2810,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 11px;
     width: 100%;
     float: left;
   }
@@ -2829,7 +2826,7 @@
   }
 
   #user_details {
-    width: 80%;
+    width: 90%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -2862,10 +2859,10 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1;
     text-align: left;
-    width: 90px;
+    width: 100px;
     color: #17222b;
     vertical-align: top;
     margin: 2px;
@@ -2876,7 +2873,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 11.5px;
     line-height: 1;
     text-align: left;
     margin: 5px;
@@ -2886,7 +2883,7 @@
   .tabbar {
     position: relative;
     width: fit-content;
-    height: 16px;
+    height: 19px;
     background: #f2f2ff;
     border-radius: 25px;
     display: flex;
@@ -2919,7 +2916,7 @@
   button {
     background-color: inherit;
     width: 90px;
-    height: 16px;
+    height: 19px;
     font-weight: medium;
     line-height: 0;
     font-size: 11px;
@@ -3036,7 +3033,7 @@
   }
 
   .resendwrapper {
-    margin-top: 7.3px;
+    margin-top: 9.5px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -3058,7 +3055,7 @@
   }
 
   .labelpreauth {
-    font-size: 8.5px;
+    font-size: 10px;
     color: #2a1563;
     cursor: pointer;
   }
@@ -3228,7 +3225,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.5px;
+    font-size: 10px;
     line-height: 7px;
     margin: 0.5px;
     right: 0px;
@@ -3326,7 +3323,7 @@
     align-items: center;
     justify-content: center;
     background: transparent;
-    margin-top: 15px;
+    margin-top: 11px;
     width: 100%;
     float: left;
   }
@@ -3514,7 +3511,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 8.5px;
+    font-size: 10px;
     color: #273a49;
     opacity: 0.7;
     width: 100%;
@@ -3901,7 +3898,6 @@
     position: fixed;
     top: 50px;
     height: fit-content;
-    width: fit-content;
     padding: 5px;
     background-color: #ffeff2;
     border: 0.3px solid rgb(255, 0, 49, 0.6);
@@ -5138,7 +5134,6 @@
     position: fixed;
     top: 43px;
     height: fit-content;
-    width: fit-content;
     padding: 8px;
     background-color: #ffeff2;
     border: 0.3px solid rgb(255, 0, 49, 0.6);
@@ -6268,7 +6263,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 439px;
+    width: 60%;
     height: 5%;
   }
 
@@ -6363,7 +6358,6 @@
     position: fixed;
     top: 55px;
     height: fit-content;
-    width: fit-content;
     padding: 8px;
     background-color: #ffeff2;
     border: 0.3px solid rgb(255, 0, 49, 0.6);
@@ -6479,15 +6473,16 @@
     color: #273a49;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
-    font-size: 11px;
+    font-size: 14px;
     width: 100%;
     float: left;
   }
 
   .otpins {
-    width: 439px;
+    width: 60%;
     line-height: 180%;
     margin: 5px 0px 5px 0px;
+    text-align: center;
   }
 
   .wrapperUser {
@@ -6510,7 +6505,7 @@
   }
 
   #user_details {
-    width: 388px;
+    width: 50%;
     height: fit-content;
     max-height: fit-content;
     background: #f4f7ff;
@@ -6543,7 +6538,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10.3px;
+    font-size: 13px;
     line-height: 1;
     text-align: left;
     width: 105px;
@@ -6556,7 +6551,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10.3px;
+    font-size: 12.5px;
     line-height: 1;
     text-align: left;
 
@@ -6752,7 +6747,7 @@
   }
 
   .labelpreauth {
-    font-size: 10px;
+    font-size: 12px;
     color: #2a1563;
     cursor: pointer;
   }
@@ -6929,7 +6924,7 @@
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 7px;
     right: 0px;
     color: #2a1563;
@@ -7140,13 +7135,13 @@
   .otpverifyBtn {
     position: relative;
     display: block;
-    width: 145px;
-    height: 30px;
+    width: 155px;
+    height: 35px;
     margin: 0px 0;
     background: #5f30e2;
     color: white;
     border: 0;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     border-radius: 2px;
     box-sizing: border-box;
@@ -7206,13 +7201,13 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 20px;
     width: 100%;
     float: left;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 12px;
     color: #273a49;
     opacity: 0.7;
   }
@@ -7392,7 +7387,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 10px;
+    font-size: 13px;
     color: #273a49;
   }
 
@@ -7589,7 +7584,6 @@
     position: fixed;
     bottom: 33px;
     height: fit-content;
-    width: fit-content;
     padding: 10px;
     background-color: #ffeff2;
     border: 0.3px solid rgb(255, 0, 49, 0.6);
@@ -7716,6 +7710,7 @@
     width: 742px;
     line-height: 150%;
     margin: 5px 0px 5px 0px;
+    text-align: center;
   }
 
   .wrapperUser {
@@ -8781,7 +8776,6 @@
     position: fixed;
     bottom: 33px;
     height: fit-content;
-    width: fit-content;
     padding: 10px;
     background-color: #ffeff2;
     border: 0.3px solid rgb(255, 0, 49, 0.6);
@@ -8913,6 +8907,7 @@
     width: 799px;
     line-height: 150%;
     margin: 5px 0px 5px 0px;
+    text-align: center;
   }
 
   .wrapperUser {
