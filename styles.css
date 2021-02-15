@@ -6,6 +6,10 @@
     float: left;
   }
 
+  a {
+    color: #212529 !important;
+  }
+
   input[type="password"],
   input[type="tel"] {
     -webkit-appearance: none;
@@ -28,11 +32,11 @@
 
   input[type="password"],
   input[type="tel"]:default {
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
   }
 
   input[password]:invalid:not(:focus) {
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     background: #ffffff;
   }
 
@@ -76,7 +80,7 @@
   #header {
     width: 100%;
     height: 30px;
-    background: #2a1563;
+    background: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +101,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f2f2ff;
+    background: #fafafa;
   }
 
   .fixed {
@@ -239,7 +243,7 @@
     display: flex;
 
     justify-content: center;
-    color: #273a49;
+    color: #212529;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
 
     font-size: 11px;
@@ -286,8 +290,8 @@
     width: 90%;
     height: fit-content;
     max-height: fit-content;
-    background: #f4f7ff;
-    border: 0.5px solid #d0e1f9;
+    background: #fafafa;
+    border: 0.5px solid #21252930;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -341,7 +345,7 @@
     position: relative;
     width: fit-content;
     height: 16px;
-    background: #f2f2ff;
+    background: #fafafa;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -376,7 +380,7 @@
 
     -webkit-appearance: none;
 
-    color: #2a1563;
+    color: #212529;
     border-radius: 25px;
     outline: none;
     border: none;
@@ -386,13 +390,13 @@
   }
 
   button:hover {
-    background-color: #634d92;
+    background-color: #969696;
     cursor: pointer;
     color: white;
   }
 
   button.active {
-    background-color: #2a1563;
+    background-color: #212529;
     color: white;
   }
 
@@ -418,7 +422,7 @@
     width: 89px;
     height: 22px;
     margin: 20px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 8px;
@@ -530,7 +534,7 @@
     height: 22px !important;
     max-height: 22px;
     max-width: 22px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -542,7 +546,7 @@
     height: 22px !important;
     max-height: 22px;
     max-width: 22px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -554,7 +558,7 @@
     height: 22px !important;
     max-height: 22px;
     max-width: 167px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 9px 8px 9px 8px;
     background: #f1f3f8;
     outline: none;
@@ -574,7 +578,7 @@
     width: 12px;
     height: 12px;
     margin: 0 3px 0 0;
-    border: #2a1563;
+    border: #212529;
     cursor: pointer;
   }
 
@@ -585,7 +589,7 @@
 
   .labelpreauth {
     font-size: 8.5px;
-    color: #2a1563;
+    color: #212529;
     cursor: pointer;
   }
 
@@ -615,7 +619,7 @@
     position: relative;
     width: 100%;
     float: left;
-    background-color: #f7f7ff;
+    background-color: #fafafa;
     border-radius: 11px 11px 0 0;
     display: flex;
     align-items: center;
@@ -677,7 +681,7 @@
   .datebox {
     width: 90px;
     height: 23px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     background: #f1f3f8;
     outline: none;
     border-radius: 2px;
@@ -715,7 +719,7 @@
     margin: 10px;
     float: right;
     text-decoration: none;
-    color: #5f30e2;
+    color: #212529;
   }
 
   .resendOTP {
@@ -742,7 +746,7 @@
     line-height: 7px;
     margin: 0.5px;
     right: 0;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp1 {
@@ -754,7 +758,7 @@
     line-height: 7px;
     position: absolute;
     float: right;
-    color: #2a1563;
+    color: #212529;
     margin: 0.5px;
     right: 0px;
     display: none;
@@ -768,7 +772,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp2 {
@@ -779,7 +783,7 @@
     line-height: 7px;
     opacity: 0.5;
     float: right;
-    color: #2a1563;
+    color: #212529;
     position: absolute;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -806,7 +810,7 @@
     font-size: 8.5px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
   }
@@ -818,7 +822,7 @@
     font-size: 6px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -865,7 +869,7 @@
     font-weight: normal;
     font-size: 7px;
     margin: 0;
-    color: #273a49;
+    color: #212529;
   }
   .resetotpcontainer {
     width: 202px;
@@ -880,7 +884,7 @@
     height: 19px !important;
     max-height: 19px;
     max-width: 19px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -908,7 +912,7 @@
     width: 100%;
     float: left;
     margin-top: 8px;
-    color: #273a49;
+    color: #212529;
   }
   #rstexpboxcontainer {
     height: 15px;
@@ -936,7 +940,7 @@
     font-weight: normal;
     font-size: 7px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstExpbox {
@@ -951,7 +955,7 @@
     width: 135px !important;
     height: 19px !important;
     max-width: 135px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 2px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -970,7 +974,7 @@
     width: 120px;
     height: 22px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 8px;
@@ -991,7 +995,7 @@
     width: 120px;
     height: 22px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 8px;
@@ -1024,7 +1028,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 8.5px;
-    color: #273a49;
+    color: #212529;
   }
 
   .otpcancel {
@@ -1036,7 +1040,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 8.5px;
-    color: #273a49;
+    color: #212529;
     width: 100%;
     float: left;
   }
@@ -1050,7 +1054,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 8.5px;
-    color: #273a49;
+    color: #212529;
     width: 100%;
     float: left;
   }
@@ -1078,7 +1082,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
-    color: #273a49;
+    color: #212529;
     margin: 0px;
   }
 
@@ -1088,7 +1092,7 @@
     font-weight: normal;
     font-size: 8px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstexplable {
@@ -1097,7 +1101,7 @@
     font-weight: normal;
     font-size: 7px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
   .rstexpin {
     height: 22px;
@@ -1135,9 +1139,9 @@
     --radius: 2px;
     --baseFg: #d3ddff;
     --baseBg: #ffffff;
-    --accentFg: #5f30e2;
+    --accentFg: #212529;
     --accentBg: #dfe6fc;
-    --bordercl: #e1e7f3;
+    --bordercl: #21252930;
   }
 
   select {
@@ -1187,7 +1191,7 @@
     height: 22px !important;
     max-height: 22px;
     max-width: 100px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 7px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -1221,7 +1225,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 9px;
-    color: #273a49;
+    color: #212529;
   }
 
   .expirewrapper {
@@ -1308,7 +1312,7 @@
   #header {
     width: 100%;
     height: 36px;
-    background: #2a1563;
+    background: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1329,7 +1333,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f2f2ff;
+    background: #fafafa;
   }
 
   .fixed {
@@ -1471,7 +1475,7 @@
     display: flex;
 
     justify-content: center;
-    color: #273a49;
+    color: #212529;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
     font-size: 13.5px;
@@ -1518,8 +1522,8 @@
     width: 85%;
     height: fit-content;
     max-height: fit-content;
-    background: #f4f7ff;
-    border: 0.5px solid #d0e1f9;
+    background: #fafafa;
+    border: 0.5px solid #21252930;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -1572,7 +1576,7 @@
     position: relative;
     width: fit-content;
     height: 16px;
-    background: #f2f2ff;
+    background: #fafafa;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -1607,7 +1611,7 @@
 
     -webkit-appearance: none;
 
-    color: #2a1563;
+    color: #212529;
     border-radius: 25px;
     outline: none;
 
@@ -1618,13 +1622,13 @@
   }
 
   button:hover {
-    background-color: #634d92;
+    background-color: #969696;
     cursor: pointer;
     color: white;
   }
 
   button.active {
-    background-color: #2a1563;
+    background-color: #212529;
     color: white;
   }
 
@@ -1650,7 +1654,7 @@
     width: 89px;
     height: 22px;
     margin: 20px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 8px;
@@ -1762,7 +1766,7 @@
     height: 32px !important;
     max-height: 32px;
     max-width: 32px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -1774,7 +1778,7 @@
     height: 25px !important;
     max-height: 25px;
     max-width: 25px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -1786,7 +1790,7 @@
     height: 25px !important;
     max-height: 25px;
     max-width: 167px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 9px 8px 9px 8px;
     background: #f1f3f8;
     outline: none;
@@ -1807,7 +1811,7 @@
     height: 12px;
     -webkit-appearance: checkbox;
     margin: 0px 3px 0px 0px;
-    border: #2a1563;
+    border: #212529;
     cursor: pointer;
   }
 
@@ -1818,7 +1822,7 @@
 
   .labelpreauth {
     font-size: 10px;
-    color: #2a1563;
+    color: #212529;
     cursor: pointer;
   }
   .seamlesspopup {
@@ -1847,7 +1851,7 @@
     position: relative;
     width: 100%;
     float: left;
-    background-color: #f7f7ff;
+    background-color: #fafafa;
     border-radius: 11px 11px 0 0;
     display: flex;
     align-items: center;
@@ -1910,7 +1914,7 @@
   .datebox {
     width: 100px;
     height: 23px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     background: #f1f3f8;
     outline: none;
     border-radius: 2px;
@@ -1953,7 +1957,7 @@
     margin: 10px 15px 10px 15px;
     float: right;
     text-decoration: none;
-    color: #5f30e2;
+    color: #212529;
   }
 
   .resendOTP {
@@ -1977,7 +1981,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 6px;
-    color: #2a1563;
+    color: #212529;
     margin: 0.5px;
   }
 
@@ -1990,7 +1994,7 @@
     line-height: 7px;
     margin: 0.5px;
     right: 0px;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp1 {
@@ -2002,7 +2006,7 @@
     line-height: 7px;
     position: absolute;
     float: right;
-    color: #2a1563;
+    color: #212529;
     margin: 0.5px;
     right: 0px;
     display: none;
@@ -2016,7 +2020,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp2 {
@@ -2027,7 +2031,7 @@
     line-height: 7px;
     opacity: 0.5;
     float: right;
-    color: #2a1563;
+    color: #212529;
     position: absolute;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -2054,7 +2058,7 @@
     font-size: 8.5px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
   }
@@ -2066,7 +2070,7 @@
     font-size: 6px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -2116,7 +2120,7 @@
     font-weight: normal;
     font-size: 9px;
     margin: 0;
-    color: #273a49;
+    color: #212529;
   }
   .resetotpcontainer {
     width: 75%;
@@ -2131,7 +2135,7 @@
     height: 19px !important;
     max-height: 19px;
     max-width: 19px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -2159,7 +2163,7 @@
     width: 100%;
     float: left;
     margin-top: 10px;
-    color: #273a49;
+    color: #212529;
   }
   #rstexpboxcontainer {
     height: 15px;
@@ -2187,7 +2191,7 @@
     font-weight: normal;
     font-size: 9px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstExpbox {
@@ -2202,7 +2206,7 @@
     width: 135px !important;
     height: 19px !important;
     max-width: 135px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 2px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -2221,7 +2225,7 @@
     width: 130px;
     height: 30px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 10.5px;
@@ -2242,7 +2246,7 @@
     width: 120px;
     height: 22px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 8px;
@@ -2275,7 +2279,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 8.5px;
-    color: #273a49;
+    color: #212529;
   }
 
   .otpcancel {
@@ -2287,7 +2291,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 10px;
-    color: #273a49;
+    color: #212529;
     width: 100%;
     float: left;
   }
@@ -2301,7 +2305,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 8.5px;
-    color: #273a49;
+    color: #212529;
     width: 100%;
     float: left;
   }
@@ -2329,7 +2333,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 9px;
-    color: #273a49;
+    color: #212529;
     margin: 0px;
   }
 
@@ -2339,7 +2343,7 @@
     font-weight: normal;
     font-size: 9px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstexplable {
@@ -2348,7 +2352,7 @@
     font-weight: normal;
     font-size: 9px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
   .rstexpin {
     height: 22px;
@@ -2386,9 +2390,9 @@
     --radius: 2px;
     --baseFg: #d3ddff;
     --baseBg: #ffffff;
-    --accentFg: #5f30e2;
+    --accentFg: #212529;
     --accentBg: #dfe6fc;
-    --bordercl: #e1e7f3;
+    --bordercl: #21252930;
   }
 
   select {
@@ -2438,7 +2442,7 @@
     height: 22px !important;
     max-height: 22px;
     max-width: 100px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 7px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -2472,7 +2476,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 12px;
-    color: #273a49;
+    color: #212529;
   }
 
   .expirewrapper {
@@ -2564,7 +2568,7 @@
   #header {
     width: 100%;
     height: 35px;
-    background: #2a1563;
+    background: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2585,7 +2589,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f2f2ff;
+    background: #fafafa;
   }
   .fixed {
     bottom: 0;
@@ -2785,7 +2789,7 @@
     display: flex;
 
     justify-content: center;
-    color: #273a49;
+    color: #212529;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
     font-size: 14px;
@@ -2832,8 +2836,8 @@
     width: 90%;
     height: fit-content;
     max-height: fit-content;
-    background: #f4f7ff;
-    border: 0.5px solid #d0e1f9;
+    background: #fafafa;
+    border: 0.5px solid #21252930;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -2887,7 +2891,7 @@
     position: relative;
     width: fit-content;
     height: 19px;
-    background: #f2f2ff;
+    background: #fafafa;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -2924,7 +2928,7 @@
     line-height: 0;
     font-size: 11px;
     -webkit-appearance: none;
-    color: #2a1563;
+    color: #212529;
     border-radius: 25px;
     outline: none;
     border: none;
@@ -2934,13 +2938,13 @@
   }
 
   button:hover {
-    background-color: #634d92;
+    background-color: #969696;
     cursor: pointer;
     color: white;
   }
 
   button.active {
-    background-color: #2a1563;
+    background-color: #212529;
     color: white;
   }
 
@@ -2966,7 +2970,7 @@
     width: 90px;
     height: 22px;
     margin: 20px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 10px;
@@ -3002,7 +3006,7 @@
     height: 32px !important;
     max-height: 32px;
     max-width: 32px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -3014,7 +3018,7 @@
     height: 25px !important;
     max-height: 25px;
     max-width: 25px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -3027,7 +3031,7 @@
     height: 24px !important;
     max-height: 24px;
     max-width: 168px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 9px 8px 9px 8px;
     background: #f1f3f8;
     outline: none;
@@ -3048,7 +3052,7 @@
     height: 13px;
     -webkit-appearance: checkbox;
     margin-left: 0px;
-    border: #2a1563;
+    border: #212529;
     cursor: pointer;
   }
 
@@ -3059,7 +3063,7 @@
 
   .labelpreauth {
     font-size: 10px;
-    color: #2a1563;
+    color: #212529;
     cursor: pointer;
   }
 
@@ -3089,7 +3093,7 @@
     position: relative;
     width: 100%;
     float: left;
-    background-color: #f7f7ff;
+    background-color: #fafafa;
     border-radius: 11px 11px 0 0;
     display: flex;
     align-items: center;
@@ -3152,7 +3156,7 @@
   .datebox {
     width: 100px;
     height: 23px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     background: #f1f3f8;
     outline: none;
     border-radius: 2px;
@@ -3195,7 +3199,7 @@
     margin: 10px 15px 10px 15px;
     float: right;
     text-decoration: none;
-    color: #5f30e2;
+    color: #212529;
   }
 
   .resendOTP {
@@ -3219,7 +3223,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 6px;
-    color: #2a1563;
+    color: #212529;
     margin: 0.5px;
   }
 
@@ -3232,7 +3236,7 @@
     line-height: 7px;
     margin: 0.5px;
     right: 0px;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp1 {
@@ -3244,7 +3248,7 @@
     line-height: 7px;
     position: absolute;
     float: right;
-    color: #2a1563;
+    color: #212529;
     margin: 0.5px;
     right: 0px;
     display: none;
@@ -3258,7 +3262,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp2 {
@@ -3269,7 +3273,7 @@
     line-height: 7px;
     opacity: 0.5;
     float: right;
-    color: #2a1563;
+    color: #212529;
     position: absolute;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -3296,7 +3300,7 @@
     font-size: 8.5px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
   }
@@ -3308,7 +3312,7 @@
     font-size: 6px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -3351,7 +3355,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .resetotpcontainer {
@@ -3367,7 +3371,7 @@
     height: 23px !important;
     max-height: 23px;
     max-width: 23px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -3395,7 +3399,7 @@
     width: 100%;
     float: left;
     margin-top: 8px;
-    color: #273a49;
+    color: #212529;
   }
 
   #createpassword {
@@ -3418,7 +3422,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstExpbox {
@@ -3432,7 +3436,7 @@
     width: 158.7px !important;
     height: 20px !important;
     max-width: 158.7px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 2px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -3447,7 +3451,7 @@
     width: 130px;
     height: 25px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 9px;
@@ -3469,7 +3473,7 @@
     width: 130px;
     height: 25px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 9px;
@@ -3503,7 +3507,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 8px;
-    color: #273a49;
+    color: #212529;
   }
 
   .otpcancel {
@@ -3515,7 +3519,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 10px;
-    color: #273a49;
+    color: #212529;
     opacity: 0.7;
     width: 100%;
     float: left;
@@ -3530,7 +3534,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 8.5px;
-    color: #273a49;
+    color: #212529;
     width: 100%;
     float: left;
   }
@@ -3558,7 +3562,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .explable {
@@ -3567,7 +3571,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstexplable {
@@ -3576,7 +3580,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
   .rstexpin {
     height: 22px;
@@ -3617,9 +3621,9 @@
     --radius: 2px;
     --baseFg: #d3ddff;
     --baseBg: #ffffff;
-    --accentFg: #5f30e2;
+    --accentFg: #212529;
     --accentBg: #dfe6fc;
-    --bordercl: #e1e7f3;
+    --bordercl: #21252930;
   }
 
   select {
@@ -3665,7 +3669,7 @@
     height: 19px !important;
     max-height: 19px;
     max-width: 88px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 7px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -3698,7 +3702,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 9.5px;
-    color: #273a49;
+    color: #212529;
   }
 
   .expirewrapper {
@@ -3787,7 +3791,7 @@
   #header {
     width: 100%;
     height: 43px;
-    background: #2a1563;
+    background: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3805,7 +3809,7 @@
     position: fixed;
     width: 100%;
     height: 180px;
-    background: #f2f2ff;
+    background: #fafafa;
     display: flex;
     justify-content: center;
   }
@@ -4028,7 +4032,7 @@
     margin-top: 4px;
     display: flex;
     justify-content: center;
-    color: #273a49;
+    color: #212529;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
     font-size: 11px;
@@ -4074,8 +4078,8 @@
     width: 75%;
     height: fit-content;
     max-height: fit-content;
-    background: #f4f7ff;
-    border: 0.5px solid #d0e1f9;
+    background: #fafafa;
+    border: 0.5px solid #21252930;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -4128,7 +4132,7 @@
     position: relative;
     width: fit-content;
     height: 20px;
-    background: #f2f2ff;
+    background: #fafafa;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -4161,7 +4165,7 @@
     line-height: 0;
     font-size: 10px;
     -webkit-appearance: none;
-    color: #2a1563;
+    color: #212529;
     border-radius: 25px;
     outline: none;
     border: none;
@@ -4171,13 +4175,13 @@
   }
 
   button:hover {
-    background-color: #634d92;
+    background-color: #969696;
     cursor: pointer;
     color: white;
   }
 
   button.active {
-    background-color: #2a1563;
+    background-color: #212529;
     color: white;
   }
 
@@ -4204,7 +4208,7 @@
     width: 90px;
     height: 24px;
     margin: 20px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 10px;
@@ -4249,7 +4253,7 @@
     height: 32px !important;
     max-height: 32px;
     max-width: 32px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -4261,7 +4265,7 @@
     height: 28px !important;
     max-height: 28px;
     max-width: 28px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -4273,7 +4277,7 @@
     height: 28px !important;
     max-height: 28px;
     max-width: 168px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 9px 7.5px 9px 7.5px;
     background: #f1f3f8;
     outline: none;
@@ -4291,13 +4295,13 @@
   .preauth {
     -webkit-appearance: checkbox;
     margin-left: 0px;
-    border: #2a1563;
+    border: #212529;
     cursor: pointer;
   }
 
   .labelpreauth {
     font-size: 8.5px;
-    color: #2a1563;
+    color: #212529;
     cursor: pointer;
   }
 
@@ -4332,7 +4336,7 @@
     position: relative;
     width: 100%;
     float: left;
-    background-color: #f7f7ff;
+    background-color: #fafafa;
     border-radius: 15px 15px 0 0;
     display: flex;
     align-items: center;
@@ -4395,7 +4399,7 @@
   .datebox {
     width: 120px;
     height: 30px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     background: #f1f3f8;
     outline: none;
     border-radius: 2px;
@@ -4438,7 +4442,7 @@
     margin: 15px;
     float: right;
     text-decoration: none;
-    color: #5f30e2;
+    color: #212529;
   }
 
   .resendOTP {
@@ -4462,7 +4466,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 6px;
-    color: #2a1563;
+    color: #212529;
     margin: 0px;
   }
 
@@ -4475,7 +4479,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     right: 0px;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp1 {
@@ -4487,7 +4491,7 @@
     line-height: 7px;
     position: absolute;
     float: right;
-    color: #2a1563;
+    color: #212529;
     margin: 1px 0px 0px 0px;
     right: 0px;
     display: none;
@@ -4501,7 +4505,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp2 {
@@ -4512,7 +4516,7 @@
     line-height: 7px;
     opacity: 0.5;
     float: right;
-    color: #2a1563;
+    color: #212529;
     position: absolute;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -4539,7 +4543,7 @@
     font-size: 9px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
   }
@@ -4551,7 +4555,7 @@
     font-size: 6px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -4596,7 +4600,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .resetotpcontainer {
@@ -4612,7 +4616,7 @@
     height: 24px !important;
     max-height: 24px;
     max-width: 24px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -4641,7 +4645,7 @@
     margin-top: 15px;
     width: 100%;
     float: left;
-    color: #273a49;
+    color: #212529;
   }
 
   #createpassword {
@@ -4667,7 +4671,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstExpbox {
@@ -4681,7 +4685,7 @@
     width: 166px !important;
     height: 22px !important;
     max-width: 166px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 2px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -4696,7 +4700,7 @@
     width: 130px;
     height: 24px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 10px;
@@ -4717,7 +4721,7 @@
     width: 130px;
     height: 25px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 9px;
@@ -4751,7 +4755,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 6px;
-    color: #273a49;
+    color: #212529;
   }
 
   .otpcancel {
@@ -4763,7 +4767,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 8.5px;
-    color: #273a49;
+    color: #212529;
     opacity: 0.7;
     width: 100%;
     float: left;
@@ -4778,7 +4782,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 8.5px;
-    color: #273a49;
+    color: #212529;
     width: 100%;
     float: left;
   }
@@ -4806,7 +4810,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstexplable {
@@ -4815,7 +4819,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
   .rstexpin {
     height: 22px;
@@ -4858,9 +4862,9 @@
     --radius: 2px;
     --baseFg: #d3ddff;
     --baseBg: #ffffff;
-    --accentFg: #5f30e2;
+    --accentFg: #212529;
     --accentBg: #dfe6fc;
-    --bordercl: #e1e7f3;
+    --bordercl: #21252930;
   }
 
   select {
@@ -4902,7 +4906,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .atmpin {
@@ -4919,7 +4923,7 @@
     height: 19px !important;
     max-height: 19px;
     max-width: 88px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 7px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -4942,7 +4946,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 10px;
-    color: #273a49;
+    color: #212529;
     top: -20px;
   }
 
@@ -4995,7 +4999,7 @@
   }
 
   body {
-    background-color: #f2f2ff;
+    background-color: #fafafa;
     font-family: "Proxima Nova", "Open Sans", "PT Sans", sans-serif;
     padding: 0;
     margin: 0;
@@ -5033,7 +5037,7 @@
   #header {
     width: 100%;
     height: 35px;
-    background: #2a1563;
+    background: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5051,7 +5055,7 @@
     position: absolute;
     width: 100%;
     height: 28px;
-    background: #f2f2ff;
+    background: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5251,7 +5255,7 @@
     display: flex;
 
     justify-content: center;
-    color: #273a49;
+    color: #212529;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
     font-size: 11px;
@@ -5298,8 +5302,8 @@
     width: 348px;
     height: fit-content;
     max-height: fit-content;
-    background: #f4f7ff;
-    border: 0.5px solid #d0e1f9;
+    background: #fafafa;
+    border: 0.5px solid #21252930;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -5353,7 +5357,7 @@
     position: relative;
     width: fit-content;
     height: 21px;
-    background: #f2f2ff;
+    background: #fafafa;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -5386,7 +5390,7 @@
     line-height: 0;
     font-size: 10px;
     -webkit-appearance: none;
-    color: #2a1563;
+    color: #212529;
     border-radius: 25px;
     outline: none;
     border: none;
@@ -5396,13 +5400,13 @@
   }
 
   button:hover {
-    background-color: #634d92;
+    background-color: #969696;
     cursor: pointer;
     color: white;
   }
 
   button.active {
-    background-color: #2a1563;
+    background-color: #212529;
     color: white;
   }
 
@@ -5429,7 +5433,7 @@
     width: 90px;
     height: 24px;
     margin: 10px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 10px;
@@ -5474,7 +5478,7 @@
     width: 26px !important;
     height: 26px !important;
 
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -5484,7 +5488,7 @@
   .pinbox {
     width: 22.5px;
     height: 22.5px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -5496,7 +5500,7 @@
     height: 24px !important;
     max-height: 24px;
     max-width: 168px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 9px 7.5px 9px 7.5px;
     background: #f1f3f8;
     outline: none;
@@ -5515,7 +5519,7 @@
   .preauth {
     -webkit-appearance: checkbox;
     margin-left: 0px;
-    border: #2a1563;
+    border: #212529;
     cursor: pointer;
   }
 
@@ -5526,7 +5530,7 @@
 
   .labelpreauth {
     font-size: 9px;
-    color: #2a1563;
+    color: #212529;
     cursor: pointer;
   }
 
@@ -5556,7 +5560,7 @@
     position: relative;
     width: 100%;
     float: left;
-    background-color: #f7f7ff;
+    background-color: #fafafa;
     border-radius: 15px 15px 0 0;
     display: flex;
     align-items: center;
@@ -5619,7 +5623,7 @@
   .datebox {
     width: 120px;
     height: 30px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     background: #f1f3f8;
     outline: none;
     border-radius: 2px;
@@ -5662,7 +5666,7 @@
     margin: 15px;
     float: right;
     text-decoration: none;
-    color: #5f30e2;
+    color: #212529;
   }
 
   .resendOTP {
@@ -5686,7 +5690,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 6px;
-    color: #2a1563;
+    color: #212529;
     margin: 0px;
   }
 
@@ -5699,7 +5703,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     right: 0px;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp1 {
@@ -5711,7 +5715,7 @@
     line-height: 7px;
     position: absolute;
     float: right;
-    color: #2a1563;
+    color: #212529;
     margin: 1px 0px 0px 0px;
     right: 0px;
     display: none;
@@ -5725,7 +5729,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp2 {
@@ -5736,7 +5740,7 @@
     line-height: 7px;
     opacity: 0.5;
     float: right;
-    color: #2a1563;
+    color: #212529;
     position: absolute;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -5765,7 +5769,7 @@
     font-size: 8.5px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
   }
@@ -5777,7 +5781,7 @@
     font-size: 7px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -5826,7 +5830,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
   .resetotpcontainer {
     width: 260px;
@@ -5841,7 +5845,7 @@
     height: 24px !important;
     max-height: 24px;
     max-width: 24px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -5869,7 +5873,7 @@
     width: 100%;
     margin-top: 10px;
     float: left;
-    color: #273a49;
+    color: #212529;
     height: 21px;
   }
 
@@ -5887,7 +5891,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstExpbox {
@@ -5901,7 +5905,7 @@
     width: 166px !important;
     height: 19px !important;
     max-width: 166px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 2px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -5916,7 +5920,7 @@
     width: 140px;
     height: 25px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 10px;
@@ -5938,7 +5942,7 @@
     width: 140px;
     height: 25px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 10px;
@@ -5972,7 +5976,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 6px;
-    color: #273a49;
+    color: #212529;
   }
 
   .otpcancel {
@@ -5984,7 +5988,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 9px;
-    color: #273a49;
+    color: #212529;
     opacity: 0.7;
     width: 100%;
     float: left;
@@ -5999,7 +6003,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 9px;
-    color: #273a49;
+    color: #212529;
     width: 100%;
     float: left;
   }
@@ -6027,7 +6031,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .explable {
@@ -6036,7 +6040,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstexplable {
@@ -6045,7 +6049,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
   .rstexpin {
     height: 22px;
@@ -6090,9 +6094,9 @@
     --radius: 2px;
     --baseFg: #d3ddff;
     --baseBg: #ffffff;
-    --accentFg: #5f30e2;
+    --accentFg: #212529;
     --accentBg: #dfe6fc;
-    --bordercl: #e1e7f3;
+    --bordercl: #21252930;
   }
 
   select {
@@ -6142,7 +6146,7 @@
     height: 19px !important;
     max-height: 19px;
     max-width: 88px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 7px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -6165,7 +6169,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 10px;
-    color: #273a49;
+    color: #212529;
     width: 100%;
     float: left;
   }
@@ -6219,7 +6223,7 @@
   }
 
   body {
-    background-color: #f2f2ff;
+    background-color: #fafafa;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     padding: 0;
     margin: 0;
@@ -6257,7 +6261,7 @@
   #header {
     width: 100%;
     height: 50px;
-    background: #2a1563;
+    background: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6273,7 +6277,7 @@
 
   #footer {
     position: absolute;
-    background: #f2f2ff;
+    background: #fafafa;
     width: 100%;
     height: 45px;
     display: flex;
@@ -6474,7 +6478,7 @@
     margin-top: 3px;
     display: flex;
     justify-content: center;
-    color: #273a49;
+    color: #212529;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
     font-size: 14px;
@@ -6512,8 +6516,8 @@
     width: 50%;
     height: fit-content;
     max-height: fit-content;
-    background: #f4f7ff;
-    border: 0.5px solid #d0e1f9;
+    background: #fafafa;
+    border: 0.5px solid #21252930;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -6575,7 +6579,7 @@
     position: relative;
     width: fit-content;
     height: 20px;
-    background: #f2f2ff;
+    background: #fafafa;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -6608,7 +6612,7 @@
     line-height: 0;
     font-size: 11px;
     -webkit-appearance: none;
-    color: #2a1563;
+    color: #212529;
     border-radius: 25px;
     outline: none;
     border: none;
@@ -6618,13 +6622,13 @@
   }
 
   button:hover {
-    background-color: #634d92;
+    background-color: #969696;
     cursor: pointer;
     color: white;
   }
 
   button.active {
-    background-color: #2a1563;
+    background-color: #212529;
     color: white;
   }
 
@@ -6652,7 +6656,7 @@
     width: 90px;
     height: 24px;
     margin: 10px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 10px;
@@ -6698,7 +6702,7 @@
     height: 30px !important;
     max-height: 30px;
     max-width: 30px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -6709,7 +6713,7 @@
   .pinbox {
     width: 23px;
     height: 23px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -6721,7 +6725,7 @@
     height: 30px !important;
     max-height: 30px;
     max-width: 203px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 9px 8px 9px 8px;
     background: #f1f3f8;
     outline: none;
@@ -6741,7 +6745,7 @@
   .preauth {
     -webkit-appearance: checkbox;
     margin-left: 0px;
-    border: #2a1563;
+    border: #212529;
     cursor: pointer;
   }
 
@@ -6752,7 +6756,7 @@
 
   .labelpreauth {
     font-size: 12px;
-    color: #2a1563;
+    color: #212529;
     cursor: pointer;
   }
 
@@ -6782,7 +6786,7 @@
     position: relative;
     width: 100%;
     float: left;
-    background-color: #f7f7ff;
+    background-color: #fafafa;
     border-radius: 15px 15px 0 0;
     display: flex;
     align-items: center;
@@ -6845,7 +6849,7 @@
   .datebox {
     width: 120px;
     height: 30px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     background: #f1f3f8;
     outline: none;
     border-radius: 2px;
@@ -6888,7 +6892,7 @@
     margin: 15px 30px 15px 10px;
     float: right;
     text-decoration: none;
-    color: #5f30e2;
+    color: #212529;
   }
 
   .resendOTP {
@@ -6919,7 +6923,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 7px;
-    color: #2a1563;
+    color: #212529;
     margin: 0px;
   }
 
@@ -6931,7 +6935,7 @@
     font-size: 12px;
     line-height: 7px;
     right: 0px;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp1 {
@@ -6943,7 +6947,7 @@
     line-height: 7px;
     position: absolute;
     float: right;
-    color: #2a1563;
+    color: #212529;
     margin: 0px;
     right: 0px;
     display: none;
@@ -6957,7 +6961,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp2 {
@@ -6968,7 +6972,7 @@
     line-height: 7px;
     opacity: 0.5;
     float: right;
-    color: #2a1563;
+    color: #212529;
     position: absolute;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -6995,7 +6999,7 @@
     font-size: 10px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
   }
@@ -7007,7 +7011,7 @@
     font-size: 9px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -7052,7 +7056,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0;
-    color: #273a49;
+    color: #212529;
   }
   .resetotpcontainer {
     width: 310px;
@@ -7067,7 +7071,7 @@
     height: 30px !important;
     max-height: 30px;
     max-width: 30px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -7095,7 +7099,7 @@
     width: 100%;
     float: left;
     margin-top: 7px;
-    color: #273a49;
+    color: #212529;
     height: 30px;
   }
 
@@ -7113,7 +7117,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstExpbox {
@@ -7127,7 +7131,7 @@
     width: 201px !important;
     height: 30px !important;
     max-width: 201px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 2px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -7142,7 +7146,7 @@
     width: 155px;
     height: 35px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 12px;
@@ -7164,7 +7168,7 @@
     width: 145px;
     height: 30px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 10px;
@@ -7198,7 +7202,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 6px;
-    color: #273a49;
+    color: #212529;
   }
 
   .otpcancel {
@@ -7212,7 +7216,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    color: #273a49;
+    color: #212529;
     opacity: 0.7;
   }
 
@@ -7225,7 +7229,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 10.5px;
-    color: #273a49;
+    color: #212529;
     width: 100%;
     float: left;
   }
@@ -7254,7 +7258,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstexplable {
@@ -7263,7 +7267,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
   .rstexpin {
     height: 25px;
@@ -7308,7 +7312,7 @@
     --radius: 2px;
     --baseFg: #d3ddff;
     --baseBg: #ffffff;
-    --accentFg: #5f30e2;
+    --accentFg: #212529;
     --accentBg: #dfe6fc;
     --bordercl: #b9c5dd;
   }
@@ -7352,7 +7356,7 @@
     font-weight: normal;
     font-size: 10px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .atmpin {
@@ -7369,7 +7373,7 @@
     height: 24px !important;
     max-height: 24px;
     max-width: 101px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 7px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -7392,7 +7396,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 13px;
-    color: #273a49;
+    color: #212529;
   }
 
   .expirewrapper {
@@ -7444,7 +7448,7 @@
   }
 
   body {
-    background-color: #f2f2ff;
+    background-color: #fafafa;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     padding: 0;
     margin: 0;
@@ -7482,7 +7486,7 @@
   #header {
     width: 100%;
     height: 60px;
-    background: #2a1563;
+    background: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7498,7 +7502,7 @@
 
   #footer {
     position: absolute;
-    background: #f2f2ff;
+    background: #fafafa;
     width: 100%;
     height: 58px;
     display: flex;
@@ -7701,7 +7705,7 @@
     display: flex;
 
     justify-content: center;
-    color: #273a49;
+    color: #212529;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     text-align: justify;
     font-size: 14px;
@@ -7730,8 +7734,8 @@
     width: 490px;
     height: fit-content;
     max-height: fit-content;
-    background: #f4f7ff;
-    border: 0.5px solid #d0e1f9;
+    background: #fafafa;
+    border: 0.5px solid #21252930;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -7792,7 +7796,7 @@
     position: relative;
     width: fit-content;
     height: 28px;
-    background: #f2f2ff;
+    background: #fafafa;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -7825,7 +7829,7 @@
     line-height: 0;
     -webkit-appearance: none;
     font-size: 14px;
-    color: #2a1563;
+    color: #212529;
     border-radius: 25px;
     outline: none;
     border: none;
@@ -7835,13 +7839,13 @@
   }
 
   button:hover {
-    background-color: #634d92;
+    background-color: #969696;
     cursor: pointer;
     color: white;
   }
 
   button.active {
-    background-color: #2a1563;
+    background-color: #212529;
     color: white;
   }
 
@@ -7882,7 +7886,7 @@
     height: 40px !important;
     max-height: 40px;
     max-width: 40px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -7895,7 +7899,7 @@
     height: 40px !important;
     max-height: 40px;
     max-width: 40px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -7908,7 +7912,7 @@
     height: 40px !important;
     max-height: 40px;
     max-width: 275px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 9px 9px 9px 9px;
     background: #f1f3f8;
     outline: none;
@@ -7928,7 +7932,7 @@
   .preauth {
     -webkit-appearance: checkbox;
     margin-left: 0px;
-    border: #2a1563;
+    border: #212529;
     cursor: pointer;
   }
 
@@ -7939,7 +7943,7 @@
 
   .labelpreauth {
     font-size: 10.5px;
-    color: #2a1563;
+    color: #212529;
     cursor: pointer;
   }
 
@@ -7969,7 +7973,7 @@
     position: relative;
     width: 100%;
     float: left;
-    background-color: #f7f7ff;
+    background-color: #fafafa;
     border-radius: 15px 15px 0 0;
     display: flex;
     align-items: center;
@@ -8032,7 +8036,7 @@
   .datebox {
     width: 120px;
     height: 30px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     background: #f1f3f8;
     outline: none;
     border-radius: 2px;
@@ -8075,7 +8079,7 @@
     margin: 15px 30px 15px 10px;
     float: right;
     text-decoration: none;
-    color: #5f30e2;
+    color: #212529;
   }
 
   .resendOTP {
@@ -8107,7 +8111,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     right: 0px;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp1 {
@@ -8119,7 +8123,7 @@
     line-height: 7px;
     position: absolute;
     float: right;
-    color: #2a1563;
+    color: #212529;
     margin: 1px 0px 0px 0px;
     right: 0px;
     display: none;
@@ -8133,7 +8137,7 @@
     line-height: 7px;
     margin: 1px 0px 0px 0px;
     float: right;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp2 {
@@ -8144,7 +8148,7 @@
     line-height: 7px;
     opacity: 0.5;
     float: right;
-    color: #2a1563;
+    color: #212529;
     position: absolute;
     margin: 1px 0px 0px 0px;
     right: 0px;
@@ -8156,7 +8160,7 @@
     width: 180px;
     height: 36px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 14px;
@@ -8194,7 +8198,7 @@
     font-size: 10.5px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
   }
@@ -8206,7 +8210,7 @@
     font-size: 11px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -8250,7 +8254,7 @@
     font-weight: normal;
     font-size: 12px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .resetotpcontainer {
@@ -8266,7 +8270,7 @@
     height: 32px !important;
     max-height: 32px;
     max-width: 32px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -8295,7 +8299,7 @@
     width: 100%;
     float: left;
     margin-top: 12px;
-    color: #273a49;
+    color: #212529;
     height: 32px;
   }
 
@@ -8314,7 +8318,7 @@
     font-size: 12px;
     margin-right: 10px;
     margin-left: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstExpbox {
@@ -8329,7 +8333,7 @@
     width: 212px !important;
     height: 32px !important;
     max-width: 212px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 2px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -8344,7 +8348,7 @@
     width: 180px;
     height: 36px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 14px;
@@ -8378,7 +8382,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 6px;
-    color: #273a49;
+    color: #212529;
   }
 
   .otpcancel {
@@ -8392,7 +8396,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 10.5px;
-    color: #273a49;
+    color: #212529;
     opacity: 0.7;
   }
 
@@ -8407,7 +8411,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 10.5px;
-    color: #273a49;
+    color: #212529;
   }
 
   #inside {
@@ -8425,7 +8429,7 @@
     font-weight: normal;
     font-size: 13px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .explable {
@@ -8434,7 +8438,7 @@
     font-weight: normal;
     font-size: 13px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstexplable {
@@ -8443,7 +8447,7 @@
     font-weight: normal;
     font-size: 12px;
     margin: 0px 11px 0px 0px;
-    color: #273a49;
+    color: #212529;
   }
   .rstexpin {
     height: 28px;
@@ -8487,7 +8491,7 @@
     --radius: 3px;
     --baseFg: #d3ddff;
     --baseBg: #ffffff;
-    --accentFg: #5f30e2;
+    --accentFg: #212529;
     --accentBg: #dfe6fc;
     --bordercl: #b9c5dd;
   }
@@ -8553,7 +8557,7 @@
     height: 40px !important;
     max-height: 40px;
     max-width: 181px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 7px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -8577,7 +8581,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 12px;
-    color: #273a49;
+    color: #212529;
   }
 
   .expirewrapper {
@@ -8629,7 +8633,7 @@
   }
 
   body {
-    background-color: #f2f2ff;
+    background-color: #fafafa;
     font-family: "Proxima Nova", "Open Sans", "PT Sans", sans-serif;
     padding: 0;
     margin: 0;
@@ -8667,7 +8671,7 @@
   #header {
     width: 100%;
     height: 75px;
-    background: #2a1563;
+    background: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8684,7 +8688,7 @@
 
   #footer {
     position: absolute;
-    background: #f2f2ff;
+    background: #fafafa;
     width: 100%;
     height: 75px;
     display: flex;
@@ -8899,7 +8903,7 @@
     float: left;
     display: flex;
     justify-content: center;
-    color: #273a49;
+    color: #212529;
     font-family: "Proxima Nova", "PT Sans", sans-serif;
     text-align: justify;
     font-size: 17px;
@@ -8927,8 +8931,8 @@
     width: 510px;
     height: fit-content;
     max-height: fit-content;
-    background: #f4f7ff;
-    border: 0.5px solid #d0e1f9;
+    background: #fafafa;
+    border: 0.5px solid #21252930;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -8989,7 +8993,7 @@
     position: relative;
     width: fit-content;
     height: 36px;
-    background: #f2f2ff;
+    background: #fafafa;
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -9026,7 +9030,7 @@
     line-height: 0;
     font-size: 16px;
     -webkit-appearance: none;
-    color: #2a1563;
+    color: #212529;
     border-radius: 25px;
     outline: none;
     border: none;
@@ -9036,13 +9040,13 @@
   }
 
   button:hover {
-    background-color: #988ab8;
+    background-color: #969696;
     cursor: pointer;
     color: white;
   }
 
   button.active {
-    background-color: #2a1563;
+    background-color: #212529;
     color: white;
   }
 
@@ -9080,7 +9084,7 @@
     width: 210px;
     height: 54px;
     margin: 10px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 20px;
@@ -9121,7 +9125,7 @@
     height: 54px !important;
     max-height: 54px;
     max-width: 54px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     outline: none;
     border-radius: 2px;
@@ -9133,7 +9137,7 @@
     height: 50px !important;
     max-height: 50px;
     max-width: 50px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -9146,7 +9150,7 @@
     height: 54px !important;
     max-height: 54px;
     max-width: 360px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 15px 14px 15px 14px;
     background: #f1f3f8;
     outline: none;
@@ -9168,13 +9172,13 @@
     height: 12px;
     -webkit-appearance: checkbox;
     margin: 0 3px 0 0;
-    border: #2a1563;
+    border: #212529;
     cursor: pointer;
   }
 
   .labelpreauth {
     font-size: 14px;
-    color: #2a1563;
+    color: #212529;
     cursor: pointer;
   }
 
@@ -9204,7 +9208,7 @@
     position: relative;
     width: 100%;
     float: left;
-    background-color: #f7f7ff;
+    background-color: #fafafa;
     border-radius: 15px 15px 0 0;
     display: flex;
     align-items: center;
@@ -9269,7 +9273,7 @@
   .datebox {
     width: 135px;
     height: 40px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     background: #f1f3f8;
     outline: none;
     border-radius: 2px;
@@ -9312,7 +9316,7 @@
     margin: 25px 30px 25px 10px;
     float: right;
     text-decoration: none;
-    color: #5f30e2;
+    color: #212529;
   }
 
   .resendOTP {
@@ -9341,7 +9345,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    color: #2a1563;
+    color: #212529;
     margin: 0px;
   }
 
@@ -9354,7 +9358,7 @@
     line-height: 7px;
     margin: 1.5px 0px 0px 0px;
     right: 0px;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp1 {
@@ -9366,7 +9370,7 @@
     line-height: 7px;
     position: absolute;
     float: right;
-    color: #2a1563;
+    color: #212529;
     margin: 1.5px 0px 0px 0px;
     right: 0px;
     display: none;
@@ -9380,7 +9384,7 @@
     line-height: 7px;
     margin: 1.5px 0px 0px 0px;
     float: right;
-    color: #2a1563;
+    color: #212529;
   }
 
   .altResendotp2 {
@@ -9391,7 +9395,7 @@
     line-height: 7px;
     opacity: 0.5;
     float: right;
-    color: #2a1563;
+    color: #212529;
     position: absolute;
     margin: 1.5px 0px 0px 0px;
     right: 0px;
@@ -9403,7 +9407,7 @@
     width: 250px;
     height: 50px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 15px;
@@ -9441,7 +9445,7 @@
     font-size: 14px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
   }
@@ -9453,7 +9457,7 @@
     font-size: 14px;
     line-height: 7px;
     text-align: center;
-    color: #2a1563;
+    color: #212529;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -9505,7 +9509,7 @@
     font-weight: normal;
     font-size: 15px;
     margin: 0;
-    color: #273a49;
+    color: #212529;
   }
 
   .resetotpcontainer {
@@ -9521,7 +9525,7 @@
     height: 40px !important;
     max-height: 40px;
     max-width: 40px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     text-align: center;
     background: #f1f3f8;
     outline: none;
@@ -9552,7 +9556,7 @@
     margin-top: 13px;
     float: left;
     height: 38px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstwrap {
@@ -9576,7 +9580,7 @@
     height: 38px !important;
     max-height: 38px;
     max-width: 285px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 2px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -9591,7 +9595,7 @@
     width: 250px;
     height: 50px;
     margin: 0px 0;
-    background: #5f30e2;
+    background: #212529;
     color: white;
     border: 0;
     font-size: 15px;
@@ -9625,7 +9629,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 6px;
-    color: #273a49;
+    color: #212529;
   }
 
   .otpcancel {
@@ -9639,7 +9643,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    color: #273a49;
+    color: #212529;
     opacity: 0.7;
   }
 
@@ -9654,7 +9658,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    color: #273a49;
+    color: #212529;
   }
 
   .insidewrapper {
@@ -9680,7 +9684,7 @@
     font-weight: normal;
     font-size: 8px;
     margin: 0px 20px 0px 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstExplable {
@@ -9690,7 +9694,7 @@
     font-weight: normal;
     font-size: 15px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .rstexplable {
@@ -9699,7 +9703,7 @@
     font-weight: normal;
     font-size: 15px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
   .rstexpin {
     height: 35px;
@@ -9745,7 +9749,7 @@
     --radius: 3px;
     --baseFg: #d3ddff;
     --baseBg: #ffffff;
-    --accentFg: #5f30e2;
+    --accentFg: #212529;
     --accentBg: #dfe6fc;
     --bordercl: #b9c5dd;
   }
@@ -9793,7 +9797,7 @@
     font-weight: normal;
     font-size: 18px;
     margin-right: 71px;
-    color: #273a49;
+    color: #212529;
   }
 
   .explable {
@@ -9802,7 +9806,7 @@
     font-weight: normal;
     font-size: 18px;
     margin: 0px;
-    color: #273a49;
+    color: #212529;
   }
 
   .atmpin {
@@ -9819,7 +9823,7 @@
     height: 42px !important;
     max-height: 42px;
     max-width: 214px;
-    border: 0.5px solid #e1e7f3;
+    border: 0.5px solid #21252930;
     padding: 10px 7px 9px 8.3px;
     background: #f1f3f8;
     outline: none;
@@ -9843,7 +9847,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
-    color: #273a49;
+    color: #212529;
   }
 
   .expirewrapper {
@@ -9895,7 +9899,7 @@
   }
 
   body {
-    background-color: #f2f2ff;
+    background-color: #fafafa;
     font-family: "Proxima Nova", "Open Sans", sans-serif;
     padding: 0;
     margin: 0;
